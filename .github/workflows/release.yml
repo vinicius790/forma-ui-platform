@@ -29,7 +29,7 @@ jobs:
       - name: Install Playwright browsers
         run: pnpm exec playwright install --with-deps chromium firefox webkit
       - run: pnpm lint && pnpm build && pnpm typecheck && pnpm verify:exports && pnpm check:packages && pnpm check:workspace-graph && pnpm check:structure && pnpm check:architecture && pnpm check:docs && pnpm check:hygiene && pnpm check:publish && pnpm smoke && pnpm test && pnpm test:a11y && pnpm docs:build && pnpm storybook:build && pnpm test:e2e
-      - uses: changesets/action@v1
+      - uses: changesets/action@v2
         with:
           publish: pnpm release
         env:
