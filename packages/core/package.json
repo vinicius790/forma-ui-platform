@@ -1,0 +1,66 @@
+{
+  "name": "@forma-ui/core",
+  "version": "100.0.0",
+  "description": "Framework-agnostic headless UI behavior and DOM primitives",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./components/*": {
+      "import": {
+        "types": "./dist/components/*.d.ts",
+        "default": "./dist/components/*.js"
+      },
+      "require": {
+        "types": "./dist/components/*.d.cts",
+        "default": "./dist/components/*.cjs"
+      }
+    },
+    "./primitives/*": {
+      "import": {
+        "types": "./dist/primitives/*.d.ts",
+        "default": "./dist/primitives/*.js"
+      },
+      "require": {
+        "types": "./dist/primitives/*.d.cts",
+        "default": "./dist/primitives/*.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run src/__tests__"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "^4.40.0",
+    "typescript": "^5.8.3",
+    "tslib": "^2.8.1",
+    "vitest": "^3.1.1",
+    "jsdom": "^26.0.0",
+    "axe-core": "^4.14.0",
+    "fast-check": "^3.23.2"
+  },
+  "engines": {
+    "node": ">=22.16.0"
+  }
+}

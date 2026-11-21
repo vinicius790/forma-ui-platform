@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", "group:monorepos"],
+  "rangeStrategy": "bump",
+  "schedule": ["before 6am on monday"],
+  "packageRules": [
+    { "matchPackagePatterns": ["^react$", "^react-dom$", "^vue$", "^svelte$", "^solid-js$", "^lit$", "^@angular/"], "groupName": "framework adapters" },
+    { "matchUpdateTypes": ["major"], "labels": ["dependencies", "breaking-change-review"] }
+  ]
+}

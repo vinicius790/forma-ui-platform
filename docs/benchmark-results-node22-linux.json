@@ -1,0 +1,42 @@
+{
+  "runtime": "v22.16.0",
+  "platform": "linux",
+  "results": [
+    {
+      "dataset": "data-grid/records-part-1.jsonl",
+      "records": 120000,
+      "bytes": 76549542,
+      "elapsedMs": 427.78,
+      "recordsPerSecond": 280518,
+      "disabled": 0,
+      "expanded": 0
+    },
+    {
+      "dataset": "data-grid/records-part-2.jsonl",
+      "records": 120000,
+      "bytes": 76549584,
+      "elapsedMs": 366.86,
+      "recordsPerSecond": 327103,
+      "disabled": 0,
+      "expanded": 0
+    },
+    {
+      "dataset": "command-palette/commands-150k.jsonl",
+      "records": 150000,
+      "bytes": 60628341,
+      "elapsedMs": 510.51,
+      "recordsPerSecond": 293822,
+      "disabled": 7894,
+      "expanded": 0
+    },
+    {
+      "dataset": "virtualization/variable-height-rows-100k.jsonl",
+      "records": 100000,
+      "bytes": 50784768,
+      "elapsedMs": 194.94,
+      "recordsPerSecond": 512983,
+      "disabled": 0,
+      "expanded": 9090
+    }
+  ]
+}

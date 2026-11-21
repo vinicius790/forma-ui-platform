@@ -1,0 +1,97 @@
+import js from '@eslint/js';
+import tsParser from '@typescript-eslint/parser';
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+
+const browserGlobals = {
+  AbortController: 'readonly',
+  AbortSignal: 'readonly',
+  Comment: 'readonly',
+  CSS: 'readonly',
+  CustomEvent: 'readonly',
+  DOMRect: 'readonly',
+  Document: 'readonly',
+  Element: 'readonly',
+  Event: 'readonly',
+  EventTarget: 'readonly',
+  FocusEvent: 'readonly',
+  FormData: 'readonly',
+  HTMLAnchorElement: 'readonly',
+  HTMLButtonElement: 'readonly',
+  HTMLDivElement: 'readonly',
+  HTMLElement: 'readonly',
+  HTMLInputElement: 'readonly',
+  HTMLOListElement: 'readonly',
+  HTMLSelectElement: 'readonly',
+  KeyboardEvent: 'readonly',
+  MutationObserver: 'readonly',
+  Node: 'readonly',
+  NodeList: 'readonly',
+  PointerEvent: 'readonly',
+  Text: 'readonly',
+  Window: 'readonly',
+  cancelAnimationFrame: 'readonly',
+  clearInterval: 'readonly',
+  clearTimeout: 'readonly',
+  document: 'readonly',
+  getComputedStyle: 'readonly',
+  navigator: 'readonly',
+  queueMicrotask: 'readonly',
+  requestAnimationFrame: 'readonly',
+  setInterval: 'readonly',
+  setTimeout: 'readonly',
+  window: 'readonly',
+};
+
+const testGlobals = {
+  afterAll: 'readonly',
+  afterEach: 'readonly',
+  beforeAll: 'readonly',
+  beforeEach: 'readonly',
+  describe: 'readonly',
+  expect: 'readonly',
+  it: 'readonly',
+  test: 'readonly',
+  vi: 'readonly',
+};
+
+export default [
+  { ignores: ['**/dist/**', '**/dist-cjs/**', '**/node_modules/**', '**/.vite/**', '**/coverage/**', '**/storybook-static/**', '**/playwright-report/**', '**/test-results/**', 'archive-imports/**'] },
+  js.configs.recommended,
+  {
+    files: ['**/*.{ts,tsx,mts}'],
+    languageOptions: {
+      parser: tsParser,
+      parserOptions: { ecmaVersion: 'latest', sourceType: 'module', ecmaFeatures: { jsx: true } },
+      globals: { ...browserGlobals, ...testGlobals, console: 'readonly', process: 'readonly' },
+    },
+    plugins: { '@typescript-eslint': tsPlugin },
+    rules: {
+      ...tsPlugin.configs.recommended.rules,
+      'no-undef': 'off',
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/consistent-type-imports': 'error',
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+    },
+  },
+  {
+    files: ['**/*.mjs'],
+    languageOptions: {
+      globals: {
+        console: 'readonly',
+        process: 'readonly',
+        URL: 'readonly',
+        URLSearchParams: 'readonly',
+        Buffer: 'readonly',
+        TextEncoder: 'readonly',
+        TextDecoder: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
+        setInterval: 'readonly',
+        clearInterval: 'readonly',
+        Intl: 'readonly',
+        performance: 'readonly',
+      },
+    },
+  },
+];

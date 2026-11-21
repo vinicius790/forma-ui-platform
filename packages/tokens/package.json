@@ -1,0 +1,64 @@
+{
+  "name": "@forma-ui/tokens",
+  "version": "100.0.0",
+  "description": "Design tokens and W3C DTCG export for Forma UI",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./colors": {
+      "import": {
+        "types": "./dist/colors.d.ts",
+        "default": "./dist/colors.js"
+      },
+      "require": {
+        "types": "./dist/colors.d.cts",
+        "default": "./dist/colors.cjs"
+      }
+    },
+    "./contrast": {
+      "import": {
+        "types": "./dist/contrast.d.ts",
+        "default": "./dist/contrast.js"
+      },
+      "require": {
+        "types": "./dist/contrast.d.cts",
+        "default": "./dist/contrast.cjs"
+      }
+    },
+    "./tokens.json": "./dist/tokens.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node scripts/emit-json.mjs && node ../../scripts/finalize-declarations.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run src/*.test.ts"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "^4.40.0",
+    "typescript": "^5.8.3",
+    "tslib": "^2.8.1",
+    "vitest": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=22.16.0"
+  }
+}

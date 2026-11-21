@@ -1,0 +1,4986 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-21T15:08:59.531Z",
+  "project": "Forma UI",
+  "projectVersion": "100.0.0",
+  "policy": {
+    "scope": "source-documentation-and-reproducible-benchmark-corpus",
+    "hash": "SHA-256 of each regular file before ZIP storage/compression; computed as a stream",
+    "selfExclusion": "docs/archive-manifest.json is excluded to avoid a self-referential hash; the outer ZIP checksum covers it",
+    "generatedArtifactsExcluded": [
+      ".audit-runtime",
+      ".git",
+      ".pnpm-store",
+      ".turbo",
+      ".vite",
+      "coverage",
+      "dist",
+      "dist-cjs",
+      "node_modules",
+      "playwright-report",
+      "storybook-static",
+      "test-results"
+    ],
+    "excludedFilePatterns": [
+      "^\\.audit-",
+      "\\.tgz$",
+      "\\.zip$",
+      "\\.log$",
+      "\\.tsbuildinfo$"
+    ],
+    "dependenciesAreNotVendored": true,
+    "benchmarkCorpus": {
+      "deterministic": true,
+      "synthetic": true,
+      "records": 4570000,
+      "bytes": 2385854469,
+      "zipCompression": "ZIP_STORED for JSONL datasets so the extracted files can be streamed without recompression overhead",
+      "individualFileLimitBytes": 100000000
+    },
+    "requiredArchiveMinimumBytes": 100000000
+  },
+  "summary": {
+    "files": 675,
+    "directories": 152,
+    "totalBytes": 2388441336,
+    "byExtension": {
+      ".md": {
+        "files": 102,
+        "bytes": 321724
+      },
+      ".json": {
+        "files": 109,
+        "bytes": 289981
+      },
+      "[no-extension]": {
+        "files": 6,
+        "bytes": 1606
+      },
+      ".yml": {
+        "files": 7,
+        "bytes": 6153
+      },
+      ".html": {
+        "files": 2,
+        "bytes": 5263
+      },
+      ".ts": {
+        "files": 319,
+        "bytes": 1327510
+      },
+      ".css": {
+        "files": 2,
+        "bytes": 2247
+      },
+      ".txt": {
+        "files": 2,
+        "bytes": 65767
+      },
+      ".mjs": {
+        "files": 82,
+        "bytes": 200170
+      },
+      ".tsx": {
+        "files": 3,
+        "bytes": 10712
+      },
+      ".yaml": {
+        "files": 3,
+        "bytes": 238352
+      },
+      ".rar": {
+        "files": 1,
+        "bytes": 108671
+      },
+      ".jsonl": {
+        "files": 36,
+        "bytes": 2385854469
+      },
+      ".py": {
+        "files": 1,
+        "bytes": 8711
+      }
+    }
+  },
+  "directories": [
+    ".changeset",
+    ".github",
+    ".github/ISSUE_TEMPLATE",
+    ".github/workflows",
+    "apps",
+    "apps/docs",
+    "apps/docs/src",
+    "apps/storybook",
+    "apps/storybook/.storybook",
+    "apps/storybook/src",
+    "apps/storybook/src/stories",
+    "archive-imports",
+    "archive-imports/17-01-design-system",
+    "archive-imports/17-01-design-system/.github",
+    "archive-imports/17-01-design-system/.github/workflows",
+    "archive-imports/17-01-design-system/apps",
+    "archive-imports/17-01-design-system/apps/docs",
+    "archive-imports/17-01-design-system/apps/docs/src",
+    "archive-imports/17-01-design-system/docs",
+    "archive-imports/17-01-design-system/packages",
+    "archive-imports/17-01-design-system/packages/a11y-testing",
+    "archive-imports/17-01-design-system/packages/a11y-testing/src",
+    "archive-imports/17-01-design-system/packages/codemods",
+    "archive-imports/17-01-design-system/packages/codemods/src",
+    "archive-imports/17-01-design-system/packages/codemods/src/__tests__",
+    "archive-imports/17-01-design-system/packages/core",
+    "archive-imports/17-01-design-system/packages/core/src",
+    "archive-imports/17-01-design-system/packages/core/src/__tests__",
+    "archive-imports/17-01-design-system/packages/core/src/components",
+    "archive-imports/17-01-design-system/packages/core/src/primitives",
+    "archive-imports/17-01-design-system/packages/react",
+    "archive-imports/17-01-design-system/packages/react/src",
+    "archive-imports/17-01-design-system/packages/react/src/__tests__",
+    "archive-imports/17-01-design-system/packages/svelte",
+    "archive-imports/17-01-design-system/packages/svelte/src",
+    "archive-imports/17-01-design-system/packages/svelte/src/__tests__",
+    "archive-imports/17-01-design-system/packages/themes",
+    "archive-imports/17-01-design-system/packages/themes/scripts",
+    "archive-imports/17-01-design-system/packages/themes/src",
+    "archive-imports/17-01-design-system/packages/tokens",
+    "archive-imports/17-01-design-system/packages/tokens/scripts",
+    "archive-imports/17-01-design-system/packages/tokens/src",
+    "archive-imports/17-01-design-system/packages/vue",
+    "archive-imports/17-01-design-system/packages/vue/src",
+    "archive-imports/17-01-design-system/packages/vue/src/__tests__",
+    "archive-imports/17-01-design-system/scripts",
+    "archive-imports/original",
+    "docs",
+    "docs/decisions",
+    "fixtures",
+    "fixtures/benchmarks",
+    "fixtures/benchmarks/ai-streams",
+    "fixtures/benchmarks/chart-timeseries",
+    "fixtures/benchmarks/command-palette",
+    "fixtures/benchmarks/crdt-ops",
+    "fixtures/benchmarks/data-grid",
+    "fixtures/benchmarks/i18n-catalogs",
+    "fixtures/benchmarks/schemas",
+    "fixtures/benchmarks/tree-hierarchy",
+    "fixtures/benchmarks/virtualization",
+    "packages",
+    "packages/a11y-testing",
+    "packages/a11y-testing/src",
+    "packages/ai-ui",
+    "packages/ai-ui/src",
+    "packages/angular",
+    "packages/angular/src",
+    "packages/charts",
+    "packages/charts/src",
+    "packages/cli",
+    "packages/cli/scripts",
+    "packages/cli/src",
+    "packages/codemods",
+    "packages/codemods/src",
+    "packages/codemods/src/__tests__",
+    "packages/collections",
+    "packages/collections/src",
+    "packages/collections/src/__tests__",
+    "packages/commands",
+    "packages/commands/src",
+    "packages/commands/src/__tests__",
+    "packages/core",
+    "packages/core/src",
+    "packages/core/src/__tests__",
+    "packages/core/src/components",
+    "packages/core/src/primitives",
+    "packages/crdt",
+    "packages/crdt/src",
+    "packages/data-grid",
+    "packages/data-grid/src",
+    "packages/data-grid/src/__tests__",
+    "packages/dates",
+    "packages/dates/src",
+    "packages/dates/src/__tests__",
+    "packages/devtools",
+    "packages/devtools/src",
+    "packages/eslint-plugin",
+    "packages/eslint-plugin/scripts",
+    "packages/eslint-plugin/src",
+    "packages/floating-ui",
+    "packages/floating-ui/src",
+    "packages/forms",
+    "packages/forms/src",
+    "packages/forms/src/__tests__",
+    "packages/i18n",
+    "packages/i18n/src",
+    "packages/lit",
+    "packages/lit/src",
+    "packages/motion",
+    "packages/motion/src",
+    "packages/motion/src/__tests__",
+    "packages/playwright",
+    "packages/playwright/e2e",
+    "packages/playwright/src",
+    "packages/preact",
+    "packages/preact/src",
+    "packages/preact/src/__tests__",
+    "packages/qwik",
+    "packages/qwik/src",
+    "packages/react",
+    "packages/react/src",
+    "packages/react/src/__tests__",
+    "packages/solid",
+    "packages/solid/src",
+    "packages/solid/src/__tests__",
+    "packages/ssr",
+    "packages/ssr/src",
+    "packages/ssr/src/__tests__",
+    "packages/svelte",
+    "packages/svelte/src",
+    "packages/svelte/src/__tests__",
+    "packages/tailwind",
+    "packages/tailwind/scripts",
+    "packages/tailwind/src",
+    "packages/testing",
+    "packages/testing/src",
+    "packages/testing/src/__tests__",
+    "packages/themes",
+    "packages/themes/scripts",
+    "packages/themes/src",
+    "packages/tokens",
+    "packages/tokens/scripts",
+    "packages/tokens/src",
+    "packages/unocss",
+    "packages/unocss/src",
+    "packages/virtualization",
+    "packages/virtualization/src",
+    "packages/virtualization/src/__tests__",
+    "packages/vue",
+    "packages/vue/src",
+    "packages/vue/src/__tests__",
+    "scripts"
+  ],
+  "files": [
+    {
+      "path": ".changeset/centennial-platform.md",
+      "bytes": 1099,
+      "sha256": "fea7cca089b350cf85424b89c711578c90e3d421fed70ea98b628f70b499f1c4",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".changeset/config.json",
+      "bytes": 271,
+      "sha256": "6bb0faa027424661cda0e6da62acfd482541dbf3b86e296380ef3e3fafef57c4",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".changeset/expanded-platform.md",
+      "bytes": 651,
+      "sha256": "2edabd43ddca25892292f1c8af72c56edc51282cc219f1a6291337d4a2cc9dc5",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".changeset/stability-fixes.md",
+      "bytes": 945,
+      "sha256": "2fb77929dd68fe2bac36e0987b2352bb85c71b6f29f8e4840fe1e715da5e0cfb",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".editorconfig",
+      "bytes": 154,
+      "sha256": "292befa852cdc796d6798ea3a956a33bebd8cfaa0c8c84cb708e1e8644e72b2c",
+      "extension": "[no-extension]",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "bytes": 428,
+      "sha256": "9aaac9bb15d987b68771a0a498101a7f532965a76e9e66b363dba6f42dd83fce",
+      "extension": ".yml",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "bytes": 474,
+      "sha256": "75ac1e91f42b7d890f6716cb00045f48472b2977d5e7ef566f7b45097b89cdfc",
+      "extension": ".yml",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "bytes": 422,
+      "sha256": "c55865dbde8dd42c91f83a64ea44d7bcb42ac9615186bd2a23bb8092774a7562",
+      "extension": ".yml",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 1474,
+      "sha256": "4bba79369c4df62e64aeeea887e93514d2ac0f38d762c3d20f8659c30ca1a4b3",
+      "extension": ".yml",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".github/workflows/codeql.yml",
+      "bytes": 632,
+      "sha256": "27a31777d49fa120fb868c9c3fb7b1312ecfc8634e5dc3c67715f347c0b70ffe",
+      "extension": ".yml",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "bytes": 1301,
+      "sha256": "414a3ef6b999395d3bfe4d61e78480a4f2f2cd03c40ae28801d4dc347745da6d",
+      "extension": ".yml",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 202,
+      "sha256": "c4eae42eaf88684d1a1c6dc34a1a6895143d7412a9a6d47b9fad5df7a25d9533",
+      "extension": "[no-extension]",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".npmrc",
+      "bytes": 71,
+      "sha256": "7c4b6cdddbfdf72673abf397c7a7592d1880eb5ae14874584a20755b14271432",
+      "extension": "[no-extension]",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".nvmrc",
+      "bytes": 8,
+      "sha256": "177d20030d4dcc37eae9ef92865ec54dadce60e8f19e9a34a5d4f37502195a36",
+      "extension": "[no-extension]",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": ".prettierrc",
+      "bytes": 106,
+      "sha256": "f05f85b3710b0912d48945e21bbac3928685ecc5ac9466332eeb57e25d4d2568",
+      "extension": "[no-extension]",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 812,
+      "sha256": "2f3e7b5e5431aa13110c1ae698d4eba02849ef48ae6cc554a1cae0aa6a6762c4",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/docs/index.html",
+      "bytes": 3589,
+      "sha256": "47e746c83ece671157d66a39b555a6426b9077a4b2067d6eec687c88f0627e29",
+      "extension": ".html",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/docs/package.json",
+      "bytes": 563,
+      "sha256": "609d0e85be39963dbe97ef2f4171c1745ffc4219d2f40cd6d43c099d303856af",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/docs/src/docs.test.ts",
+      "bytes": 1859,
+      "sha256": "159712d69958075bbfa3bbcf2d33b691955316dd1255c9db4662da20b9fc5d06",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/docs/src/keyboard-matrix.ts",
+      "bytes": 8913,
+      "sha256": "9cfc50f5e907fad532d9ddc72b40e2bc826403b70253fd7d04a5cd7982c8c443",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/docs/src/main.ts",
+      "bytes": 24451,
+      "sha256": "b37661d0d462420d0c6f480391262bf93b137f6057154390bd3ff49bb69c296a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/docs/src/token-visualizer.ts",
+      "bytes": 885,
+      "sha256": "a5e4c39a3ae3dfd9192aa78f836e14c388d3dab7f7402594ab5119b0f5e8d12a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/docs/tsconfig.json",
+      "bytes": 643,
+      "sha256": "17bb0d1947467d155d7c428f30cdfe819acd18547e4884b44492126a643491b2",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/docs/vite.config.ts",
+      "bytes": 704,
+      "sha256": "19d3f1879a787d844993d7ce44dbb04ca637163ff7d1eec663261bbc3064a3b2",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/README.md",
+      "bytes": 566,
+      "sha256": "1432fe74fd4e8db1bb7d31bc272a0aa5e8acd37efcaea0841dce4eeaec7aa7bd",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/storybook/.storybook/main.ts",
+      "bytes": 766,
+      "sha256": "e516a135bf9bd535a89909f4775df77f87b42c5a7d9dacbf6290fbe9032b46ae",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/storybook/.storybook/preview.ts",
+      "bytes": 974,
+      "sha256": "335695720d4467ace8270324dde8ad7d1b5fe3535525b0d3de0d1664c6b54b50",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/storybook/package.json",
+      "bytes": 755,
+      "sha256": "1ee700a7d79030729917457f318d04a29ebbf55fb7e5a45557219c2a8f683bc9",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/storybook/README.md",
+      "bytes": 816,
+      "sha256": "8a9f2608b8bca2311c26fd79fc694ed29ea86621e7918de6b2bf9c40e1612ff8",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/storybook/src/stories/core.stories.ts",
+      "bytes": 13647,
+      "sha256": "5c984225e91db82f516cd117da10e162e0d010dcab48deaa7ffc3462f4375b3f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/storybook/src/stories/data.stories.ts",
+      "bytes": 6542,
+      "sha256": "43dc32d3b5c6001f98ccbe5d464826f8e8661149edbcdf7853be11f7e04e600d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/storybook/src/stories/enterprise-and-productivity.stories.ts",
+      "bytes": 10515,
+      "sha256": "d7b2b3233fffae913bdb8580932c4691066a0640be4e7ad0ac6e2ecaef6fae25",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/storybook/src/stories/feedback.stories.ts",
+      "bytes": 3200,
+      "sha256": "4416b9f55401c7ae69a2c504376ddaaf0ee5b7af35ca14c4dfaafc67fc793cb8",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/storybook/src/stories/forms.stories.ts",
+      "bytes": 6711,
+      "sha256": "ca3522a239522a63732e1c721bab5bcf989910c164b03bfeec008d23fa99e202",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/storybook/src/stories/overlays-and-inputs.stories.ts",
+      "bytes": 4160,
+      "sha256": "d0b40c31724b2be6f910e25bed41a2b23b223516e4bec5e00a6d5f20828d4eb8",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/storybook/src/stories/showcase.css",
+      "bytes": 1383,
+      "sha256": "f5ce27454fda47a0807539fe5d4bc21089135a94e6f404a0bf4252b9d95ef27e",
+      "extension": ".css",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "apps/storybook/tsconfig.json",
+      "bytes": 596,
+      "sha256": "653b99779083d4152d2aeee5b164fcd071525daa107195cf895b36c5bb97ab82",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/.github/workflows/ci.yml",
+      "bytes": 1422,
+      "sha256": "d7e5f7921b5f984e9b7c07b6aff5fbf3835f82ecf446d9bf092eb6175cb98997",
+      "extension": ".yml",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/AGENTS.md",
+      "bytes": 3091,
+      "sha256": "71d7c285826fd5d75949a134bbac1e9859d30512e37f283df244f9a0f6dd430e",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/apps/docs/index.html",
+      "bytes": 1674,
+      "sha256": "b4d41bb45a5e45320bd8dc8aaed482fa8a467b6ddb5dd770d0ea22fa4aa9cc0b",
+      "extension": ".html",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/apps/docs/package.json",
+      "bytes": 545,
+      "sha256": "66a11252f81d65346e9c4eeda21c4798cfccd68323feb3ec5bb549f8975e1e3e",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/apps/docs/src/docs.test.ts",
+      "bytes": 2463,
+      "sha256": "1d60f7849e14150db0c406d2b80535829d711e8345019a4fb2dcc179b858bb27",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/apps/docs/src/keyboard-matrix.ts",
+      "bytes": 3381,
+      "sha256": "3a6db09d649ced643c388a026a898ced0976c843b98cc1e29e234b35b465001a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/apps/docs/src/main.ts",
+      "bytes": 22533,
+      "sha256": "1ac507756b168c24da66ac70c1e00b1b201b6a539bbd55f14645cf72dce98b2a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/apps/docs/src/token-visualizer.ts",
+      "bytes": 2933,
+      "sha256": "16a87c2a2cf624a2c2c37bf908de13b1ca538e7ff467263b90ce1b8e47c30096",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/apps/docs/tsconfig.json",
+      "bytes": 177,
+      "sha256": "7fe5b00675ac3d2684421c015df053178f3a0a0ebd073137ec97cc3e60ae5b29",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/apps/docs/vite.config.ts",
+      "bytes": 558,
+      "sha256": "ec6e9f822bb4b2236230e99cd228685cda7d2427d4f574fc7cb88c526a2ced7d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/ARQUITETURA_COMPLETA.txt",
+      "bytes": 12575,
+      "sha256": "74e5a16ddce5a733eda799c9ca410007027b74c7b5d09366d4add34cfae6d9a8",
+      "extension": ".txt",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/CHANGELOG.md",
+      "bytes": 3136,
+      "sha256": "fcc7606f2953fff313b2c7c2cc5a11296a81605eab5c43335ce5a4943ad43dbb",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/Dependências.md",
+      "bytes": 1743,
+      "sha256": "00195d355bb974ab3f14c7fa0ad2f8e6259e696b9bb9835a20a4820852eafe89",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/docs/accessibility-wcag.md",
+      "bytes": 3200,
+      "sha256": "05fbd420c4ac5edd4fa29fe35fa9deecd6a2032378945dd1cb4e837a641cbf8c",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/docs/architecture.md",
+      "bytes": 6528,
+      "sha256": "a99522ac86e80ba6e227ca62339ddc758eb5fda13033c0c7193481d748e97b80",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/docs/i18n-and-rtl.md",
+      "bytes": 1879,
+      "sha256": "fdca75e1ac5e8253bc001f1bf1897d9b59fb6337cdf5c2cd00aa1f6a4418d6be",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/docs/versioning-and-codemods.md",
+      "bytes": 1924,
+      "sha256": "b95fe3b5e231c4c069220d53f6c1fc3b61f14af7930ed1085b0e3f09077112d9",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/eslint.config.mjs",
+      "bytes": 792,
+      "sha256": "54f5b999e1ef220f6369b4d15fc36645de6845ac9dbcc1afcd53786301d86e2b",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/package.json",
+      "bytes": 1986,
+      "sha256": "6408a0da49446d1f2fe66edc414fa7fc60cce1fdcb11933f80bb0d7fc93a890c",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/a11y-testing/package.json",
+      "bytes": 714,
+      "sha256": "3122d9b98f8720572f0b80dd5f151d74b49603eb77b09881e8c86c3d574dbf5f",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/a11y-testing/README.md",
+      "bytes": 887,
+      "sha256": "0f431e6e55d39ce75cee16bd540648980bef89e9f2c0eaf0aacc8db2496d7899",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/a11y-testing/rollup.config.mjs",
+      "bytes": 599,
+      "sha256": "0c48eb450eb00e560eb8a214ab838754f682f3fe767915a812d1a67552ee1f1e",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/a11y-testing/src/index.ts",
+      "bytes": 2873,
+      "sha256": "3b299f22b07a5ada24c3351bc77f242e45a7c5ed853247fbb002b307368ec45c",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/a11y-testing/tsconfig.json",
+      "bytes": 157,
+      "sha256": "738948c0f1c26fe4d3ae76674ab6752b991f17e586dd6b5f79a0825c09383be7",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/codemods/package.json",
+      "bytes": 663,
+      "sha256": "cc2a936a6732f8024af85146f89dcb2d630d40c8a3733a0a3ea14e52b7817e23",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/codemods/README.md",
+      "bytes": 966,
+      "sha256": "ce528b318aad70c8a5a18b052f80c7ad0dd692c416502ac2bb98bf6db26f2220",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/codemods/rollup.config.mjs",
+      "bytes": 639,
+      "sha256": "0bdfbcf802aef152b2bb84e5c659465a970e17bb868c59a9b73fb09f83ae6cde",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/codemods/src/__tests__/codemods.test.ts",
+      "bytes": 1952,
+      "sha256": "28e7c01af12637b189628663968ffb2423991ec51bc33edb5e1fecae9f9b7265",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/codemods/src/cli.ts",
+      "bytes": 2069,
+      "sha256": "e47385984914416f47556771d02e67fe79415b250dbe95a53a7cb73147d0e293",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/codemods/src/index.ts",
+      "bytes": 3629,
+      "sha256": "bf9834c03e173ea97c89e323c503d2c32b9b436383bba57dba64cbc5d7f3188e",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/codemods/tsconfig.json",
+      "bytes": 200,
+      "sha256": "306c87794bf2f814fb83e7c4338584db88ca70ad6c4d7c110f97d1b086594193",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/package.json",
+      "bytes": 2140,
+      "sha256": "4708a955614556bc9d30fafa89dbf1c13eed8822d31461f4a6507095df2c0d80",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/README.md",
+      "bytes": 2098,
+      "sha256": "d5c7e26224ce03513fafe6926d4196062d4915d57e0849ebe5041718b085572e",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/rollup.config.mjs",
+      "bytes": 1392,
+      "sha256": "e265e98898dbc36d03b8bda72104f0bb2e67edf98245a56c423aa168014ff67b",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/__tests__/accordion.test.ts",
+      "bytes": 913,
+      "sha256": "472de123a6934c29397ec1495fa16661cf36bb7b1bd9b9ced72141ae4645a3dd",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/__tests__/button.test.ts",
+      "bytes": 1231,
+      "sha256": "819ffb7bf56a60b4fb608f2c0953a46c4c6312c7b7906736f62e82baa22b664f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/__tests__/components.a11y.test.ts",
+      "bytes": 13257,
+      "sha256": "7a4d8265196b656ac038652dae094922233732e306a7d0e82e41da4f710fd0b8",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/__tests__/dialog.test.ts",
+      "bytes": 1452,
+      "sha256": "2ceb0efbb9fa8b56fe68c216785bdc3f1378f8e34c45ed601c75a150b2872887",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/__tests__/menu.test.ts",
+      "bytes": 1164,
+      "sha256": "645bd53ec4342e4acaa9c02dd4f38e4b9afce0519b8d566fe4fc7c2834983342",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/__tests__/positioner-and-modal.test.ts",
+      "bytes": 2812,
+      "sha256": "bf964f2afb1e273db1261c0645c1b491f1e654f57550222c1b15408f62341c60",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/__tests__/primitives.test.ts",
+      "bytes": 4738,
+      "sha256": "0cd4751d34bbe37e3a87b88b4adabf0d1aff5ae15a73ed55bb17d081558de6c7",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/__tests__/select.test.ts",
+      "bytes": 991,
+      "sha256": "0fcacf09065aeff5c201af71bc0dfc47932373f8898180a9e971fa1acba47a44",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/__tests__/tabs.test.ts",
+      "bytes": 957,
+      "sha256": "02552a3fa86e93d4aa5fe5d2d3af61c132cd6ec1171c6c5153837abb8f1a4f83",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/__tests__/toast.test.ts",
+      "bytes": 661,
+      "sha256": "67bad1409f71f0c509395fb65b1581d0df66b921c71f43dfd4b43f72ffb42d3c",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/__tests__/tooltip.test.ts",
+      "bytes": 981,
+      "sha256": "07111025ecf0dd7dcc3bbbf0686868a26f88bf5ff1a6a9fb638f91f414c7405c",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/components/accordion.ts",
+      "bytes": 6037,
+      "sha256": "004f985d30b5b36bb6ec930d24a0551a83d079bf0e4e3c08c4ea92fd898d1107",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/components/button.ts",
+      "bytes": 2597,
+      "sha256": "e6f532fc2f683211c9b4f5fdba45f270debb15add0e688828697f852c1ba26f6",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/components/dialog.ts",
+      "bytes": 7866,
+      "sha256": "94fc251482e2b96bedcbdb7b914ce48eea72a40795460ac1e6b1984e1a93276f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/components/menu.ts",
+      "bytes": 7846,
+      "sha256": "db45f9eb90c244db08e0e82f0a0357e30fbb1027929e9ecd9a951539ffd0d601",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/components/select.ts",
+      "bytes": 10800,
+      "sha256": "db7d007393dcd977bdc472d1fe530b2f445281a9777b6a6d0184288908d5738a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/components/tabs.ts",
+      "bytes": 6399,
+      "sha256": "d40541ace8fd38135fb77b18fa900f6dd415bbe72633e622aab623741417c9e3",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/components/toast.ts",
+      "bytes": 8539,
+      "sha256": "6546acc09d144c7ff5657547d0c6982bfcebb533da16985df57cc0b07ed93ce0",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/components/tooltip.ts",
+      "bytes": 5097,
+      "sha256": "a7520628093639eb9db5482a4b50f4e676bf32371eaf71c710e0927652f9c9e8",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/index.ts",
+      "bytes": 1238,
+      "sha256": "d2612f0d84b7d131735be57c8d75d2723caeddb869cd3c468930e6d478e4160b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/aria-hide-outside.ts",
+      "bytes": 2358,
+      "sha256": "54ce095716dd3ade567287bbef73467f41adb1a84afd5f361e8582a1c03ae556",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/dismissable-layer.ts",
+      "bytes": 2193,
+      "sha256": "94295450f7cb128a68f13bf0abebb6fb1033d5f6168c3c5e5e91424067eba7b5",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/dom.ts",
+      "bytes": 1379,
+      "sha256": "ad5cfff644044e8f161e75d52eba07e9f7812c78b4a2a77560e1ce3ebe07268b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/focus.ts",
+      "bytes": 4855,
+      "sha256": "fa660ec035baf5c1294dc02e2ec3f019d52ffd3eef4c7ec151effd23365d4a17",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/i18n.ts",
+      "bytes": 4305,
+      "sha256": "2605f0a57f24dba890d311b8f8471f63343b9c9e69eda5e54e5f74ea67d98bb6",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/id.ts",
+      "bytes": 205,
+      "sha256": "ad01abd386169dab30fac6f4a9553ca9f30d78231e11ba727e3f19ee0c459ad5",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/index.ts",
+      "bytes": 1525,
+      "sha256": "5f9a904579c833ac31f3d4c77fb6412e8d981b35269c2c8428b59de6b8b87c2e",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/keyboard.ts",
+      "bytes": 751,
+      "sha256": "f0a9b31f7c212f47634e73be623f17aed5c9d3d7606b8975ce5efcf0a859c0c2",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/live-region.ts",
+      "bytes": 1553,
+      "sha256": "c0a306d0f1ad33f12a571c23cf1a906bb79a56f983513a82c3928111ebaedce2",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/portal.ts",
+      "bytes": 1197,
+      "sha256": "f05b158e4867f3731876daffb98ce1244e460846452fa28f07c3a811676e6319",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/positioner.ts",
+      "bytes": 4218,
+      "sha256": "ca711669dff829c1871332c528b0e1e0a358dfd24f07160fe4697f8a40ec7d0a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/roving-tabindex.ts",
+      "bytes": 2047,
+      "sha256": "3f8092224bdeb98e5a74f98ab20bc544f2b0f0e01bbadb5512d497702e0735a5",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/scroll-lock.ts",
+      "bytes": 1463,
+      "sha256": "703c5713a1db0e74791b09b99754483be81a5f0c5ec9085f21417dfae132f285",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/src/primitives/typeahead.ts",
+      "bytes": 1687,
+      "sha256": "81825857984a8815cace6abbd3afbc5387358d2fc554e15b40d8fd4470eebb67",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/core/tsconfig.json",
+      "bytes": 200,
+      "sha256": "306c87794bf2f814fb83e7c4338584db88ca70ad6c4d7c110f97d1b086594193",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/react/package.json",
+      "bytes": 757,
+      "sha256": "877cfe5c16127d6bc81c21b1f5b477a409805c1646aee951ba228ac6e9a477f3",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/react/README.md",
+      "bytes": 1226,
+      "sha256": "ddea7f72bcb77e13c12c559ee680bd000356cb5bb4af55e0e924d756f575a627",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/react/rollup.config.mjs",
+      "bytes": 648,
+      "sha256": "c838bb7a84b77afe0985f6b9e29c7cdebc801b643d3164112054c127f9f28d76",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/react/src/__tests__/react-adapters.test.tsx",
+      "bytes": 2408,
+      "sha256": "87fc1b3e9648bb91880cf76f8b4f586a530d6d3f7d0f366be187649e4378be10",
+      "extension": ".tsx",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/react/src/index.ts",
+      "bytes": 13751,
+      "sha256": "5a77e65ebc03e76ff687940a1ab576e6c5c00f06745da18b4b72a48c71f24535",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/react/tsconfig.json",
+      "bytes": 245,
+      "sha256": "efbae06c19d379e396c097cf284175553a7a6e7d06115f44eaccc5fab31fd19b",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/svelte/package.json",
+      "bytes": 688,
+      "sha256": "0a325bdc2f3e1260cece7704a4546a83f35050d39fc48e773e96c7613cae9aca",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/svelte/README.md",
+      "bytes": 927,
+      "sha256": "fd2bc736dee056610fb57d0f6017b0dab5fd25a7074c99158edc445b33c85277",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/svelte/rollup.config.mjs",
+      "bytes": 615,
+      "sha256": "0c3df36d15666cbd05755329b8ee22e900ca289868f38fe054e958bdfe53ce67",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/svelte/src/__tests__/svelte-adapters.test.ts",
+      "bytes": 2224,
+      "sha256": "7fd4617213909eac9ec1be72712cf430947d07794325446f8997c24720983bb4",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/svelte/src/index.ts",
+      "bytes": 2987,
+      "sha256": "e4f69dd2332ac21a362d502748d57aece62b867a16861f0456ce1eaf054b3513",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/svelte/tsconfig.json",
+      "bytes": 200,
+      "sha256": "306c87794bf2f814fb83e7c4338584db88ca70ad6c4d7c110f97d1b086594193",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/themes/package.json",
+      "bytes": 775,
+      "sha256": "1bfbc0d194390cd8bd7a390e8a1af4f9b65a8cb68d34ed45fffc1a48fdc6031a",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/themes/README.md",
+      "bytes": 960,
+      "sha256": "b3fd356ecc89ffa5488c9324b4d3e479a23ab08cd7ac31984b2fff7c5954958c",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/themes/rollup.config.mjs",
+      "bytes": 607,
+      "sha256": "da1f48d45e9fe010d6d407d4a3206785b6d130684f94ef13a867562b5f411782",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/themes/scripts/emit-css.mjs",
+      "bytes": 410,
+      "sha256": "8a7d5057468d2adb809e37625a1aaba4960dccb788cde3c39ce41b9221f78b50",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/themes/src/index.ts",
+      "bytes": 7051,
+      "sha256": "0ce472e0381f7a49d1d58c073489b4221bbd0354af514be9976760f7c8b11d4d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/themes/src/themes.test.ts",
+      "bytes": 1496,
+      "sha256": "758ce5024701dd51409c60bb3e905bbab7844c439e3b6210f0f3ac4923530d7a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/themes/tsconfig.json",
+      "bytes": 200,
+      "sha256": "306c87794bf2f814fb83e7c4338584db88ca70ad6c4d7c110f97d1b086594193",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/package.json",
+      "bytes": 768,
+      "sha256": "40a8a439b50216c4e031c65bba4f84306c4c779f57fceaf88dd605a9925fa7b7",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/README.md",
+      "bytes": 1497,
+      "sha256": "db52115ea1461ced040cd65724a5e764e4262611390692c9ae173ba68bf43b0e",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/rollup.config.mjs",
+      "bytes": 589,
+      "sha256": "9ad550fee3d3cca4a2612956b8e8b85c304c5449c7579583da13792af63bc2de",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/scripts/emit-json.mjs",
+      "bytes": 417,
+      "sha256": "f286466d900ed1ad5412722d252854f6f5ab089e1d4f77b56291cb002eae2a03",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/src/colors.ts",
+      "bytes": 2182,
+      "sha256": "14a80e502f47abe575356324374f9001c02bf03a528dd0a1d41dda35d189b01a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/src/contrast.test.ts",
+      "bytes": 843,
+      "sha256": "b3e3e762c21dfbfa8d7986df081b6639a875ad0db71ec56af58c544a35afde44",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/src/contrast.ts",
+      "bytes": 2178,
+      "sha256": "f07b57db49aa4a56c4ce55c3a9a41bc61238c5587c0d80bfec416318e8a179e0",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/src/css-vars.ts",
+      "bytes": 3957,
+      "sha256": "8148fea24c2c7a4e4e623bf74909335dc5b8de56e8e3348e2bef9db23670d0ea",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/src/elevation.ts",
+      "bytes": 836,
+      "sha256": "9d1a268e4dd3fb567374bb4f8f533f6fd253398934ec95cec0047d1264bb0db1",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/src/index.ts",
+      "bytes": 685,
+      "sha256": "7cfb31940697897db8a23ff3536242f2386429b4cd72554e7a00dabbf5288371",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/src/logical-css.ts",
+      "bytes": 776,
+      "sha256": "2c23299bc72cb96cd167cbbcaeeb43d21e723d186f6a58fbed7a474d23271429",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/src/spacing.ts",
+      "bytes": 347,
+      "sha256": "3504229ccb3c3ff11fdd7a6bdc8a4be0eb298be237a620ef28906129c16d18c3",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/src/tokens.test.ts",
+      "bytes": 1617,
+      "sha256": "1a3e0b33008b0166d617b1ef5891868df45c684aaa0951891f6e0ad0930597ea",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/src/typography.ts",
+      "bytes": 667,
+      "sha256": "f4a3e06e0dd844d60d12ce53cffb0f4c1f6ac048a7af2d90ffbd956a0345a233",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/tokens/tsconfig.json",
+      "bytes": 157,
+      "sha256": "738948c0f1c26fe4d3ae76674ab6752b991f17e586dd6b5f79a0825c09383be7",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/vue/package.json",
+      "bytes": 712,
+      "sha256": "3770c2708e1a809c5f19e98e40a1bb61acd857de81e30e78f85aaf4e8a5ec6c0",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/vue/README.md",
+      "bytes": 1183,
+      "sha256": "90189757112470c4dc19566528aa54598dadbae5792fcd8beb3838f46da52294",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/vue/rollup.config.mjs",
+      "bytes": 612,
+      "sha256": "7f19c55e8ba49dcdf6b3205b2ca061f5567712b9322a32e95546584d770db097",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/vue/src/__tests__/vue-adapters.test.ts",
+      "bytes": 1860,
+      "sha256": "d337a3eb9d4a8ce543410424a7d183d3e2e2c6514595af3c6eb33e750f10d42f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/vue/src/index.ts",
+      "bytes": 3709,
+      "sha256": "ab0363bbf99ff3d222fa9b896b1d1cd4294ff0d053f6d761398db49372ee364c",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/packages/vue/tsconfig.json",
+      "bytes": 200,
+      "sha256": "306c87794bf2f814fb83e7c4338584db88ca70ad6c4d7c110f97d1b086594193",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/pnpm-workspace.yaml",
+      "bytes": 40,
+      "sha256": "af261372097773546d4000a74b771c8c09c4114ca5e9dd715c95018b44e1fbe3",
+      "extension": ".yaml",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/README.md",
+      "bytes": 3601,
+      "sha256": "90651811f2ab7cfce6450561ba8b28d3af3800a444d08b6788e306d4809a9f10",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/scripts/release-check.mjs",
+      "bytes": 1722,
+      "sha256": "2e53f8b583118f8ef85b27a05f1668c35569fd147ad3fdc772ab5c3f79f13230",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/scripts/verify-exports.mjs",
+      "bytes": 2560,
+      "sha256": "60def3e3ef8de15e97e1ae50a16b118d000e90160d508a6219fde1689b540af1",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/SPEC.md",
+      "bytes": 1003,
+      "sha256": "672052e9ad2f886434d9fa9c95123129953a05db10bf99c05cfb378716486809",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/tsconfig.base.json",
+      "bytes": 591,
+      "sha256": "f7614b7e2a5ad8aff98fb61a1410e04b723cb811df2d79931cb56e562e2b56e0",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/vitest.config.ts",
+      "bytes": 1122,
+      "sha256": "799cf38d305e5437705c90f18ce92d75623ad08b79616cd7c2025312248d9fac",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/17-01-design-system/vitest.setup.ts",
+      "bytes": 1509,
+      "sha256": "3b77c220073f50bbbe7cce4e58fac5fce29f97e2916656db50f8102f7ed73b96",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/original/17-01-design-system.rar",
+      "bytes": 108671,
+      "sha256": "d64afe3a1820eb368acb0d4d4b9206ebdc3e09a7ffd657bde61a87afbe95ece3",
+      "extension": ".rar",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "archive-imports/original/forma-ui-over-100mb-index.json",
+      "bytes": 58417,
+      "sha256": "dbd45becdb862768bfd8e04be67b6756d007844507c5006b0ff89e719fe82048",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "archive-imports/README.md",
+      "bytes": 743,
+      "sha256": "6f8bca7230650d60239ffc3c33f1da2af1d2d6d9872c7388b13d254244082885",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "ARQUITETURA_COMPLETA.txt",
+      "bytes": 53192,
+      "sha256": "dedb8f308b895358141975aaa922b7a3f34aa2feb5d2738f2e1c3e9f88b9e8be",
+      "extension": ".txt",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 11314,
+      "sha256": "3a11b80303f75a8d7b51255321f0c45d677471a8e033c32119151fdd55ba596a",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 177,
+      "sha256": "da99ba4cfa517e2728b1dd02145b62b3a91158a3798779c107fa746f86c3ead6",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "bytes": 1060,
+      "sha256": "393f4b11c67a09b886a5662785174a234f3c8d52365ed34a643fee45aa3101f0",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 2242,
+      "sha256": "10e4353fe9d1a1b504621938ad557717e0b12adf83312e8231285d291a48a53d",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "Dependências.md",
+      "bytes": 2272,
+      "sha256": "05d87effe471e5c110df19761e3311fe9af6979b35ed0e550d317d4c2ed5a705",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/accessibility-wcag.md",
+      "bytes": 2189,
+      "sha256": "a604a73c15fb19d179b5f6232f295946fa203beac9987fce4a859b61a9910f5a",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/adapter-coverage.md",
+      "bytes": 9278,
+      "sha256": "026bc91e8915bf328a9fe454c98535b5c970e41bdc25c6bc72966ab8e1b691f3",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 3096,
+      "sha256": "5244b402780fb72f161f653c20c4d6ec7915c6d52ec1d2e5cf61860fe34fb5d8",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/archive-layout.md",
+      "bytes": 2832,
+      "sha256": "972717eba5cb4eacd16e1428b4aadf8d0469e81fb2a2b1f0a2efc9719a03183f",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/benchmark-fixtures.md",
+      "bytes": 1971,
+      "sha256": "b3b5d1f5797b2731f56fa584d729ab798d5de4e31f4113196ba5f7a457d3cdfc",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/benchmark-results-node22-linux.json",
+      "bytes": 961,
+      "sha256": "dbb153557c79f922ff5320bfac552ee2b062c94e86f7078c8be0f62c172ef23d",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/component-catalog.md",
+      "bytes": 8069,
+      "sha256": "7b6c13eb245d4e35878ef96a68fdab09c9674fedcbdca2efabf673c003bee6ca",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/decisions/0001-framework-neutral-core.md",
+      "bytes": 637,
+      "sha256": "11b21b2e89f8f7b5c2695f910617ddd7d0b3b8bac92ad1d484cf2cfb94b28768",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/decisions/0002-no-mandatory-css.md",
+      "bytes": 581,
+      "sha256": "c4844234bb6b3e394fe1bc003ea109ff2a307abc84c9a247899a8a9f2f93b09b",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/decisions/0003-native-html-first.md",
+      "bytes": 634,
+      "sha256": "de55f4463965803e179d8fb9012424468f66510423bd6e2337725b7f262e41c6",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/decisions/0004-quality-pyramid.md",
+      "bytes": 680,
+      "sha256": "11c99c0c4668f57f27ae9ca706ba784a068874bab5575d6b2bf7cfb27ae7105c",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/dependency-inventory.json",
+      "bytes": 41390,
+      "sha256": "b4034ff2953ea3f9449ccd60c2284750297a96db676897b28c6123fd65bc59f9",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/dependency-policy.md",
+      "bytes": 2887,
+      "sha256": "6e3e6993723a2b19f5db30cfecffe4a8313c78d8bf0c920dbf0d7b024ab7da97",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/design-tokens.md",
+      "bytes": 2293,
+      "sha256": "abfde0e9cc994b13bc93f7eb7e388a21fcdcbacacd8db4fbbf6da32829dd45cf",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/ecosystem-and-integrations.md",
+      "bytes": 3794,
+      "sha256": "5fbbf65ad4abef7c1c9506095379c9269d6ee78278977e6cd80143c18ca5194c",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/i18n-and-rtl.md",
+      "bytes": 1674,
+      "sha256": "b7313955e2d241dcd6ba2036952eb5ff70785ac7699e4f6ca5876a0d92462b92",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/IDEIA_ORIGINAL.md",
+      "bytes": 1178,
+      "sha256": "9c3194a77c5cbac41cf71d4fbd1fa6a026fd6df842d97fd5ffd98d39dbe33a8a",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/legacy-api-assessment.md",
+      "bytes": 2621,
+      "sha256": "e1854bed590f9e3c38d14f748981fb631f00b637b86173951a6b08f0b8ec7dae",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/legal-release-checklist.md",
+      "bytes": 791,
+      "sha256": "d15c9f771e6cdb2c75f4d214a18087a0dc5ac1e1f4f1b276b286f17bce2910fb",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/performance-and-memory.md",
+      "bytes": 4063,
+      "sha256": "fc886a20e313d5db436f8b52744f49e51bca7355ba7d6c4e4f85780015411249",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/platform-guide.md",
+      "bytes": 1855,
+      "sha256": "31aa5b9b064aa3bab5eb5fc451e3276e3780799054108b2a3a2dd42191d33f21",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/quality-gates.md",
+      "bytes": 4436,
+      "sha256": "75c5b17b2cb400f26dfc029652888b7543426477bda37eecb01dd937659912da",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 2904,
+      "sha256": "a0aef5f62a78effaa28eb24b699d7a6387b7ce5567526490791b79305660aae7",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/references.md",
+      "bytes": 1728,
+      "sha256": "8bddf9785eb4cf2346d5fbaf3bd01b3dde3b250af4f7f1df0e4d865dfdf63d2a",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/release-and-security.md",
+      "bytes": 982,
+      "sha256": "5b353cd18f4b8de01bf22d4b11d47e2c75c4976e5bd9167d00f29eb622e2478e",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/release-archive-audit.md",
+      "bytes": 5488,
+      "sha256": "3620f21766d967b4efd5c9729d9c136cab8d117797a48d8735536a11d18af77e",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/research-landscape.md",
+      "bytes": 14543,
+      "sha256": "62df67287c1d6996853d9fc98277e7d60380773b9be3ebbc9e01e9e441fc93bd",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/research-repository-survey.md",
+      "bytes": 12413,
+      "sha256": "c8f5b03ca41f0ec3f257d89b8e2f3d1b066c1f81efd02649c27c428ddc1a8c14",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/roadmap.md",
+      "bytes": 5508,
+      "sha256": "286f5231d6ca205d02275be3e3df7f80c66d526d230accd0a5c7f1a8a68a8536",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/source-merge-manifest.json",
+      "bytes": 80009,
+      "sha256": "13acbb7bb122d293c9c0bea95ab804a153dcddc9eece10efba1f541605896293",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/source-merge-report.md",
+      "bytes": 5141,
+      "sha256": "4e5eebea981298a7233c695aa791833d3de49ea9c31fba5e1941ad89a28332ff",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/ssr-and-framework-recipes.md",
+      "bytes": 5231,
+      "sha256": "2ce2998ef5f5a8f68b61ce796ebc2cee9931e65d47f930669737ed6235d244c8",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/test-inventory.json",
+      "bytes": 18662,
+      "sha256": "47f65316b7e8c4091be6b924f358a9a50d64622d851f46d4d362e5b71f26e0d2",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/testing-strategy.md",
+      "bytes": 2116,
+      "sha256": "e94bb6a1d66aacf5d30cada2ef5db7dd70bd18e2cca3ad4bc4e8e838bf8e37f8",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/validation-report.md",
+      "bytes": 12047,
+      "sha256": "c7c2e8eadf71298158c9056d7180c3cc65b778999120d39fde47693c6aa355c0",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "docs/versioning-and-codemods.md",
+      "bytes": 1646,
+      "sha256": "d4922700c1c44751c4dda0f055d55e7e55bef8e56c0e82693ee17aaa7572f20d",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "bytes": 2827,
+      "sha256": "25d1c0dbf14b343ec44de6e4919a327b883af5e04ea10723fc19036fc03c59f9",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "fixtures/benchmarks/ai-streams/stream-events-part-1.jsonl",
+      "bytes": 68425011,
+      "sha256": "1da1a5f4cad3175bbae0538b96e1c06112f9dce0755f5dcece0167410b9ba634",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/ai-streams/stream-events-part-2.jsonl",
+      "bytes": 68536150,
+      "sha256": "8e6518a82a48b5618d07e81a8176fe041177d348d0995143c7c4145bb65ef278",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/ai-streams/stream-events-part-3.jsonl",
+      "bytes": 68536111,
+      "sha256": "0dad64c3f041762bae1ec74029681ac8a746c3e9decd837fef07a25329106376",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/ai-streams/stream-events-part-4.jsonl",
+      "bytes": 68536150,
+      "sha256": "106adc0e5f4bec9c7ae4f5869a50e108c6230852d13f40cbac7f3c62d56ff04a",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/chart-timeseries/series-part-1.jsonl",
+      "bytes": 83536311,
+      "sha256": "e2fd5afa86ec7302305a721e6e237bda199f6d529f6d16043354d70df508cf60",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/chart-timeseries/series-part-2.jsonl",
+      "bytes": 83647419,
+      "sha256": "1284135d23182602dbd37d0c0547e01150f3283cf9ecbdf6c0c0d329f4ec74e1",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/command-palette/commands-150k.jsonl",
+      "bytes": 60628341,
+      "sha256": "424a3806a956abda61fa3c9b9cd8eadf2e8c6fff6d81795c7cd916db067df9e2",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/command-palette/commands-part-2.jsonl",
+      "bytes": 60739485,
+      "sha256": "a9d278d0cfcbbaa2bf131dcc37a7edec44e7efa16f2357321d5d6bcec00d10ae",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/command-palette/commands-part-3.jsonl",
+      "bytes": 60739448,
+      "sha256": "99b6682ae303093104144fe3f0f1c75d0bf5d4d40095d7241a0104322e110dee",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/command-palette/commands-part-4.jsonl",
+      "bytes": 60739482,
+      "sha256": "963f35cc5a376d4ed9957a96137ed5a6bdb70199f9656b6b8a2df7fa520e5d0b",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/command-palette/commands-part-5.jsonl",
+      "bytes": 60739456,
+      "sha256": "46d2176cac465e81f4aadb300333daed14968dea1a51653e7d988df3295e3636",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/crdt-ops/lww-ops-part-1.jsonl",
+      "bytes": 50997437,
+      "sha256": "8b30d548709040ed5a42fb4969ad93b52d161c10091c83c2551020f708ecf501",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/crdt-ops/lww-ops-part-2.jsonl",
+      "bytes": 51219659,
+      "sha256": "00a60191d0058a10bdb08387a8a848d7b8c290368cbb2bc88de65462279c2b5f",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/crdt-ops/lww-ops-part-3.jsonl",
+      "bytes": 51219660,
+      "sha256": "bec601b81dc66308f7cef0596bfa4f742f823ad6854399a471609d150810c916",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/crdt-ops/lww-ops-part-4.jsonl",
+      "bytes": 51219642,
+      "sha256": "bc7f8a7a2b54d0c84a3004a9186ae35091a63c03edc0e5e0dff3ac3c4107c99b",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/data-grid/records-part-1.jsonl",
+      "bytes": 76549542,
+      "sha256": "5588ec852fa7e0d15d10e94a6f927f6bed79564875aa5b02101ecb3413195eda",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/data-grid/records-part-10.jsonl",
+      "bytes": 76549617,
+      "sha256": "b776a6162545cc7d92bf10d97bd21f2c13f9376bff73fcfbba8348cfc9ae8810",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/data-grid/records-part-2.jsonl",
+      "bytes": 76549584,
+      "sha256": "e896319880884f64aa4c34a0099b4a0292e854c330b9e19d49570adeb366da51",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/data-grid/records-part-3.jsonl",
+      "bytes": 76549579,
+      "sha256": "2d195f4f7a5e50b61ebb0bb1b4ce7c8ade44991053b8fe6d901f5b01427745e7",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/data-grid/records-part-4.jsonl",
+      "bytes": 76549583,
+      "sha256": "0a8db18a051244a22a4d775440f3fcd376713605dcbd4a64aff4fedb542680b8",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/data-grid/records-part-5.jsonl",
+      "bytes": 76549627,
+      "sha256": "285d6bcf1131645ed390bb2ae946cd64ac23550011c43158347a759e7e96f0fe",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/data-grid/records-part-6.jsonl",
+      "bytes": 76549612,
+      "sha256": "a9c022ef345b990cc9d489eb845f6d82d7e21099486a031af90be9de6228e4f6",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/data-grid/records-part-7.jsonl",
+      "bytes": 76549609,
+      "sha256": "f6b05099e98f03313c4016b3f6382c2e6c8349f88d14119014b48628b1c54c07",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/data-grid/records-part-8.jsonl",
+      "bytes": 76549621,
+      "sha256": "f67c5b551ac90dd0e642fa6beb0dca2bab0dc7b054b4e863cdb49657fc1f39ba",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/data-grid/records-part-9.jsonl",
+      "bytes": 76549599,
+      "sha256": "33fdfd1f5f5a49a9e6a2e93e086257f7e702a00d76c1832c7887fc08e0aa2443",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/i18n-catalogs/messages-part-1.jsonl",
+      "bytes": 86868895,
+      "sha256": "328ab79654d61762f531d6a0a5b091d9d63af40836cb95c250b2d411ebf8f648",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/i18n-catalogs/messages-part-2.jsonl",
+      "bytes": 86980000,
+      "sha256": "e755ba250ba9adbd6b7c422a4f5248519d8e0d72b016a91ee375a3f44fcd34ea",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/manifest.json",
+      "bytes": 11290,
+      "sha256": "7d3b145ac42bac52cce73d2aa8c022c57c8ce1a12f190c2dace332c9bae8ccfe",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "fixtures/benchmarks/README.md",
+      "bytes": 2526,
+      "sha256": "d406ae79e7fe04803377982d728ce07ac64b98a6bdb09593fd600a37c0368d92",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "fixtures/benchmarks/schemas/ai-stream.schema.json",
+      "bytes": 1293,
+      "sha256": "a2ace5d4a5853f863edd86bc9b30eba952b7a36a106c187724b0ca4a7c2909f3",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "fixtures/benchmarks/schemas/chart-point.schema.json",
+      "bytes": 1221,
+      "sha256": "3b13cb58628b48b2f72ecef86be427d2e50db301c6f60ae46c4cf4b2c03d80ff",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "fixtures/benchmarks/schemas/command.schema.json",
+      "bytes": 1172,
+      "sha256": "9f52694342345a1543c2daa3f5d08c517ff13dc146f5bdf3167cc144a25ab9d7",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "fixtures/benchmarks/schemas/crdt-op.schema.json",
+      "bytes": 1080,
+      "sha256": "10d65e6813025baccb4bf5769d3a16e2a2da8a905cd5885ae901dc8a0b4ecf8a",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "fixtures/benchmarks/schemas/data-grid-record.schema.json",
+      "bytes": 1827,
+      "sha256": "8d573b026d951542f1e5a6236f09c7dd95f9ca50c97c56dbc07c071ee09b7661",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "fixtures/benchmarks/schemas/i18n-message.schema.json",
+      "bytes": 1135,
+      "sha256": "55de9a79a8cdc2e96a8605ff4b17ffd97d47021dc2bba0c7324008c76cc9dcb8",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "fixtures/benchmarks/schemas/tree-node.schema.json",
+      "bytes": 1168,
+      "sha256": "f1be5d5b97f53899921f00a110fc6b758b23e6def4def06b869cfb96c96ea8db",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "fixtures/benchmarks/schemas/virtual-row.schema.json",
+      "bytes": 1155,
+      "sha256": "5a1cc433c774eee430702ccb3c9338b90a93ffe77f2f3dd4ee6da5d7957510e6",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "fixtures/benchmarks/tree-hierarchy/nodes-part-1.jsonl",
+      "bytes": 60587057,
+      "sha256": "0ba47d4e0c41fc7740c6bf1bb1a0dc5c61935a50710a7bf326bed018c44e8ffa",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/tree-hierarchy/nodes-part-2.jsonl",
+      "bytes": 60698168,
+      "sha256": "9f2a7886a18b631daf31c7272a39297a305f400449d05b9e0c65cab78611d27b",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/tree-hierarchy/nodes-part-3.jsonl",
+      "bytes": 60698187,
+      "sha256": "78c0da92b28918ddddda54800bc158dbc06f789b6660df5247015e5ae1266dbe",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/tree-hierarchy/nodes-part-4.jsonl",
+      "bytes": 60698166,
+      "sha256": "139276eea2d09e89b9614fb27ab6ee3bab4ad80eaa5edd8e4eb41f74504348ea",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/virtualization/variable-height-rows-100k.jsonl",
+      "bytes": 50784768,
+      "sha256": "f2bce2df2de5357fe78d99d758ebf30705c9e3c7609de7cefcd5be87fc7758df",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/virtualization/variable-height-rows-part-2.jsonl",
+      "bytes": 50895873,
+      "sha256": "b801755de7487070a6fb9ef8f6d9550ac01674097790d30f325ab791f39ce4da",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/virtualization/variable-height-rows-part-3.jsonl",
+      "bytes": 50895874,
+      "sha256": "57a55b85f1ac83a082cb19dcedb5d98474a158e034272cdbead392a4f5773d7f",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/virtualization/variable-height-rows-part-4.jsonl",
+      "bytes": 50895873,
+      "sha256": "928e2a6d3cd9e2dd7294dcabe5e0cb9ae4dbe9b8966640a62d21b8f9cef9ab0c",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "fixtures/benchmarks/virtualization/variable-height-rows-part-5.jsonl",
+      "bytes": 50895873,
+      "sha256": "c238b5fdc02d34c2fdbd5f950efac7808d6e30143cdcc2901789fe5c5576db03",
+      "extension": ".jsonl",
+      "archiveCompression": "STORE"
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "bytes": 962,
+      "sha256": "c043fbd8f5fe175cd39a19b8356c4c7d5d2081e5349ed7fe08f0d77f87b27a10",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "knip.json",
+      "bytes": 1025,
+      "sha256": "702b6d37aa7268324619ea08ba3b39733802e677975a2cf22604d1c4ccd87d99",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "012669c0a427e0fef3eb48b53528f86bc010373685d176fdc722381bdeb47da9",
+      "extension": "[no-extension]",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "package.json",
+      "bytes": 4798,
+      "sha256": "96f078bd64bde1fe96321e59ac35c8a00e6d710d65a74967beb12ad06ac7c5c1",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/a11y-testing/package.json",
+      "bytes": 1156,
+      "sha256": "1c7f75c8a50b0bb9628df630a4f6cd7aef47063ba70f8aef7b0d9c8a0dc8a68f",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/a11y-testing/README.md",
+      "bytes": 896,
+      "sha256": "9b6a46be0fbad8bb68e6933f9332de95a700af5be6437a347d2bb9c99e0fdc15",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/a11y-testing/rollup.config.mjs",
+      "bytes": 437,
+      "sha256": "fceebd552c2579f5af2ee39a06f0d7edef410707d2e5106eecda8852085a6201",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/a11y-testing/src/index.ts",
+      "bytes": 4147,
+      "sha256": "73318db1849cce97417328ceb8fe4bd6867ff5e58fc5c89453b9c2e235b9ecd0",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/a11y-testing/tsconfig.json",
+      "bytes": 293,
+      "sha256": "c5fb2488e46bd314e964ff38ada7c1e3090c4ed625c2a555a5478bfb620f4365",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/ai-ui/package.json",
+      "bytes": 1099,
+      "sha256": "9bce0cab8edf5c5b4435c22dbad122225e271c3db57eaa49a01b202ea8e929a0",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/ai-ui/README.md",
+      "bytes": 481,
+      "sha256": "5edccb99f0396ba877ca722a4d38d1c151048cf682db650763465424ad04a38d",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/ai-ui/rollup.config.mjs",
+      "bytes": 417,
+      "sha256": "7169953dd3bbce714e654df4c80b6b86d005f4a3e51fa686bd99b9822b839036",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/ai-ui/src/index.ts",
+      "bytes": 6587,
+      "sha256": "a58936ff125f7725f2d34cfcef4e1b785388d04dc91b18342db0f07911143b64",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/ai-ui/tsconfig.json",
+      "bytes": 125,
+      "sha256": "baa7bf0d750905c3fbc057bc829576660af7daa9c9ef12dccf2430cbd27955c5",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/angular/package.json",
+      "bytes": 1194,
+      "sha256": "be02bab6b7f855f6c70075a225c26eeb71768277ece47368c289517686a4678d",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/angular/README.md",
+      "bytes": 439,
+      "sha256": "ae9623b1c929c06312bb42dfa2a2c218038d0dcc1cc742a267878e2dba8eddf5",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/angular/rollup.config.mjs",
+      "bytes": 425,
+      "sha256": "5c28fcc66fd57488b36466302e15d78e5806b9dde05990b678be6487022d2056",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/angular/src/enterprise-and-boards.ts",
+      "bytes": 8879,
+      "sha256": "877f5c28b6f1a030efabfe85d16b1106da458a60f0019e35f2a26c94a406d7a6",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/angular/src/index.ts",
+      "bytes": 9174,
+      "sha256": "ae42099bcdf2764c3a253be8e69b4f6675e3af9551aa664ee326e56a6a8b9d1f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/angular/src/workbench-and-media.ts",
+      "bytes": 3236,
+      "sha256": "1a4f4e57a8387bdc1b05b07e5be0a26ca534a30794824a1e659c54db405bcc2a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/angular/tsconfig.json",
+      "bytes": 178,
+      "sha256": "cd7b0799ed386a9b2aeb6b75c3aa817b1e145bda1cba20be4ad296379b141b50",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/charts/package.json",
+      "bytes": 1066,
+      "sha256": "20c830de6610faad09e8a0c573cf1d9ab25d86351c1158cb9bace179a2fe65f9",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/charts/README.md",
+      "bytes": 201,
+      "sha256": "26afd5e19111c2e8e04cecabd732a6a09eb269ba77a31e060937da50d0aa2222",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/charts/rollup.config.mjs",
+      "bytes": 417,
+      "sha256": "7169953dd3bbce714e654df4c80b6b86d005f4a3e51fa686bd99b9822b839036",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/charts/src/index.ts",
+      "bytes": 2752,
+      "sha256": "f825d25aac1f9192f7a057ddc1aaa43dbf1002ada61ab2301076c9f82a1f92af",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/charts/tsconfig.json",
+      "bytes": 125,
+      "sha256": "baa7bf0d750905c3fbc057bc829576660af7daa9c9ef12dccf2430cbd27955c5",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/cli/package.json",
+      "bytes": 720,
+      "sha256": "62b0a64a76f972a8ade9a073aa75980a3cb564fc3a4d2d08f3c4d237b2e2d4b9",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/cli/README.md",
+      "bytes": 1241,
+      "sha256": "69218c615f721f071baf6308d1e905d8c016fef5f5c4342e5eb27adbf6562da2",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/cli/scripts/build.mjs",
+      "bytes": 145,
+      "sha256": "1ea452ee86a0feba43dab7574a87a00c451b5d5332ded317cfe4a47b271bbf17",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/cli/src/index.mjs",
+      "bytes": 10354,
+      "sha256": "c0cf463b7daf805ef999c3fd3065b00f05cc8f2a0c1d21f01e84ffb60c6fc447",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/cli/src/index.test.mjs",
+      "bytes": 7114,
+      "sha256": "a82ae1675f8344f279c668d0b6a41fc499647fc285ef6a58cc5f28cafef2c862",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/codemods/package.json",
+      "bytes": 1100,
+      "sha256": "e11c9e985b1786490a0a0119df998dcfef919dbc9f59f18d5b1b2b7247c1e204",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/codemods/README.md",
+      "bytes": 904,
+      "sha256": "106de3ab8317cb28aa6271b05da71c0f57547ddb6453b7311622c21512298a24",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/codemods/rollup.config.mjs",
+      "bytes": 627,
+      "sha256": "e76d7ce1ea2cd854c176fae320d3eac9c249d596b9bebef024037f2b10e3a6aa",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/codemods/src/__tests__/codemods.test.ts",
+      "bytes": 1604,
+      "sha256": "5cc65f1e57cd7c4cb00694033b6382c74440a1a2cb0cd89b66cb08d2a896279b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/codemods/src/cli.ts",
+      "bytes": 1691,
+      "sha256": "3772df4c46e0a6ddcb0e2657afbdc772e6179550f027a457b091630de5d84d8a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/codemods/src/index.ts",
+      "bytes": 5709,
+      "sha256": "b41be52da4930ddc622bfae4610606ccc37770e62b62cafabee1c08377ed692d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/codemods/tsconfig.json",
+      "bytes": 307,
+      "sha256": "69df680e442215657c28014e8061d8f84c774c9d8a49a1bd92cc78ad794a9462",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/collections/package.json",
+      "bytes": 1188,
+      "sha256": "404c945e671171a1c3eea74a4294bb57d5544efafe5a3625e178af65e2d5e48d",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/collections/README.md",
+      "bytes": 354,
+      "sha256": "ecb33febb67219e07ff08cad10383e78969ebc27cdd9e677950bbc7736d2ae3c",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/collections/rollup.config.mjs",
+      "bytes": 492,
+      "sha256": "1b30bf0d72fea3c27f24e6acd14e5901558b2982778224480bc9a4300ee20278",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/collections/src/__tests__/tree-filter-and-range.test.ts",
+      "bytes": 2105,
+      "sha256": "30cc68d63e667240c7c7f6edc7553be12fbd3bb50150dcab5a531fe525a164a6",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/collections/src/index.test.ts",
+      "bytes": 2494,
+      "sha256": "6953c776a11a6c4c41cab70c17a953f5c2a8a9a049ba959338692e3413fb8aa7",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/collections/src/index.ts",
+      "bytes": 384,
+      "sha256": "1a8335b8e72fb637c5a9ad9f0ce55c02df476fb02d5cc24fbf040b10a9a3479e",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/collections/src/reorder.ts",
+      "bytes": 3909,
+      "sha256": "80be02dc7295155af43109fe8df5f4c498bba41a11328c137fa0d43e667eb86b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/collections/src/tree-filter-and-range.ts",
+      "bytes": 5030,
+      "sha256": "cd08a8d4a32a8fbd19846aba31a8520de53610a8041e77f17594db8452934881",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/collections/tsconfig.json",
+      "bytes": 367,
+      "sha256": "70b4ea252329d5d39b68262b57dbd1879b2039c82bce006928f1046830d67f1f",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/commands/package.json",
+      "bytes": 1088,
+      "sha256": "68cfcbe8b595867c94b440fdf1fb3cf8d061ace9096ade16bac78e14bb6a04ea",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/commands/README.md",
+      "bytes": 1520,
+      "sha256": "1427867db51682ed9d007090d8775799584faa984c5a1c5a09fdf32f63d237ba",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/commands/rollup.config.mjs",
+      "bytes": 450,
+      "sha256": "1e6c28abfe431da862e3224debd61c2fe652dbe65148021da1b8f9c8da985935",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/commands/src/__tests__/chords-and-registry.test.ts",
+      "bytes": 2739,
+      "sha256": "62238b4bd751388273b8025c4ee7527e3d24215367046adff39cce78eeddd7e4",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/commands/src/__tests__/commands.test.ts",
+      "bytes": 3797,
+      "sha256": "e9dc60c0feb6cf8202c25f26f220000e5f599ef8ed7ac04e0d2229686c416c9a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/commands/src/chords-and-registry.ts",
+      "bytes": 9690,
+      "sha256": "42132b912d70a877f8cac05f33d5ac5ab6d2e6756bd2b7e34508db22a6a05c15",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/commands/src/frecency-and-pages.ts",
+      "bytes": 3112,
+      "sha256": "90d4bd1cd88a0e293ff2e5ad3a3017b405fe9c51010f850f69b7a3914e45a28b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/commands/src/index.ts",
+      "bytes": 10840,
+      "sha256": "cf57509e163b8165e3f6a888540ea7476cb977aa163b0a2d7cc0a9662cbad0ee",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/commands/tsconfig.json",
+      "bytes": 239,
+      "sha256": "889cd50974419bac292e7e775423d693c73e9cbdd13fead4f3783e628c2ca2ba",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/package.json",
+      "bytes": 1680,
+      "sha256": "a18c723bf631bb339093cbce94d4466eb0d4695a4041af9675fe91960d94d3a1",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/README.md",
+      "bytes": 4578,
+      "sha256": "5b3e06f1d5124cc31b7c5e856b1040a20fcf49ac6235ec084f4e95f497249622",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/rollup.config.mjs",
+      "bytes": 911,
+      "sha256": "7cde87525400300e4b58e80f7016837c6c3fe29a4f3633cde11918dab0e8c6b7",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/accordion.test.ts",
+      "bytes": 1087,
+      "sha256": "0bc0f35673f556646a57b2c3eab3f429895c2a7cda183036e3e243956e9da1f9",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/advanced-controls.test.ts",
+      "bytes": 5143,
+      "sha256": "914fed93eab0b6de5060cada24e2d139b5b3b170532633da8d963e805b276bd0",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/button.test.ts",
+      "bytes": 515,
+      "sha256": "4563038b81e3530e90e1e511620275cac843761763ae18f706f0b5f318a8bf8a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/collection-and-machine.test.ts",
+      "bytes": 4494,
+      "sha256": "0b70fe6135e4086440a92ebe455cd07b3219870a4bfa30cc9f7e009440ac754b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/components.a11y.test.ts",
+      "bytes": 5309,
+      "sha256": "4a674899df614b6d62e1b05402c4cd406e902236ad5d18ad82d41c7a0fc1e80f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/dialog.test.ts",
+      "bytes": 1790,
+      "sha256": "a26c6b9b6297c9774c23b65448b7a8e7c80c5fe5fb1b5c4c45f1b153ac4166ff",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/expanded-controls.test.ts",
+      "bytes": 6589,
+      "sha256": "239057134c28576f009158408a40585c7bdfd3659a6cbb32be05400b71a31457",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/grid-and-pin-input.test.ts",
+      "bytes": 4294,
+      "sha256": "e3ee3711e70c519d0b40e0891d8d8a8284f38ffd8340e1b3d807036c5679b36c",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/inline-and-onboarding.test.ts",
+      "bytes": 3964,
+      "sha256": "99c15f3f5d07f5699ff29c875a852a3ac6b4ad38e1b952288db876022ebd1791",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/interactive-widgets.test.ts",
+      "bytes": 4451,
+      "sha256": "14ae083e6b7b71d9f3b8d14913a22f71cd8b35b848bc9126a6bc77109de322ec",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/menu.test.ts",
+      "bytes": 4622,
+      "sha256": "9284872635a592a9fc97487671e32ed88582775e9c4f249a7f22388c62468b48",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/overlays-and-layout.test.ts",
+      "bytes": 4322,
+      "sha256": "160b84d87ffd630afd887c1f6fd794d2a7d05f3999a29fc085bda1af446d48f0",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/positioner-and-modal.test.ts",
+      "bytes": 2527,
+      "sha256": "2bd6c4c1b0e602646d26162a6f90eeced4f125c1a95f8cf497d7314650dacd53",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/primitives.test.ts",
+      "bytes": 6800,
+      "sha256": "ee395c0ff539b0729db950d03e5001035ad47da00c2a8107e6bb9031d9d45963",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/property-controls.test.ts",
+      "bytes": 1860,
+      "sha256": "951e9e6ea6b2728bc55a5ce6cca6266c0d0ec71394c133c1c7a8be9a24ea81e8",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/select.test.ts",
+      "bytes": 2825,
+      "sha256": "33815239bab0a6ec5475628698a86bf0623d979dbdaa678d9739509e37a6a697",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/tabs.test.ts",
+      "bytes": 1844,
+      "sha256": "5042eb091b27666fb7bc5675c72d09a4be6cec64d86df52bfba01270ec287def",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/toast.test.ts",
+      "bytes": 1631,
+      "sha256": "60fea6f736f5f1240fdb7380c2271229ffe816838ec285d1c3fd1ae127194f85",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/tooltip.test.ts",
+      "bytes": 1032,
+      "sha256": "8ae324f372c486ad64eea678b548f11531659f8711fb63534c2693f102ede2f4",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/workbench-and-media.test.ts",
+      "bytes": 4253,
+      "sha256": "51fb51a2649042f9c70a87eba648b33dee0d866fef9e50ac539baadc57a7d121",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/__tests__/workspace-and-boards.test.ts",
+      "bytes": 6578,
+      "sha256": "22440bf3269b6589e1c9fc4bc4049adc08d44dbf7fa5c1d1ff89e7c99bca5629",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/accordion.ts",
+      "bytes": 2181,
+      "sha256": "fea9810a83ba939b8be854cfbe5513cd8b6e5d55503e592b03636ec01f2bba7b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/audio-player.ts",
+      "bytes": 3396,
+      "sha256": "6e42b9fc73ebf6b3b063e28dfb3909c79f8cfa8ec9713df7e53af8b399bd54d6",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/avatar.ts",
+      "bytes": 1610,
+      "sha256": "c7a065be50d2c27631b49c9847be3398bbbed238a96559a5e10df85ecf762841",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/bottom-sheet.ts",
+      "bytes": 5361,
+      "sha256": "2d34dc56f80e5df1a61053594aea0a97b2c1d7d6118c88d011eceed9a6bd7f0c",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/breadcrumb-overflow.ts",
+      "bytes": 1071,
+      "sha256": "8dddb23787ca4fa59103691e013437301b457f456665e44b8181eb29fe31e6cc",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/breadcrumb.ts",
+      "bytes": 369,
+      "sha256": "1831a6c15cedef211966389201d530b49d8d7dec1ea63641779f6a1a65f2d951",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/button.ts",
+      "bytes": 642,
+      "sha256": "f37787ca0f306e1312c459656e053774284ef96bc302e4d729af5ac0f325f333",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/calendar-scheduler.ts",
+      "bytes": 2501,
+      "sha256": "290549dbedcad4e229b2600b6cfe941802d7b4a2708767a18d1cc5bec2cd14ac",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/carousel.ts",
+      "bytes": 3382,
+      "sha256": "52eb1683d1771e6db0bc113254c7507a100e9d74f2f55c2a2b22aea894641448",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/checkbox.ts",
+      "bytes": 2312,
+      "sha256": "0c55557038a0d308de297131abc83f09a76dbb9e64d7cd23b7da09a6059a383f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/code-editor-gutter.ts",
+      "bytes": 2240,
+      "sha256": "eb22b07d98b037719508188db179c721f34d466a336cc701b5c79c5183107f19",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/collapsible.ts",
+      "bytes": 2019,
+      "sha256": "506fb7cdc25220a4fe422add5ae2af1b52d4b958d67f4417b3e9b6627843e12d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/color-picker.ts",
+      "bytes": 3182,
+      "sha256": "cf846f0f97de85c7c028ab77a67b4d3ab174581e627143828fc0721c35ea4589",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/combobox.ts",
+      "bytes": 5556,
+      "sha256": "9f32fe071e727b02db899584b802e7827c8de96f621e8db2e21b2269e010c0d7",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/command-bar.ts",
+      "bytes": 3503,
+      "sha256": "9df2b19d8287704dd739db959186483eca6138060f457516f522f198f696d979",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/context-menu.ts",
+      "bytes": 3201,
+      "sha256": "8ef76fa24a0d7cb35577252d4d96781ca816df51a345046aa572e49a8ebb1a00",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/dialog.ts",
+      "bytes": 5350,
+      "sha256": "15b54120a105e0ca9197f021f0eed3e047c97f731da68e6f3258456b5d02fbb7",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/diff-viewer.ts",
+      "bytes": 3334,
+      "sha256": "7fd97ba810572bd07cd8ee96c2ab3666eb6719bd740b82b2a56aeb47b408d285",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/disclosure.ts",
+      "bytes": 1264,
+      "sha256": "182dbc90daa36051b61ef4d7f000163df8b383783720a371a71dd079df41f20b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/dock.ts",
+      "bytes": 3339,
+      "sha256": "00f0c32d87222cee643a27f079aa22fe084831029e836fc90dc514bef9e588ea",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/drawer.ts",
+      "bytes": 3958,
+      "sha256": "81556fb3a5f6de254b8cb8bbc10f025c556410269a60d18b132943fce83ba06d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/editable.ts",
+      "bytes": 3825,
+      "sha256": "588735e5a2aa3876108dbcba4ae9c7043cc8f9744235d35980df4b019e19c8e5",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/feed.ts",
+      "bytes": 2623,
+      "sha256": "e1f5ab58de41542ca4ce2e84f860012540ceea1843972bcc8a6cdbe1895b069f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/file-upload.ts",
+      "bytes": 4152,
+      "sha256": "51a6bd15b83f0dfcda35aa2dd7271c6d307a6696414eb96e190dac49371c4d2a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/filter-builder.ts",
+      "bytes": 2306,
+      "sha256": "fa6e095e515f4a37f4a8f94761a3db1029d8d485d3506b87692d58c1fd08145b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/form-field.ts",
+      "bytes": 1368,
+      "sha256": "e36b1d75e8fad0c54c5daea16790240dd13e1a193be26f88f5fcecae4965cf40",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/gantt.ts",
+      "bytes": 3006,
+      "sha256": "afac067d53cc0b9ee5d2a7fb11395de9294cef860095f7757194ba305d169e1e",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/grid.ts",
+      "bytes": 10539,
+      "sha256": "4c36708260e6f6ab7dacf8949ee00d720added2b55a862cfedfc2b2f3b598b81",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/hover-card.ts",
+      "bytes": 3285,
+      "sha256": "6cc4ece8d78843f34f75037f236e0da00d0af62279389c41667ee31dbc728fe8",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/kanban.ts",
+      "bytes": 5822,
+      "sha256": "ceeaaae8150ba2f1482d7eb154a894244ec6c5df8b8ad2b4765e7693d94cf514",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/kbd-chord-help.ts",
+      "bytes": 1911,
+      "sha256": "711d647139eb98948ead2ca0d114dff630dbb400d7ffbe735cb6d48a7cd45722",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/listbox.ts",
+      "bytes": 6635,
+      "sha256": "649c0d711ed40eae9e12ed3a657e448da8b7aabcfbd30c14071543bcb41e4f3e",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/menu.ts",
+      "bytes": 8678,
+      "sha256": "43f6a9787851b3f26b6bf7ad311c8896b3d7dbb4e6171fee226d17fa8e4b464c",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/menubar.ts",
+      "bytes": 4627,
+      "sha256": "348caa30b4c04e5ccdc947e04dd5152ce6b011d1533caab20f8df24a635f8749",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/meter.ts",
+      "bytes": 730,
+      "sha256": "04ac89d9f6f56e1ef9ada89a14ca7fd6c25fb8abbf3d0f13fc9281c77d1d1977",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/notification-center.ts",
+      "bytes": 3758,
+      "sha256": "061c8dc4828783d3b1bbccc618a552db68fce52e80cdda14dec651253fda2e9c",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/number-field.ts",
+      "bytes": 4413,
+      "sha256": "f028c3f592dc51e41e933ba766580fb920a739fb92a5e4e3d6559be0b294f509",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/onboarding-checklist.ts",
+      "bytes": 1223,
+      "sha256": "6c13a25bf0cf7137ca874b3309f80138302f8257d8beb733c8309a9d347443dd",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/otp-input.ts",
+      "bytes": 5148,
+      "sha256": "0cfcf406971ab2cc3f4570d6cb2e11ec8bb0f6ea3c96a3ae1cde66eaebd15587",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/pagination.ts",
+      "bytes": 3097,
+      "sha256": "d17b7bb127fd3727dd53e72add66e4dcced8e968435c32588f3fde99513cc7cc",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/pin-input.ts",
+      "bytes": 6089,
+      "sha256": "10781494c373cf2418189c8a5cf429aa3baa3d3b3498d03f0160fa9cd9c321ff",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/popover.ts",
+      "bytes": 3254,
+      "sha256": "e088c6c7cf3f1547990c1c7dac6a01c6a32cd9be94dc8ce2701b7af8b9aeb95d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/progress.ts",
+      "bytes": 725,
+      "sha256": "1e5d6bf979c75f81196e23f8c81e06d663ba0b17f2875fe184955702af6b71d4",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/qrcode.ts",
+      "bytes": 3165,
+      "sha256": "98470a0be2e9f0d3387a0f9d8f4efc0e86bca93f9bee609de361cc465e1802fb",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/radio-group.ts",
+      "bytes": 3795,
+      "sha256": "22a3ab79bd8a7dea923d9fb50413016944ca6aa66aca19750db8a101b0e63ed3",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/rating-group.ts",
+      "bytes": 2798,
+      "sha256": "1d1a741a28c1c2cc195127200a4cacf1fd0fb1c057e564a49166f9fc312197e4",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/rich-listbox.ts",
+      "bytes": 3486,
+      "sha256": "206aaebc932bed2315d517fddf14348649868aa866e82e352db1208a17e697e0",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/rich-table-pivot.ts",
+      "bytes": 2659,
+      "sha256": "b97911e496788c124726124cc9a80e446baacf344ee532953c8248bd5a0ffbc9",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/scroll-area.ts",
+      "bytes": 3736,
+      "sha256": "9266ab322c723f6cc1d841a835e4749c563afa49a500d7816b551e4fce7d253d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/search-field.ts",
+      "bytes": 1885,
+      "sha256": "a875734aaa076e0ae03dd76bbe548e40e966191ee3d6fe7d73437336b60a7d87",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/segment-group.ts",
+      "bytes": 3773,
+      "sha256": "9d85e9f74a2c3ef953ec073a7de7be1bed43f5dc8269e1da941d75191f271aed",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/select.ts",
+      "bytes": 9798,
+      "sha256": "63880b9feaa692edb260bf7dbcb27b1eeea168f19ced193d5d81d73eb94fbcd7",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/separator.ts",
+      "bytes": 369,
+      "sha256": "ee1c35d08e4b549cd0eec3ea0f40b40b65e78f2fe873e88f9a45957bf01f58b9",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/signature-pad.ts",
+      "bytes": 3787,
+      "sha256": "b61a34398306f1eed51e1f7897616289680c3c4e53efb63883a9bcf022219d06",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/slider.ts",
+      "bytes": 5471,
+      "sha256": "3330d1b94becdb82e91ec35e8770e7bc947f9b5fb3ca649b82ecd7dfdc2f94d0",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/split-button.ts",
+      "bytes": 1822,
+      "sha256": "2756539a740917cf6b1aa7d886bb4a8f630bdbbeb3efad6d88de17452ab1552f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/splitter.ts",
+      "bytes": 4133,
+      "sha256": "413055315871070fe1370b17bc248db28306b9321954f45d8cd67cd731d25a8e",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/spotlight.ts",
+      "bytes": 2658,
+      "sha256": "f6d8de2b5492613feedc3131e828bea18790c98c7e10f23ec9359e785fd0a5d2",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/stepper.ts",
+      "bytes": 3833,
+      "sha256": "ed7467e74edb30cb20dc942a6f09b88b349999c5034e165bcb3684a00991aace",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/switch.ts",
+      "bytes": 1673,
+      "sha256": "939456f90a56f82aa10c19a7632df395348a5dcde383e911fadfbe3971fef41d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/tabs.ts",
+      "bytes": 4374,
+      "sha256": "43bc065cf35e4e6dbff52bd570de92f75bf68f880c4b32086518966323fe18df",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/tags-input.ts",
+      "bytes": 4997,
+      "sha256": "eab40e2c9fa9df4784e77c6bd6a30b1bc078157e28b5e89b304cf0dcca99fcb0",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/text-field.ts",
+      "bytes": 1371,
+      "sha256": "a7cf2c8b98485d18605ba1685eb94b9d4bb60f3841c129de1bbe1af8ec3eeb44",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/timeline.ts",
+      "bytes": 3090,
+      "sha256": "8cf8bb2467b693f1763e8c413576c7fa9bc118d4246c44be1581b6c2d3818aa8",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/toast.ts",
+      "bytes": 3858,
+      "sha256": "f5a6577e502971fb8c5a362e6acadc01f84fc1d75b23470995a2d441f81b6cb7",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/toggle-group.ts",
+      "bytes": 5076,
+      "sha256": "37df7457325575e78a84e8071069432854e9978bf2a2ec1ef3efa59f303c7e0f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/toolbar.ts",
+      "bytes": 1431,
+      "sha256": "7ce1947e3bc519c026892dd9c860400b73629e139ff4e4271ecffc4c9faa0310",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/tooltip.ts",
+      "bytes": 5931,
+      "sha256": "670b685f36172db31cac84cec2ad360d331746b71bd024e354d6d229e13e105d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/tour-spotlight.ts",
+      "bytes": 1643,
+      "sha256": "e45baef4e4edb619a1e3bf3f1799d62065cc618e51da8ab4c6597e7aa370c728",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/tour.ts",
+      "bytes": 3712,
+      "sha256": "6c1ea41e7788d2a04e2a683e3e9ef6bac6ff4498313e61af8352e5e1c4a35023",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/tree-grid.ts",
+      "bytes": 5323,
+      "sha256": "afd29b261aa3f81b62ae159a9559f1de912a87203a3a8bb2eb84291df2cd6bcf",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/tree-table.ts",
+      "bytes": 1970,
+      "sha256": "d038ff3c5e0f8cffc5efbc7714b28f22e1c860a1cd1b3f068818e7e59d9901b1",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/tree-view.ts",
+      "bytes": 8508,
+      "sha256": "604f0d63da335a32fd5aba871068d4f05ec110618ddeb4dd65bc6f85a83f5093",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/components/wizard-dialog.ts",
+      "bytes": 2413,
+      "sha256": "3714f0f6db2f579cbc4d974f2ebcfc81198bb4507786f5e998b779d84d9e5c8b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/index.ts",
+      "bytes": 3043,
+      "sha256": "22c44bab55883f6ca1f51eefba7b1e43aac96ffaa9ba967c191b7623ba1277f3",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/aria-hide-outside.ts",
+      "bytes": 4122,
+      "sha256": "3de98158f7835ca96c02e86ba1e3fb4b2ed59359fe961488600d43f3cc73e256",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/broadcast-sync.ts",
+      "bytes": 1062,
+      "sha256": "5fb9137db7133a1dcd759cf1233369183be6c3f7b68d00e92226a8dc13736e1c",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/clipboard.ts",
+      "bytes": 2694,
+      "sha256": "b0532c145d2eeb9a4c3b613233d0fc07d1fec0b47148d3c896d4a0c6a0e133af",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/collection.ts",
+      "bytes": 10199,
+      "sha256": "a2b59124b965489ecdff7b6e4b9fbb70a3bb7899ccbe70f5cdbb7743a86bd454",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/dismissable-layer.ts",
+      "bytes": 2772,
+      "sha256": "2413cd10830a4a555404e595c47c2d4f6e97920172c87f4a0f98a7015f3adb80",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/dom.ts",
+      "bytes": 2870,
+      "sha256": "1f16c67917907987aa219af8e0b539ca21430ff4562a641400b0f43689fab486",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/eye-dropper.ts",
+      "bytes": 815,
+      "sha256": "13da438d05dd51de2641f52471228fae661ba33557408473caae0dad6032550d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/focus-scope.ts",
+      "bytes": 1888,
+      "sha256": "fea40524e8f372f0cb3a1dc6c9006fa149c1c1cea39e518e8e1914d095b977c4",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/focus.ts",
+      "bytes": 7986,
+      "sha256": "2b5742e99f8114e13dffc14f85012e12875d58e0762792650feaa70ccda61f97",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/gesture.ts",
+      "bytes": 2831,
+      "sha256": "2485242edd6e57169e2a2554b77ae7a306777844b99c7cb3d5853446110deaa1",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/hotkeys.ts",
+      "bytes": 2369,
+      "sha256": "7f621fb279dbfd2cbd72a2b9c4a0c3df1314c977f30f4bb781ada4da6131ec23",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/i18n.ts",
+      "bytes": 878,
+      "sha256": "7be5b45e257bcf16c891d0399cb68f295a8e465284a9278eacd19eb43df9f74b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/id.ts",
+      "bytes": 590,
+      "sha256": "b988ce65a2e562cf75bbde2494e8b5fdd8f7fabb05c0d94aa9033a6ab0a5e9f0",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/index.ts",
+      "bytes": 992,
+      "sha256": "21ba116a0f78b4109bf3a306ae3226bdbe9e40b48b8ea6b01e9b72c5ee39fdd5",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/indexed-db.ts",
+      "bytes": 630,
+      "sha256": "dace78963630ed664b9f1e67b3760c3523914a790b5bb843a1af77ac14e50d5c",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/keyboard.ts",
+      "bytes": 793,
+      "sha256": "bf8e192d900c69390d96fdfdaa8d66ce87b0366bff2e548f43449a6301786315",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/live-region.ts",
+      "bytes": 1128,
+      "sha256": "5eb9a94975ea52bd6e19c667e2da39f36e3d8ec675754a29eb36aa5bfc6b20c2",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/media-query.ts",
+      "bytes": 1586,
+      "sha256": "3cbe9bb1d5aad4d5c0e838f50137027dffd6a130d7b03415b98a4686334dd3e9",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/performance-observer.ts",
+      "bytes": 663,
+      "sha256": "1a6700d937cbb1903add718be9d7b486657c009dfb25cefd5afb5f911c0aa137",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/popover-api.ts",
+      "bytes": 1196,
+      "sha256": "481748e5b5349fe7f45933654c0d2b3902f2c72af66a6019d8010f8ecdd3ed40",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/portal.ts",
+      "bytes": 1093,
+      "sha256": "7dc94224f130fd115cb5a467f0102b08aa0ba6a469e10a2823d72855ba3c4147",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/positioner.ts",
+      "bytes": 3211,
+      "sha256": "827a2052462d87b0bf7c72be826634315155545ae71c34c91cc98b075d00ac10",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/resize-observer.ts",
+      "bytes": 1240,
+      "sha256": "c60820975d4ee117356443b0a782f511480de5c35b99bdc7bec55f3193df89b6",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/roving-tabindex.ts",
+      "bytes": 5388,
+      "sha256": "af04d556fea4479d658a82e57df021fd3e6439518be4b35fa37d1426ec595334",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/scheduler.ts",
+      "bytes": 833,
+      "sha256": "591b732fe104385cb109717080f34629d6fb974f0d4a5325311b36600dde12f1",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/scroll-lock.ts",
+      "bytes": 1156,
+      "sha256": "b3ce85fab61282838ff0722e7e08ece6b542b3f5f3f9bb210f328a77452455d5",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/spatial-nav.ts",
+      "bytes": 1226,
+      "sha256": "8475a975fdd27ad9a81e65b3ac9211b71ecda4e392beb45446b100d30626d7e3",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/state-machine.ts",
+      "bytes": 3586,
+      "sha256": "8ed9258131a84c5b6cd4a2516fbfa027e79d7dea759c1f4b7778790b5b07277d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/state-sync.ts",
+      "bytes": 1456,
+      "sha256": "ef9ab75f26b62472bad9d2af1286df4dc4acf8c675f604c181bb8caf15387787",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/telemetry.ts",
+      "bytes": 1298,
+      "sha256": "d6fd52cf859a3fa8d34d77374359ed4498de66b3189e892fed598cec36712537",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/typeahead.ts",
+      "bytes": 1236,
+      "sha256": "20fa25267cb119af7c58a54f057457fc536fa7fa7c6d78430bd0eed2d4cc7264",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/undo-redo.ts",
+      "bytes": 1424,
+      "sha256": "234690a8b07354776fae6141c887f46e7b17edb679cea7ebba43a20af1cf00ef",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/viewport.ts",
+      "bytes": 1162,
+      "sha256": "9c4db72b4a9557848b5ee342f41965fd2f03604869678f7b09983fda87fab838",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/src/primitives/web-share.ts",
+      "bytes": 999,
+      "sha256": "85003e6534a56bc9464d0be8d5582851e4c780acae2b18eb814e37d2bfa21d52",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/core/tsconfig.json",
+      "bytes": 347,
+      "sha256": "b17cfe8af9c54483a72c4282a99107a3011ad446b9f782ed76cb045946f476fa",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/crdt/package.json",
+      "bytes": 1116,
+      "sha256": "6c759a2bdff5899cc9812d5e10796c66beeefefff2c39b85f7d91d96ee8dbb3b",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/crdt/README.md",
+      "bytes": 444,
+      "sha256": "047e4e58c7818bba69f4e60e28bf9c3257696c599e18c7ca891843d66072431d",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/crdt/rollup.config.mjs",
+      "bytes": 417,
+      "sha256": "7169953dd3bbce714e654df4c80b6b86d005f4a3e51fa686bd99b9822b839036",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/crdt/src/index.ts",
+      "bytes": 4988,
+      "sha256": "66592669aefec510c9a6ffabd994c924113269e2263d2fc8e1ad3dffc1b9e705",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/crdt/tsconfig.json",
+      "bytes": 125,
+      "sha256": "baa7bf0d750905c3fbc057bc829576660af7daa9c9ef12dccf2430cbd27955c5",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/data-grid/package.json",
+      "bytes": 1202,
+      "sha256": "e066d9ce9a7d8af74ab494a2f4b5c1b7edfb534fca58bdab1b4ac19c8264d463",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/data-grid/README.md",
+      "bytes": 1278,
+      "sha256": "2c1d218ba09e11ae38bcb49e481a20e0e9f83ff8076eeafdbfdd988ec26cd547",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/data-grid/rollup.config.mjs",
+      "bytes": 466,
+      "sha256": "fd455c3cd902183d0c13034f2adc012986d8d0aee64a35d20495029ff5b81001",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/data-grid/src/__tests__/data-grid.test.ts",
+      "bytes": 4602,
+      "sha256": "073bc94098762fee8fe0bfe4cfc6e7d6082a5d81d29aea6739af9709b174623e",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/data-grid/src/__tests__/tree-pivot-and-clipboard.test.ts",
+      "bytes": 3329,
+      "sha256": "4f35ea218702c47d00b87678657e62ca636b9abc2cdb9c7483cb61f9d8d00a8b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/data-grid/src/columns-and-export.ts",
+      "bytes": 6460,
+      "sha256": "4ad0dad39f9956cb3ead21dc181de746ceb4342ab8e6734a373bbf84dc9191c2",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/data-grid/src/index.ts",
+      "bytes": 21553,
+      "sha256": "cdfa2e800c5c054253f86e7866aad00ed81378318a20ba504465819d6927b871",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/data-grid/src/tree-pivot-and-clipboard.ts",
+      "bytes": 11538,
+      "sha256": "8e197c50168516538a190c20ae4a19e6773adcf7802870451af5bbaed5ca676d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/data-grid/tsconfig.json",
+      "bytes": 239,
+      "sha256": "889cd50974419bac292e7e775423d693c73e9cbdd13fead4f3783e628c2ca2ba",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/dates/package.json",
+      "bytes": 1224,
+      "sha256": "cdf30cfa82ac26bf90803416759b50d5b13f283edbafaa949f515e8f12b80bc3",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/dates/README.md",
+      "bytes": 349,
+      "sha256": "83c27e5490649fd222ce08d4a50427debbe601367ecb1733ac03815766c530c3",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/dates/rollup.config.mjs",
+      "bytes": 492,
+      "sha256": "1b30bf0d72fea3c27f24e6acd14e5901558b2982778224480bc9a4300ee20278",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/dates/src/__tests__/date-properties.test.ts",
+      "bytes": 847,
+      "sha256": "28c7e22b7621b1f98a78dcf9c8432c7812285887e53305425081c7f519683cec",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/dates/src/__tests__/dates.test.ts",
+      "bytes": 3812,
+      "sha256": "ae138493b821a6811c9d43093610c059defd2e04d3a270a10709105a3673243a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/dates/src/__tests__/recurrence-and-relative.test.ts",
+      "bytes": 1810,
+      "sha256": "23f3514e44fc8b3b97f6c90639841d387b82c955dbf4b9ca84b594e7e69b3083",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/dates/src/index.ts",
+      "bytes": 12595,
+      "sha256": "e8c6dfe16399c12059e5b8de8a52a6570abe2425a50c5f2b11663c89b7336ddb",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/dates/src/range-and-time.ts",
+      "bytes": 6718,
+      "sha256": "ec08e0ae1de8532f1048d2ac2e2cafdb9e366bef62f37a99dbde49bd85b1d392",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/dates/src/recurrence-and-relative.ts",
+      "bytes": 9671,
+      "sha256": "ff0e98714c61ef97f660292869b8ea6cd5e4bd4de43033a69ab381966a6f16fd",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/dates/tsconfig.json",
+      "bytes": 367,
+      "sha256": "70b4ea252329d5d39b68262b57dbd1879b2039c82bce006928f1046830d67f1f",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/devtools/package.json",
+      "bytes": 1107,
+      "sha256": "775ffbf32d941b2548b29fcacc292f5a78137570848a5e5962bc4e600c9864b8",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/devtools/README.md",
+      "bytes": 359,
+      "sha256": "a52445d399bc9df8003f3202fbc3b9c38c63741de718ec85dde54e05b3a9a4d1",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/devtools/rollup.config.mjs",
+      "bytes": 430,
+      "sha256": "4cdb8037a11c5cff670a4d6ec0d8771e982611b0748177485d785b7e5a50409b",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/devtools/src/index.ts",
+      "bytes": 3364,
+      "sha256": "7158d4078e3f2de31f0eef9d5d360f718e66fc2741dd18c717f568da32ba7048",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/devtools/tsconfig.json",
+      "bytes": 141,
+      "sha256": "ab7f926be3e290fe799165f4ab31dee509994422044eeee746e4db9589b411d9",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/eslint-plugin/package.json",
+      "bytes": 943,
+      "sha256": "7fa21f68e4c79d380057c8d0068267508e4d43380766a2090b802bb7293049b4",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/eslint-plugin/README.md",
+      "bytes": 754,
+      "sha256": "e426e9157b82dbaa85893a91b8222b1b98d21190bcfbf3040913c8ac17f467ff",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/eslint-plugin/scripts/build.mjs",
+      "bytes": 729,
+      "sha256": "9486424f1083f20f725862c23ca8cdc8ad4b47e8ba42e2102b70fcfe03fe9949",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/eslint-plugin/src/index.d.ts",
+      "bytes": 454,
+      "sha256": "91bccc16eb06432de29f2f66d642295b0bfe83acdb808880cc6cb846d25b45a3",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/eslint-plugin/src/index.mjs",
+      "bytes": 12552,
+      "sha256": "368bc33abcbe7c634656ec1cea2c2b6cdb6791443d946fedcfbb8491cbf952b1",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/eslint-plugin/src/index.test.mjs",
+      "bytes": 3795,
+      "sha256": "ef6d78638d41f9e38243f30b45ba60e4899b88cfe36d50415b933e15975dab07",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/floating-ui/package.json",
+      "bytes": 1190,
+      "sha256": "02e6728376d817c57592c9e178a3e0e8bc1c5607cafed591608aa3022487b861",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/floating-ui/README.md",
+      "bytes": 2017,
+      "sha256": "11ea69bf95fd0f4e26cde155cf7a8c90891e1581117fad8f38e16ffc42cd6bbd",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/floating-ui/rollup.config.mjs",
+      "bytes": 449,
+      "sha256": "f24e7a7f5055b0ab655c50da8da432550e7e2a764b65805b13f9f4d344f87ba7",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/floating-ui/src/index.ts",
+      "bytes": 8067,
+      "sha256": "35fc8bd2aea911819449603daffb180df1bae06d778de4a1d84610b1bbcb3b4d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/floating-ui/src/safe-polygon-and-anchor.ts",
+      "bytes": 3269,
+      "sha256": "c89a5dc195953eac139836666f326fcea249babc4893466cb415da54561015f8",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/floating-ui/tsconfig.json",
+      "bytes": 170,
+      "sha256": "e0dcaf38aa33c1affc81425294b08ffd4b4ddc2f032a0fb1cdd6ff6e926735a2",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/forms/package.json",
+      "bytes": 1150,
+      "sha256": "9e9dccae546870817c0651a28c3450f0cf2ede5f9b9f7118e63fd21bdfb73a86",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/forms/README.md",
+      "bytes": 3231,
+      "sha256": "5db5b4a75c4e1cb6fd1ee1cbce8186a9643700d05da31ec06514b015c3c5e682",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/forms/rollup.config.mjs",
+      "bytes": 448,
+      "sha256": "d3712e7936bcc469fec11777c22141365ae87b67e5a88064ca1e52db297efafd",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/forms/src/__tests__/computed-and-schema.test.ts",
+      "bytes": 4017,
+      "sha256": "636b5c92f73205d4391c3ff00cc9420a12d20663f042441c54fac3951b9bf77b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/forms/src/__tests__/form-controller.test.ts",
+      "bytes": 4609,
+      "sha256": "bdcebde8b98c9b94c8bdbded0c172a1ded8b183494568e2b441fa4fe566c3d65",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/forms/src/__tests__/standard-schema.test.ts",
+      "bytes": 1276,
+      "sha256": "ae43895dab96ca66ca7f9fd18e63f6f81c59ca7f3a9b33a5f0e4ad89dff1bc9b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/forms/src/arrays-and-wizard.ts",
+      "bytes": 7218,
+      "sha256": "0bd87084a7b7dac43c37102bfbbbf06e5ed558a90c4df47bd55f0e73f4c492d3",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/forms/src/computed-and-schema.ts",
+      "bytes": 10526,
+      "sha256": "84b23ad440488c814f580eecfc7b111c25436cb042443a4db0d53efe895a65d4",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/forms/src/index.ts",
+      "bytes": 12587,
+      "sha256": "3abacfdd67446d24782a39be32ffc7624a9997691f72c11b9951d869c8e13c5d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/forms/src/standard-schema.ts",
+      "bytes": 2003,
+      "sha256": "b3062c260ebd595c0ce1df9b5c5889406d85de95b58fcb91aca4b97b8d47c301",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/forms/tsconfig.json",
+      "bytes": 228,
+      "sha256": "aa25ebf1f946aba72039df678e037578cf3e146da80efe3304ccc98c29156e7a",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/i18n/package.json",
+      "bytes": 1044,
+      "sha256": "09ec869ba0b09edea45fb0b509727b9be652107915843eeba593d0388d0ec50c",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/i18n/README.md",
+      "bytes": 142,
+      "sha256": "186647f0529cddbcb397e363028692f21a2d3121c7e48a4dacc9bcafc8f6c02f",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/i18n/rollup.config.mjs",
+      "bytes": 417,
+      "sha256": "7169953dd3bbce714e654df4c80b6b86d005f4a3e51fa686bd99b9822b839036",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/i18n/src/index.ts",
+      "bytes": 2122,
+      "sha256": "39a2f8b7c57325f9f3280269831806ca9715bdb214ed7337ed57ba56a92c4b71",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/i18n/tsconfig.json",
+      "bytes": 125,
+      "sha256": "baa7bf0d750905c3fbc057bc829576660af7daa9c9ef12dccf2430cbd27955c5",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/lit/package.json",
+      "bytes": 1157,
+      "sha256": "a4f79bed85cc0f98186a85db1a89defa38eecd9b4d6464a611714351e00ca3ff",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/lit/README.md",
+      "bytes": 476,
+      "sha256": "a0870f29a23b182578b1a3be75892aec6398e7611f819bda76af8d62ff2eb80f",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/lit/rollup.config.mjs",
+      "bytes": 415,
+      "sha256": "88e5a1690ddbd853b4fa67b28f16521c8b3efe37269bba20a1a9183ad46d0b6e",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/lit/src/enterprise-and-boards.ts",
+      "bytes": 4997,
+      "sha256": "447654c9649cde1a8541169ca2435792010f838d80f5fb1f838ce0a078b42b67",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/lit/src/index.ts",
+      "bytes": 3090,
+      "sha256": "d5a3b217da10f59d5840942ac0ec6a644147f30b5a2673b39886aba2ee4d4add",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/lit/src/workbench-and-media.ts",
+      "bytes": 2464,
+      "sha256": "bdad84fba3bff879552ead1119e0980c75695dd4dbf05b44b0e193780d00b017",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/lit/tsconfig.json",
+      "bytes": 178,
+      "sha256": "cd7b0799ed386a9b2aeb6b75c3aa817b1e145bda1cba20be4ad296379b141b50",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/motion/package.json",
+      "bytes": 1094,
+      "sha256": "9ac775a6fc62e6c653405c0eb4847725def2061261526dfefb5c9ad0a31db666",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/motion/README.md",
+      "bytes": 323,
+      "sha256": "601762fda520474501ae3fb675bc43d4d820ea48d838689a74e74efc444d0f6a",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/motion/rollup.config.mjs",
+      "bytes": 492,
+      "sha256": "1b30bf0d72fea3c27f24e6acd14e5901558b2982778224480bc9a4300ee20278",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/motion/src/__tests__/motion.test.ts",
+      "bytes": 1330,
+      "sha256": "7edbff89f98b0dd23909c50922912085e986b2969d142f75f82e5c75cfbcda3f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/motion/src/flip-and-scroll.ts",
+      "bytes": 4205,
+      "sha256": "26610918b63273cb0cbcecec574c338ff59099ed73ba8178465aaeb11b512717",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/motion/src/index.ts",
+      "bytes": 6136,
+      "sha256": "9e288504690db987987e75360cc7ea16aa293a558bf19b657da6b30979bbd135",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/motion/tsconfig.json",
+      "bytes": 367,
+      "sha256": "70b4ea252329d5d39b68262b57dbd1879b2039c82bce006928f1046830d67f1f",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/playwright/e2e/docs-smoke.spec.ts",
+      "bytes": 2020,
+      "sha256": "1f852843071dd65eda181b704dbf0c8c97031d8075ef08472e2bdf7b6ce65b6d",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/playwright/package.json",
+      "bytes": 1295,
+      "sha256": "f92bc43afd99c813084e2549fe66a2fe5bbd8f5c3177447841da1088f7428162",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/playwright/playwright.config.ts",
+      "bytes": 1025,
+      "sha256": "daea8b75c9b79fc173d7b348188d60cf60a3b7505e86d296ed8e74de51745d03",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/playwright/README.md",
+      "bytes": 262,
+      "sha256": "d07750fb0e859a16fcd847da7ba3e80d2b71972c4275d1c1f9f653f55c72db09",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/playwright/rollup.config.mjs",
+      "bytes": 388,
+      "sha256": "1b77595c002784bd42dbddf3faa7c862ff43dbc83b02d9e5795ee22120e7b980",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/playwright/src/index.ts",
+      "bytes": 3406,
+      "sha256": "664febbd11445f7e690eb7cdfbee801eedd81f7fbe0653f81d6d91ff22b2a83e",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/playwright/tsconfig.json",
+      "bytes": 178,
+      "sha256": "cd7b0799ed386a9b2aeb6b75c3aa817b1e145bda1cba20be4ad296379b141b50",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/preact/package.json",
+      "bytes": 1311,
+      "sha256": "869523ba73ce80565ff3cc248f3e60531739da3d793066d8540ebe89c570f19e",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/preact/README.md",
+      "bytes": 327,
+      "sha256": "62f5359c9a7d88716f3b21d6e4b332f5358ac3d3c25fbe5b763b0b17e8e43e47",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/preact/rollup.config.mjs",
+      "bytes": 514,
+      "sha256": "0a2812fff5a1d1ee09a2f05ac52bc2f9c2eb38182fd9eaef780a5bc95ee0154b",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/preact/src/__tests__/preact-adapters.test.tsx",
+      "bytes": 1757,
+      "sha256": "f75916b13833f9e4601ce144d335f3b54f45daa91853608b72d08a010d894c9a",
+      "extension": ".tsx",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/preact/src/enterprise-and-boards.ts",
+      "bytes": 7212,
+      "sha256": "ab9302cd1d3fe74987ead571810eab70505ed04b1744ecd7b78cff7b25a3781a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/preact/src/index.ts",
+      "bytes": 10902,
+      "sha256": "6f838b70ea03ce716ab9dba21cc016c72aed9673887c393471a99dd7d1e190d7",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/preact/src/inputs-and-navigation.ts",
+      "bytes": 4564,
+      "sha256": "a8de72b3ff8dcc71ea8e90c099de0fdf26f284550c0a411acb80768a04681083",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/preact/src/overlays-and-layout.ts",
+      "bytes": 2273,
+      "sha256": "a1f7b7cc98b21dd56c0a7e4a708e4432567d8934da6e58a30441d8e93c6681a3",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/preact/src/workbench-and-media.ts",
+      "bytes": 2531,
+      "sha256": "367e593e500c7d95efa27ecd16ffb6d6c2f86cba3f633930fabf87fc373ebe96",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/preact/tsconfig.json",
+      "bytes": 367,
+      "sha256": "70b4ea252329d5d39b68262b57dbd1879b2039c82bce006928f1046830d67f1f",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/qwik/package.json",
+      "bytes": 1146,
+      "sha256": "8a10ec38ddf61f59b7a14caa01a2358e7aa118386504546d67a6be7380c4f62d",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/qwik/README.md",
+      "bytes": 472,
+      "sha256": "6e9dbb0d492ec7747ffc1c9745b0f65e66d8e19ef3401557939363acdca1a1f4",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/qwik/rollup.config.mjs",
+      "bytes": 450,
+      "sha256": "894c5b121e4472c75c75a75ff815e3e5eab6d9bb1cd22d0d6de8786a88ae036f",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/qwik/src/index.ts",
+      "bytes": 4427,
+      "sha256": "02e1fe37f97640c8742b53f3954ad788fc99991c0d7908aca486e82c9994d2c0",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/qwik/src/workbench-and-media.ts",
+      "bytes": 2086,
+      "sha256": "1f645430f02d38ed05e1aa2af9a9a6789207e63c7d85934d71ff71142c89d100",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/qwik/tsconfig.json",
+      "bytes": 141,
+      "sha256": "ab7f926be3e290fe799165f4ab31dee509994422044eeee746e4db9589b411d9",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/react/package.json",
+      "bytes": 1397,
+      "sha256": "9fb5b050debd962b3b99f6a0bb35f2d66fb6c679662194e76b15ba3ae758464c",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/react/README.md",
+      "bytes": 4890,
+      "sha256": "729509db1519cf8a92a051d462b531dfe039cbd9edbfd10170876aa3f8a0258e",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/react/rollup.config.mjs",
+      "bytes": 508,
+      "sha256": "60553d97bbe0599bd36febae18df0e1e0807c214fd2b5898499c015ed7369e4d",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/react/src/__tests__/react-adapters.test.tsx",
+      "bytes": 6547,
+      "sha256": "794395448706e643b02bcc3081693b21b7fe033e1a0fb8b942d4140cd3dd8dfc",
+      "extension": ".tsx",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/react/src/enterprise-and-boards.ts",
+      "bytes": 12336,
+      "sha256": "d1175d350ab8e6a9e937e93b9776880f3849e52020c5c5032eccd348cb6fbd2f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/react/src/index.ts",
+      "bytes": 40123,
+      "sha256": "06abf8eee7dbbde337329aff1e6bb08f6c30972ff5e42e623ee9565c8209863b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/react/src/inputs-and-navigation.ts",
+      "bytes": 8581,
+      "sha256": "7ea301e473cf879b3d50aad9a8ebf478fe917380424602612a2b2b39a1846427",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/react/src/overlays-and-layout.ts",
+      "bytes": 4534,
+      "sha256": "e903480055c0bfb7832e7a3d40494b193b4dc1295296763a0caba5d01ceb990f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/react/src/workbench-and-media.ts",
+      "bytes": 3630,
+      "sha256": "3272aac52f17dbad97c315752f39970e4b0c16ee2b66f03b2b6b1f48bd6490b5",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/react/tsconfig.json",
+      "bytes": 371,
+      "sha256": "066e12d87324749c81c3286aba51d4532fb9636f6147d58414a14b4c976c580e",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/README.md",
+      "bytes": 2700,
+      "sha256": "f57cdac749c9142499e47b9b51dc63d4dffe77316fcdd870ff1c9bfd61c7a9c0",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/solid/package.json",
+      "bytes": 1247,
+      "sha256": "58e05d443b31288b68fc44964c34dc6c588b2b3d878611b4aeb328c36e382989",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/solid/README.md",
+      "bytes": 1190,
+      "sha256": "63c1bbc84249e1591a697f2dd21e88f361518ff1ad821159693f413618548c44",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/solid/rollup.config.mjs",
+      "bytes": 420,
+      "sha256": "2324edb2705bd6ff9993c9891b0ce84107be197df930d64a34a7c0b0b9f98877",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/solid/src/__tests__/solid-adapters.test.ts",
+      "bytes": 4290,
+      "sha256": "b8c4ca05d0fdd79c77ac0169054141d457d010ac59dc0186fb7c5c2d4cb3ab87",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/solid/src/enterprise-and-boards.ts",
+      "bytes": 7708,
+      "sha256": "c75d5e958e93ba4a1f4394d75b8fba233708e43ad6ea82e09c42327574b44003",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/solid/src/index.ts",
+      "bytes": 24892,
+      "sha256": "6917598807b24d32f54e88add5a3f3e79f3c6b954d4ec5a7bd11517d1834fe3a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/solid/src/inputs-and-navigation.ts",
+      "bytes": 5216,
+      "sha256": "28a154b74a90bcee403b8943c8f1d3dee67860eb9886f39d058eb57bfd84d7ed",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/solid/src/overlays-and-layout.ts",
+      "bytes": 2824,
+      "sha256": "518433c0e66efd1d5355a4da85de4e0d04ad98bfbc9fba233d76d0b528ed95e6",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/solid/src/workbench-and-media.ts",
+      "bytes": 2918,
+      "sha256": "19146ad9529baaa09e0ca194d49f6a93f7365b531d66a7a557ecd1d46155124f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/solid/tsconfig.json",
+      "bytes": 273,
+      "sha256": "3458930b012302b72f5f9981a027b45eb3b9cca652ab70533494587482724163",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/ssr/package.json",
+      "bytes": 1103,
+      "sha256": "48a21ee783ce6578b539c703ecfc8804f83c8f55b869598dee17a9a20832d02f",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/ssr/README.md",
+      "bytes": 326,
+      "sha256": "b031335441490bc7918c73173f740ef713d8156d492bad320a5739c4297fef61",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/ssr/rollup.config.mjs",
+      "bytes": 492,
+      "sha256": "1b30bf0d72fea3c27f24e6acd14e5901558b2982778224480bc9a4300ee20278",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/ssr/src/__tests__/ids.test.ts",
+      "bytes": 1529,
+      "sha256": "8b5d35db1e75afc322f35bdbdaec21df06b022a7281c6600d3ffc398ed9dbf59",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/ssr/src/declarative-shadow-dom.ts",
+      "bytes": 1680,
+      "sha256": "a8aeec7887bf9a12870792eaa8b20b2dc26f832095a4a229103e33fc6e3d9932",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/ssr/src/index.ts",
+      "bytes": 2826,
+      "sha256": "5fa3ed41a5b05446c12ed5f8598afa908f8b9aaad76011e093ecd7dd96575d75",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/ssr/tsconfig.json",
+      "bytes": 367,
+      "sha256": "70b4ea252329d5d39b68262b57dbd1879b2039c82bce006928f1046830d67f1f",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/svelte/package.json",
+      "bytes": 1227,
+      "sha256": "7f4559e67b83bcd8626c2914a4a6977242ddd13d3b1d575145c02912040cf5da",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/svelte/README.md",
+      "bytes": 4235,
+      "sha256": "7927eb9bda2c4aec8918b6cb1c0841699431c2acb665c5ef60191b0f9da236e4",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/svelte/rollup.config.mjs",
+      "bytes": 488,
+      "sha256": "9bcb73d755f03aa05de6c1756da87a35cd2e2bced240bb0593cb9f0cb597d3c5",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/svelte/src/__tests__/svelte-adapters.test.ts",
+      "bytes": 5600,
+      "sha256": "efd7f06874dbd8524dc43cf0cdf147e2117fd8eeb244dda6f96df65a13703028",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/svelte/src/enterprise-and-boards.ts",
+      "bytes": 7229,
+      "sha256": "0dd2ae8c4498a48fd90659ebf72caa7d490661c28be683157e5ebe0bf142ea29",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/svelte/src/index.ts",
+      "bytes": 35766,
+      "sha256": "0ce1611dfa71d6e9dc14136f9c8189d9b9570d8df6298a8ba15cba6861cf33d7",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/svelte/src/inputs-and-navigation.ts",
+      "bytes": 4809,
+      "sha256": "7d48762eb7262fd432f0b6ce7bd5ed40aa3016658426cd433c9e2a788f3f5ae2",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/svelte/src/overlays-and-layout.ts",
+      "bytes": 3859,
+      "sha256": "7f0c633757123301cd61d52124d8871486243927fdd88225ae9ee948fe315b46",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/svelte/src/workbench-and-media.ts",
+      "bytes": 2841,
+      "sha256": "6acb4cbbc49830c0afe527246e651cd9bcd8f64f4aea2e3d8eea706b3bc4a4d6",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/svelte/tsconfig.json",
+      "bytes": 293,
+      "sha256": "c5fb2488e46bd314e964ff38ada7c1e3090c4ed625c2a555a5478bfb620f4365",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tailwind/package.json",
+      "bytes": 1269,
+      "sha256": "69d7e0ee0cfab6dff44c1532be4c133673a63dcda319866dde7c1edf702a0475",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tailwind/README.md",
+      "bytes": 952,
+      "sha256": "f13c296fb08f2de07269660582737d246142d01258c6649151dbd3cfb3edbc5c",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tailwind/rollup.config.mjs",
+      "bytes": 388,
+      "sha256": "016290d916b88054c9548f60d0956090cae44122041be8eeb12deb862cd033d9",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tailwind/scripts/build.mjs",
+      "bytes": 143,
+      "sha256": "86637c7da4261aa47f8ff81207244b193134a6b1ca12f890365395d2db69e84e",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tailwind/src/index.ts",
+      "bytes": 3040,
+      "sha256": "1804ff10fcb5c9cb77bfad6c1315edf39345ae6b7faae715a309a936caf9bbfb",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tailwind/styles.css",
+      "bytes": 864,
+      "sha256": "22547680917664d7ba781bbf8274fede1030a54e62823c92d6cf06138ebf32ab",
+      "extension": ".css",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tailwind/tsconfig.json",
+      "bytes": 178,
+      "sha256": "cd7b0799ed386a9b2aeb6b75c3aa817b1e145bda1cba20be4ad296379b141b50",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/testing/package.json",
+      "bytes": 1102,
+      "sha256": "5cd257fb6c89e4ca93208d180008090b1c92e7788631f12fe9e32eb6d90182ce",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/testing/README.md",
+      "bytes": 333,
+      "sha256": "2c4ddeb5b2cd10e8f0c8a6547f0dc39437038e37bd31bcdfeaf5bc48056864dc",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/testing/rollup.config.mjs",
+      "bytes": 492,
+      "sha256": "1b30bf0d72fea3c27f24e6acd14e5901558b2982778224480bc9a4300ee20278",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/testing/src/__tests__/dom-contracts.test.ts",
+      "bytes": 1417,
+      "sha256": "3af749bac85079bd34a8e6b5c63fcc8ce1580bfccb040368f2f687fe148a9afd",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/testing/src/index.ts",
+      "bytes": 5786,
+      "sha256": "f729848d030b5a00d7c84b240a01bc4d7ec21dccdd83984d6058276face384ee",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/testing/tsconfig.json",
+      "bytes": 367,
+      "sha256": "70b4ea252329d5d39b68262b57dbd1879b2039c82bce006928f1046830d67f1f",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/themes/package.json",
+      "bytes": 1140,
+      "sha256": "e26106227629a9b0a2db14c133d23908ee189f2623a789815b80a8e3a4854049",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/themes/README.md",
+      "bytes": 711,
+      "sha256": "378e68aa62ba42d4a8bc7d58a006bda046c0af30cf063b0e698778b6a4d3fd7e",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/themes/rollup.config.mjs",
+      "bytes": 413,
+      "sha256": "aaaf2275c843e66b7bf948b75fd908dc47622ead4ae554d8466e04df3a1ecd44",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/themes/scripts/emit-css.mjs",
+      "bytes": 320,
+      "sha256": "3c5a6a17973aa1be6e17ea9629d0be585ef9db8d4b72df025b3acf7aefba8194",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/themes/src/index.ts",
+      "bytes": 5033,
+      "sha256": "bd5488b16675cddfe38aea98b5cd4fc64e7ea95dbf12e6259c338ae4729f89ad",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/themes/src/theme-builder.ts",
+      "bytes": 6829,
+      "sha256": "94d0641139de224a27dd6b8783f80b8de64c898e2805badd21f97e0ef55a5fb7",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/themes/src/themes.test.ts",
+      "bytes": 1340,
+      "sha256": "487c889a4751dcb3495fc46c91f8ab081011fb1a3b58fc05165b13fcf0bfac50",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/themes/tsconfig.json",
+      "bytes": 293,
+      "sha256": "c5fb2488e46bd314e964ff38ada7c1e3090c4ed625c2a555a5478bfb620f4365",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/package.json",
+      "bytes": 1613,
+      "sha256": "e479981d223889dfb0b2b63fe0d780a64b17fd037addafff58a9670adaf7e4a6",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/README.md",
+      "bytes": 1148,
+      "sha256": "6036cc9ce2b400abfa1c78ea5943cbe09fb3fa07b9604504d0229e6fc0352527",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/rollup.config.mjs",
+      "bytes": 586,
+      "sha256": "8b73cd662ba9d5177c7d4d4744322b0c9142175dc6d2d61c23984b41826f2097",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/scripts/emit-json.mjs",
+      "bytes": 1586,
+      "sha256": "6ddd27cd253b3638c5066aaef07c2b6c7a888898ebd6a26e72800ed2c1a19298",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/apca.ts",
+      "bytes": 2118,
+      "sha256": "4f866f700e60eb78c4562f3d837670294e67940d4b9a17d1db06ddbc1473b1d7",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/color-engine.ts",
+      "bytes": 7470,
+      "sha256": "159e7fd35b8481f0d23969bb34c84d26247b59faf0b4cdec7c720d9756962f8e",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/colors.ts",
+      "bytes": 1207,
+      "sha256": "3f9c7d131b0615eae3b1ec0671d5e525b857646ea06eac7b4dee10444255b336",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/contrast.test.ts",
+      "bytes": 986,
+      "sha256": "49a4079d3aea75e8d260a9e99e963a8602ca1e08535fc3004ceeb36283b7cdf1",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/contrast.ts",
+      "bytes": 2316,
+      "sha256": "66bd569855dac173296f0f7add1df521607f2b8f5164d7c20de66ba359b83778",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/css-vars.ts",
+      "bytes": 2872,
+      "sha256": "c457dae3ab235b4bc9fe14fc45d932915270783f5446428daa4d07f45157445f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/dtcg.test.ts",
+      "bytes": 1081,
+      "sha256": "3d624173f58b8185565b4e879fe7b4b4d06d4fcb5d64ce9c42cfa69a03024076",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/dtcg.ts",
+      "bytes": 5470,
+      "sha256": "09f708db9f25f02ffa46829652d329cfd9b5102ea84ae47b62ba237f7756785a",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/elevation.ts",
+      "bytes": 545,
+      "sha256": "7c4f10f69dcf0d33def1f217f39f2adb5b373437f456aebe59c939e1b550adcd",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/index.ts",
+      "bytes": 306,
+      "sha256": "15538bfce22261b64686e95922ed2a59f8b72a3b4da224456d290326db95106f",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/logical-css.ts",
+      "bytes": 667,
+      "sha256": "9d40978b7eaf64188a9fe83269fef941385b018b71967636e1e21dc53c3846b2",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/modern.ts",
+      "bytes": 1583,
+      "sha256": "36cbfd151bc6231c50f0f51a13751f0592a9bf634e4acc1ad2a14dd632e666f9",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/spacing.ts",
+      "bytes": 343,
+      "sha256": "7250b874ef1f9ce75cc8d58286ac287c20ec987036f3ace90f9cb42085014d68",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/tokens.test.ts",
+      "bytes": 1867,
+      "sha256": "8373f7eb4403a8b72cc19ab66fc0a0974ae98e31752ca9b948876f454cf881af",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/src/typography.ts",
+      "bytes": 427,
+      "sha256": "14284451a88df4bb521b382ef24b09a25513fd8135b51630b5e742d232346b23",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/tokens/tsconfig.json",
+      "bytes": 293,
+      "sha256": "c5fb2488e46bd314e964ff38ada7c1e3090c4ed625c2a555a5478bfb620f4365",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/unocss/package.json",
+      "bytes": 1144,
+      "sha256": "ada64cccd71d7bffb3566211b0be6411625c1aeb973856301cfcf7b23b24cea1",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/unocss/README.md",
+      "bytes": 232,
+      "sha256": "2b6d8fc385dcac80db6442faa3b4e8cbc973e20807114233134d4bd2aac9380b",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/unocss/rollup.config.mjs",
+      "bytes": 398,
+      "sha256": "0389341234b752df7068105e08e03111a7636bd6f8b9e70b0376ebd39b624e01",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/unocss/src/index.ts",
+      "bytes": 1987,
+      "sha256": "8a74ee8ed2456611f81edb513390b3da985400eed942fe6b10a6837723edf0e7",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/unocss/tsconfig.json",
+      "bytes": 178,
+      "sha256": "cd7b0799ed386a9b2aeb6b75c3aa817b1e145bda1cba20be4ad296379b141b50",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/virtualization/package.json",
+      "bytes": 1144,
+      "sha256": "811238d583cd5b4590d27ca4f11b6cb8787a3d19f30ce215c0510ec60e3fe654",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/virtualization/README.md",
+      "bytes": 360,
+      "sha256": "632de8fc8b942b7d140d67eaf1ecfca1b89152c606622af98415bcbaef6f8790",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/virtualization/rollup.config.mjs",
+      "bytes": 492,
+      "sha256": "1b30bf0d72fea3c27f24e6acd14e5901558b2982778224480bc9a4300ee20278",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/virtualization/src/__tests__/masonry-and-sticky.test.ts",
+      "bytes": 1662,
+      "sha256": "bd9e6d12fd7b5ea3cb10364fbba749e5254dfef1d7aa82f79126a31fba30a003",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/virtualization/src/__tests__/virtualizer.test.ts",
+      "bytes": 4202,
+      "sha256": "b3951f6d0afd40eacd1fa4459736ec35d00e8f4d7da5bdaa08b4d4f981fe44ab",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/virtualization/src/grid-virtualizer.ts",
+      "bytes": 3630,
+      "sha256": "093d39509ab3f1b9865a9f5bc7c0ffe4cc14dad6155bcb6858a8c5cbd4d56228",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/virtualization/src/index.ts",
+      "bytes": 10905,
+      "sha256": "19a2b57562a5336fc713914d55e7e48896be5c090c42bc4c7e7e602b2b800975",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/virtualization/src/masonry-and-sticky.ts",
+      "bytes": 8540,
+      "sha256": "8028eb52719f00e82a5a1ca8485b1e4781d2d441647c0f4c47fc1c45bc0ada91",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/virtualization/tsconfig.json",
+      "bytes": 367,
+      "sha256": "70b4ea252329d5d39b68262b57dbd1879b2039c82bce006928f1046830d67f1f",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/vue/package.json",
+      "bytes": 1221,
+      "sha256": "b94d9e9f82551e3f6ecb8ed1cc1c56a740fb0d5febcc75c384f1f1192b909380",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/vue/README.md",
+      "bytes": 2725,
+      "sha256": "d3ac1c1fd7ded2e5dde34c726bda73f6264902813305ebf01f06ba45f0c738cf",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/vue/rollup.config.mjs",
+      "bytes": 472,
+      "sha256": "6bb6e440e07a78e8b35aeb20ffab5b4ee08a60136b174de1b56bf78a4a5df5d5",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/vue/src/__tests__/vue-adapters.test.ts",
+      "bytes": 5820,
+      "sha256": "5998b1284e46c89753aca4b98474270c378f8c4d68dd4e6654894fdeb944ba54",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/vue/src/enterprise-and-boards.ts",
+      "bytes": 7492,
+      "sha256": "d324e6a2d4e545753d87fa6666c48e0078319a663970b1657651900cec31be29",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/vue/src/index.ts",
+      "bytes": 33624,
+      "sha256": "7a39cea6a237361bd17e966ebb0e8e8ad22c76e059d57f8834045019858e0685",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/vue/src/inputs-and-navigation.ts",
+      "bytes": 5090,
+      "sha256": "37f9b19582c0ae0a46498023eebbf7c3ab503048e1d784cb443a4d1c51f51a64",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/vue/src/overlays-and-layout.ts",
+      "bytes": 3842,
+      "sha256": "0508f70ce8b10dad1d9f7a1315900ed95c940c488d33abc352ce23ad85f2ca38",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/vue/src/workbench-and-media.ts",
+      "bytes": 2686,
+      "sha256": "c858e34428ae63ecda07f50ee7b37dfa9673cbe9abbc7c55d48eda38b595876b",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "packages/vue/tsconfig.json",
+      "bytes": 293,
+      "sha256": "c5fb2488e46bd314e964ff38ada7c1e3090c4ed625c2a555a5478bfb620f4365",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 238272,
+      "sha256": "9ebfbbe401710a3cc325c25170e53a58dff738eab99a85253cabe66ac527ec24",
+      "extension": ".yaml",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "bytes": 40,
+      "sha256": "316f2a0038d464f103abd64d7338dacefc35d0d09e57c8296defa0d5ddb898fe",
+      "extension": ".yaml",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "README.md",
+      "bytes": 15308,
+      "sha256": "5335093013ae1dba824f783050c28d9d38a4c4b571daf76985cd24874fcc2c97",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "renovate.json",
+      "bytes": 462,
+      "sha256": "93f1d658564486cbb7b5539f5ee09ff3ec5f74662c45f4c187ee1becba77e9a6",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/benchmark-fixtures.mjs",
+      "bytes": 1263,
+      "sha256": "9564c9aabb5334a90962aaa42100aa512cbfd721ba27878c25635bf1d3bec420",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/bundle-report.mjs",
+      "bytes": 1604,
+      "sha256": "925cf46cab562be780cf69b4ceeeabb19749047eb43682d2ab03c289bd28715b",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/check-architecture.mjs",
+      "bytes": 2151,
+      "sha256": "01f7f5ea8c41ec85f465b6a64294fa0280de2ffa9c1a0b249b9cc2d77b2514ef",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/check-archive-manifest.mjs",
+      "bytes": 4470,
+      "sha256": "b7721026af311661387650c20b115151ba32d49ae73bc35e5e766acd8f7700cf",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/check-docs.mjs",
+      "bytes": 1406,
+      "sha256": "e94fa2b83a2113beae7482c5edbd3f3941c39845ef24a69fffd0553c5f23d670",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/check-legal-release.mjs",
+      "bytes": 1121,
+      "sha256": "19ac74ab8ef77db122e460851c29fb8b3b6100c6c5a5a6fdab67d380f726046d",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/check-packages.mjs",
+      "bytes": 5622,
+      "sha256": "1ef8f0ce66c73bc1ce659b34347afd7905efd8f335d5e5c482197fbfb87974f3",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/check-publish.mjs",
+      "bytes": 3102,
+      "sha256": "e878f9792e2766bb56a58bd003e32e4df1efb14e4abdf12518fb33d8fe8e184f",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/check-source-hygiene.mjs",
+      "bytes": 2095,
+      "sha256": "a7712b2b9bbd42eed1c3ee97c57004ef3c8132496bef8d584227891ef85f9646",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/check-source-merge.mjs",
+      "bytes": 7037,
+      "sha256": "44236d681d8553bcbb5c486f2658d2e1f2ac9f90a6ff8462abeda7e3fbe58ccf",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/check-structure.mjs",
+      "bytes": 4236,
+      "sha256": "f1c8eb1dd9c19ccac6667d2cc70a7af27e7adddc074200032301c0c5df89f20d",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/check-workspace-graph.mjs",
+      "bytes": 3068,
+      "sha256": "9b9350fac79d898e1757eff6cf6c2c989de3297b2b2bcbbd1ea8c89606952faa",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/clean.mjs",
+      "bytes": 1255,
+      "sha256": "43084656a6715cd1bb3007a31e1c8ff72798dfe843154d4249d5a461520d1c4f",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/create-source-archive.py",
+      "bytes": 8711,
+      "sha256": "a69995c998ff7e0b59a38b27880e8ad50013e46dabd06d86be649bbfd5a629ac",
+      "extension": ".py",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/finalize-declarations.mjs",
+      "bytes": 2616,
+      "sha256": "4b3db26d783c5286f9355b74188a5f80b5469891ba05f47f0efcf35314d5a3e0",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/generate-architecture-map.mjs",
+      "bytes": 2241,
+      "sha256": "a27512afe8029e394280d8198ec9c91f27797ecfb70e530f3cc4f484e884d20f",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/generate-archive-manifest.mjs",
+      "bytes": 4042,
+      "sha256": "1ec59a6f887b30abf812ef59a165022c2c64c36cb9fc26af7dda1ef662137471",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/generate-benchmark-fixtures.mjs",
+      "bytes": 20279,
+      "sha256": "71f2a1696ceafbd86f8c43ed3faff289053e53732f90dc92c5a26d9aa5145a47",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/generate-inventory.mjs",
+      "bytes": 2560,
+      "sha256": "557c6639fd6a69d8003d4ad3765e7497a9c96305b6e43b264f9f0a5035c11b83",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/generate-source-merge-manifest.mjs",
+      "bytes": 5670,
+      "sha256": "89e01e138be3a6ac6fa0248b91b3d2f6f635ce445fb579752ce6bd2e2f0cfd00",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/generate-test-inventory.mjs",
+      "bytes": 2422,
+      "sha256": "236cb951881aa857493ce601eeb73adc016bc29295eb68e8659c3695dbd1a27b",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/pack-dry-run.mjs",
+      "bytes": 602,
+      "sha256": "563f2094eafe7c0c6f120e6b806a93d0554933dda09a88eb9fd591fa78fa9c5b",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/README.md",
+      "bytes": 2364,
+      "sha256": "5b08f5744606d96d420fcf142a832fbe078c1d6f661f284cd09c83b406b88c10",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/release-check.mjs",
+      "bytes": 2654,
+      "sha256": "93f3a59fca5daa015db04f7d8141d9e5dde3745666386fb99658203e6ccbd601",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/smoke-check.mjs",
+      "bytes": 5620,
+      "sha256": "b02d413da09cb5922ec94d929df88693b20ee8201d507b4d6984d3a20042cdea",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/verify-benchmark-fixtures.mjs",
+      "bytes": 10027,
+      "sha256": "b07618cecb66eb6a3063e06bb6a648b81c2602412d6a4ec0546b0355c15d7377",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/verify-core-and-domains.mjs",
+      "bytes": 12650,
+      "sha256": "5a3bb83e538ab5d7406ee0d20c1aac77accdcf7896457f10ffe820827658e420",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/verify-enterprise-and-platform.mjs",
+      "bytes": 10498,
+      "sha256": "ccc58ffe7a75083868aa1ddb7ad424bf2bf07bdd90a36a0772e95772dbcaeec6",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/verify-exports.mjs",
+      "bytes": 3611,
+      "sha256": "96095b1d7cb701f342e6206f5e8dda7d3b20f7178209e68f84a6ae97e014ecb3",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "scripts/verify-workbench-ai-and-crdt.mjs",
+      "bytes": 10378,
+      "sha256": "39d4d9abfaae3dc45c984cc7a9125816c45d374b74a5c15ad8b9fa3bb9180f0c",
+      "extension": ".mjs",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1114,
+      "sha256": "5db824e7f93a444ab6931b1a4e091b197a6ced5b008422859f2d224b0cada841",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "SPEC.md",
+      "bytes": 6497,
+      "sha256": "ce22cdae65c849f9663d35a48f2f810fa51945f53d84c419b53e744f48f853f5",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "tsconfig.base.json",
+      "bytes": 629,
+      "sha256": "bf9d73bd935b59b56db96cf62318faa4accb8d390f751869abd7522ae38f47af",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "tsconfig.typedoc.json",
+      "bytes": 305,
+      "sha256": "b52cef9dfaa3c7a2dce4abdad5001ce16f5f797f7e55953a86929b7d4665d802",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "typedoc.json",
+      "bytes": 322,
+      "sha256": "2129924ba43bd5b2bb333616db771a83cac3c37e411b76caafef5c48948e72c3",
+      "extension": ".json",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "VISÃO_E_ESPECIFICAÇÃO.md",
+      "bytes": 68251,
+      "sha256": "8cce648419a237ff4494a2330a04468b86bf62225c74989a41c97e695bd426b4",
+      "extension": ".md",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "vitest.config.ts",
+      "bytes": 819,
+      "sha256": "4bc6d696e7fc5fa16844c264a55ba9759898cf70aaa10eb71b5629b22d6eff06",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    },
+    {
+      "path": "vitest.setup.ts",
+      "bytes": 640,
+      "sha256": "c4ece2ed3388ef5b624041077371fe2c46e1fc6575ae311e75d40ca4f9099afa",
+      "extension": ".ts",
+      "archiveCompression": "DEFLATE"
+    }
+  ]
+}

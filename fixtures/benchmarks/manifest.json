@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 3,
+  "fixtureVersion": "100.0.0",
+  "generator": "scripts/generate-benchmark-fixtures.mjs",
+  "deterministic": true,
+  "personalData": false,
+  "syntheticEmailDomain": "example.test",
+  "generatedDatasets": [
+    {
+      "path": "data-grid/records-part-1.jsonl",
+      "records": 120000,
+      "bytes": 76549542,
+      "sha256": "5588ec852fa7e0d15d10e94a6f927f6bed79564875aa5b02101ecb3413195eda",
+      "format": "jsonl",
+      "firstId": "grid-0000001",
+      "lastId": "grid-0120000"
+    },
+    {
+      "path": "data-grid/records-part-2.jsonl",
+      "records": 120000,
+      "bytes": 76549584,
+      "sha256": "e896319880884f64aa4c34a0099b4a0292e854c330b9e19d49570adeb366da51",
+      "format": "jsonl",
+      "firstId": "grid-0120001",
+      "lastId": "grid-0240000"
+    },
+    {
+      "path": "data-grid/records-part-3.jsonl",
+      "records": 120000,
+      "bytes": 76549579,
+      "sha256": "2d195f4f7a5e50b61ebb0bb1b4ce7c8ade44991053b8fe6d901f5b01427745e7",
+      "format": "jsonl",
+      "firstId": "grid-0240001",
+      "lastId": "grid-0360000"
+    },
+    {
+      "path": "data-grid/records-part-4.jsonl",
+      "records": 120000,
+      "bytes": 76549583,
+      "sha256": "0a8db18a051244a22a4d775440f3fcd376713605dcbd4a64aff4fedb542680b8",
+      "format": "jsonl",
+      "firstId": "grid-0360001",
+      "lastId": "grid-0480000"
+    },
+    {
+      "path": "data-grid/records-part-5.jsonl",
+      "records": 120000,
+      "bytes": 76549627,
+      "sha256": "285d6bcf1131645ed390bb2ae946cd64ac23550011c43158347a759e7e96f0fe",
+      "format": "jsonl",
+      "firstId": "grid-0480001",
+      "lastId": "grid-0600000"
+    },
+    {
+      "path": "data-grid/records-part-6.jsonl",
+      "records": 120000,
+      "bytes": 76549612,
+      "sha256": "a9c022ef345b990cc9d489eb845f6d82d7e21099486a031af90be9de6228e4f6",
+      "format": "jsonl",
+      "firstId": "grid-0600001",
+      "lastId": "grid-0720000"
+    },
+    {
+      "path": "data-grid/records-part-7.jsonl",
+      "records": 120000,
+      "bytes": 76549609,
+      "sha256": "f6b05099e98f03313c4016b3f6382c2e6c8349f88d14119014b48628b1c54c07",
+      "format": "jsonl",
+      "firstId": "grid-0720001",
+      "lastId": "grid-0840000"
+    },
+    {
+      "path": "data-grid/records-part-8.jsonl",
+      "records": 120000,
+      "bytes": 76549621,
+      "sha256": "f67c5b551ac90dd0e642fa6beb0dca2bab0dc7b054b4e863cdb49657fc1f39ba",
+      "format": "jsonl",
+      "firstId": "grid-0840001",
+      "lastId": "grid-0960000"
+    },
+    {
+      "path": "data-grid/records-part-9.jsonl",
+      "records": 120000,
+      "bytes": 76549599,
+      "sha256": "33fdfd1f5f5a49a9e6a2e93e086257f7e702a00d76c1832c7887fc08e0aa2443",
+      "format": "jsonl",
+      "firstId": "grid-0960001",
+      "lastId": "grid-1080000"
+    },
+    {
+      "path": "data-grid/records-part-10.jsonl",
+      "records": 120000,
+      "bytes": 76549617,
+      "sha256": "b776a6162545cc7d92bf10d97bd21f2c13f9376bff73fcfbba8348cfc9ae8810",
+      "format": "jsonl",
+      "firstId": "grid-1080001",
+      "lastId": "grid-1200000"
+    },
+    {
+      "path": "command-palette/commands-150k.jsonl",
+      "records": 150000,
+      "bytes": 60628341,
+      "sha256": "424a3806a956abda61fa3c9b9cd8eadf2e8c6fff6d81795c7cd916db067df9e2",
+      "format": "jsonl",
+      "firstId": "command-0000001",
+      "lastId": "command-0150000"
+    },
+    {
+      "path": "command-palette/commands-part-2.jsonl",
+      "records": 150000,
+      "bytes": 60739485,
+      "sha256": "a9d278d0cfcbbaa2bf131dcc37a7edec44e7efa16f2357321d5d6bcec00d10ae",
+      "format": "jsonl",
+      "firstId": "command-0150001",
+      "lastId": "command-0300000"
+    },
+    {
+      "path": "command-palette/commands-part-3.jsonl",
+      "records": 150000,
+      "bytes": 60739448,
+      "sha256": "99b6682ae303093104144fe3f0f1c75d0bf5d4d40095d7241a0104322e110dee",
+      "format": "jsonl",
+      "firstId": "command-0300001",
+      "lastId": "command-0450000"
+    },
+    {
+      "path": "command-palette/commands-part-4.jsonl",
+      "records": 150000,
+      "bytes": 60739482,
+      "sha256": "963f35cc5a376d4ed9957a96137ed5a6bdb70199f9656b6b8a2df7fa520e5d0b",
+      "format": "jsonl",
+      "firstId": "command-0450001",
+      "lastId": "command-0600000"
+    },
+    {
+      "path": "command-palette/commands-part-5.jsonl",
+      "records": 150000,
+      "bytes": 60739456,
+      "sha256": "46d2176cac465e81f4aadb300333daed14968dea1a51653e7d988df3295e3636",
+      "format": "jsonl",
+      "firstId": "command-0600001",
+      "lastId": "command-0750000"
+    },
+    {
+      "path": "virtualization/variable-height-rows-100k.jsonl",
+      "records": 100000,
+      "bytes": 50784768,
+      "sha256": "f2bce2df2de5357fe78d99d758ebf30705c9e3c7609de7cefcd5be87fc7758df",
+      "format": "jsonl",
+      "firstId": "virtual-row-0000001",
+      "lastId": "virtual-row-0100000"
+    },
+    {
+      "path": "virtualization/variable-height-rows-part-2.jsonl",
+      "records": 100000,
+      "bytes": 50895873,
+      "sha256": "b801755de7487070a6fb9ef8f6d9550ac01674097790d30f325ab791f39ce4da",
+      "format": "jsonl",
+      "firstId": "virtual-row-0100001",
+      "lastId": "virtual-row-0200000"
+    },
+    {
+      "path": "virtualization/variable-height-rows-part-3.jsonl",
+      "records": 100000,
+      "bytes": 50895874,
+      "sha256": "57a55b85f1ac83a082cb19dcedb5d98474a158e034272cdbead392a4f5773d7f",
+      "format": "jsonl",
+      "firstId": "virtual-row-0200001",
+      "lastId": "virtual-row-0300000"
+    },
+    {
+      "path": "virtualization/variable-height-rows-part-4.jsonl",
+      "records": 100000,
+      "bytes": 50895873,
+      "sha256": "928e2a6d3cd9e2dd7294dcabe5e0cb9ae4dbe9b8966640a62d21b8f9cef9ab0c",
+      "format": "jsonl",
+      "firstId": "virtual-row-0300001",
+      "lastId": "virtual-row-0400000"
+    },
+    {
+      "path": "virtualization/variable-height-rows-part-5.jsonl",
+      "records": 100000,
+      "bytes": 50895873,
+      "sha256": "c238b5fdc02d34c2fdbd5f950efac7808d6e30143cdcc2901789fe5c5576db03",
+      "format": "jsonl",
+      "firstId": "virtual-row-0400001",
+      "lastId": "virtual-row-0500000"
+    },
+    {
+      "path": "ai-streams/stream-events-part-1.jsonl",
+      "records": 120000,
+      "bytes": 68425011,
+      "sha256": "1da1a5f4cad3175bbae0538b96e1c06112f9dce0755f5dcece0167410b9ba634",
+      "format": "jsonl",
+      "firstId": "ai-evt-0000001",
+      "lastId": "ai-evt-0120000"
+    },
+    {
+      "path": "ai-streams/stream-events-part-2.jsonl",
+      "records": 120000,
+      "bytes": 68536150,
+      "sha256": "8e6518a82a48b5618d07e81a8176fe041177d348d0995143c7c4145bb65ef278",
+      "format": "jsonl",
+      "firstId": "ai-evt-0120001",
+      "lastId": "ai-evt-0240000"
+    },
+    {
+      "path": "ai-streams/stream-events-part-3.jsonl",
+      "records": 120000,
+      "bytes": 68536111,
+      "sha256": "0dad64c3f041762bae1ec74029681ac8a746c3e9decd837fef07a25329106376",
+      "format": "jsonl",
+      "firstId": "ai-evt-0240001",
+      "lastId": "ai-evt-0360000"
+    },
+    {
+      "path": "ai-streams/stream-events-part-4.jsonl",
+      "records": 120000,
+      "bytes": 68536150,
+      "sha256": "106adc0e5f4bec9c7ae4f5869a50e108c6230852d13f40cbac7f3c62d56ff04a",
+      "format": "jsonl",
+      "firstId": "ai-evt-0360001",
+      "lastId": "ai-evt-0480000"
+    },
+    {
+      "path": "crdt-ops/lww-ops-part-1.jsonl",
+      "records": 150000,
+      "bytes": 50997437,
+      "sha256": "8b30d548709040ed5a42fb4969ad93b52d161c10091c83c2551020f708ecf501",
+      "format": "jsonl",
+      "firstId": "crdt-op-0000001",
+      "lastId": "crdt-op-0150000"
+    },
+    {
+      "path": "crdt-ops/lww-ops-part-2.jsonl",
+      "records": 150000,
+      "bytes": 51219659,
+      "sha256": "00a60191d0058a10bdb08387a8a848d7b8c290368cbb2bc88de65462279c2b5f",
+      "format": "jsonl",
+      "firstId": "crdt-op-0150001",
+      "lastId": "crdt-op-0300000"
+    },
+    {
+      "path": "crdt-ops/lww-ops-part-3.jsonl",
+      "records": 150000,
+      "bytes": 51219660,
+      "sha256": "bec601b81dc66308f7cef0596bfa4f742f823ad6854399a471609d150810c916",
+      "format": "jsonl",
+      "firstId": "crdt-op-0300001",
+      "lastId": "crdt-op-0450000"
+    },
+    {
+      "path": "crdt-ops/lww-ops-part-4.jsonl",
+      "records": 150000,
+      "bytes": 51219642,
+      "sha256": "bc7f8a7a2b54d0c84a3004a9186ae35091a63c03edc0e5e0dff3ac3c4107c99b",
+      "format": "jsonl",
+      "firstId": "crdt-op-0450001",
+      "lastId": "crdt-op-0600000"
+    },
+    {
+      "path": "tree-hierarchy/nodes-part-1.jsonl",
+      "records": 120000,
+      "bytes": 60587057,
+      "sha256": "0ba47d4e0c41fc7740c6bf1bb1a0dc5c61935a50710a7bf326bed018c44e8ffa",
+      "format": "jsonl",
+      "firstId": "tree-node-0000001",
+      "lastId": "tree-node-0120000"
+    },
+    {
+      "path": "tree-hierarchy/nodes-part-2.jsonl",
+      "records": 120000,
+      "bytes": 60698168,
+      "sha256": "9f2a7886a18b631daf31c7272a39297a305f400449d05b9e0c65cab78611d27b",
+      "format": "jsonl",
+      "firstId": "tree-node-0120001",
+      "lastId": "tree-node-0240000"
+    },
+    {
+      "path": "tree-hierarchy/nodes-part-3.jsonl",
+      "records": 120000,
+      "bytes": 60698187,
+      "sha256": "78c0da92b28918ddddda54800bc158dbc06f789b6660df5247015e5ae1266dbe",
+      "format": "jsonl",
+      "firstId": "tree-node-0240001",
+      "lastId": "tree-node-0360000"
+    },
+    {
+      "path": "tree-hierarchy/nodes-part-4.jsonl",
+      "records": 120000,
+      "bytes": 60698166,
+      "sha256": "139276eea2d09e89b9614fb27ab6ee3bab4ad80eaa5edd8e4eb41f74504348ea",
+      "format": "jsonl",
+      "firstId": "tree-node-0360001",
+      "lastId": "tree-node-0480000"
+    },
+    {
+      "path": "i18n-catalogs/messages-part-1.jsonl",
+      "records": 140000,
+      "bytes": 86868895,
+      "sha256": "328ab79654d61762f531d6a0a5b091d9d63af40836cb95c250b2d411ebf8f648",
+      "format": "jsonl",
+      "firstId": "i18n-msg-0000001",
+      "lastId": "i18n-msg-0140000"
+    },
+    {
+      "path": "i18n-catalogs/messages-part-2.jsonl",
+      "records": 140000,
+      "bytes": 86980000,
+      "sha256": "e755ba250ba9adbd6b7c422a4f5248519d8e0d72b016a91ee375a3f44fcd34ea",
+      "format": "jsonl",
+      "firstId": "i18n-msg-0140001",
+      "lastId": "i18n-msg-0280000"
+    },
+    {
+      "path": "chart-timeseries/series-part-1.jsonl",
+      "records": 140000,
+      "bytes": 83536311,
+      "sha256": "e2fd5afa86ec7302305a721e6e237bda199f6d529f6d16043354d70df508cf60",
+      "format": "jsonl",
+      "firstId": "chart-pt-0000001",
+      "lastId": "chart-pt-0140000"
+    },
+    {
+      "path": "chart-timeseries/series-part-2.jsonl",
+      "records": 140000,
+      "bytes": 83647419,
+      "sha256": "1284135d23182602dbd37d0c0547e01150f3283cf9ecbdf6c0c0d329f4ec74e1",
+      "format": "jsonl",
+      "firstId": "chart-pt-0140001",
+      "lastId": "chart-pt-0280000"
+    }
+  ],
+  "summary": {
+    "datasetCount": 36,
+    "records": 4570000,
+    "bytes": 2385854469
+  },
+  "usage": {
+    "verify": "node scripts/verify-benchmark-fixtures.mjs",
+    "benchmark": "node scripts/benchmark-fixtures.mjs",
+    "regenerate": "node scripts/generate-benchmark-fixtures.mjs",
+    "note": "Datasets are intentionally line-oriented and sharded below 100,000,000 bytes each for streaming audits and repository compatibility."
+  }
+}

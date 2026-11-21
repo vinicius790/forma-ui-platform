@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@forma-ui — Design System & Biblioteca Headless Acessível</title>
+  </head>
+  <body>
+    <header data-docs-topbar>
+      <div>
+        <h1>@forma-ui — Playground Interativo Headless</h1>
+        <p id="docs-subtitle">Primitivas WAI-ARIA agnósticas de estilo com alternância ao vivo de tema, idioma e RTL.</p>
+      </div>
+      <div role="toolbar" aria-label="Controles de Tema, Idioma e Direção">
+        <label for="theme-switcher">Tema:
+          <select id="theme-switcher">
+            <option value="unstyled">Headless Puro (Sem CSS)</option>
+            <option value="light" selected>Light Theme</option>
+            <option value="dark">Dark Theme</option>
+            <option value="high-contrast">High Contrast (WCAG AAA)</option>
+          </select>
+        </label>
+        <label for="locale-switcher">Idioma / RTL:
+          <select id="locale-switcher">
+            <option value="pt-BR" selected>Português (LTR)</option>
+            <option value="en-US">English (LTR)</option>
+            <option value="es-ES">Español (LTR)</option>
+            <option value="ar-SA">العربية (RTL)</option>
+          </select>
+        </label>
+        <button id="run-a11y-audit" type="button">Auditar Acessibilidade (axe-core)</button>
+      </div>
+    </header>
+    <main id="playground-root"></main>
+    <aside id="a11y-inspector" aria-label="Inspetor de Acessibilidade e Foco" aria-live="polite"></aside>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

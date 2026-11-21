@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forma-ui.dev/schemas/crdt-op.schema.json",
+  "title": "Forma UI synthetic CRDT operation record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "peerId",
+    "clock",
+    "opType",
+    "key",
+    "x",
+    "y",
+    "timestamp",
+    "payload",
+    "token"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^crdt-op-[0-9]{7}$"
+    },
+    "peerId": {
+      "type": "string"
+    },
+    "clock": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "opType": {
+      "enum": [
+        "lww-set",
+        "lww-delete",
+        "presence-cursor",
+        "presence-selection"
+      ]
+    },
+    "key": {
+      "type": "string"
+    },
+    "x": {
+      "type": "integer"
+    },
+    "y": {
+      "type": "integer"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "payload": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string",
+      "minLength": 24,
+      "maxLength": 24
+    }
+  }
+}

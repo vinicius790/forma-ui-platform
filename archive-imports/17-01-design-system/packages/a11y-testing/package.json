@@ -1,0 +1,29 @@
+{
+  "name": "@forma-ui/a11y-testing",
+  "version": "1.0.0",
+  "description": "Utilit\u00e1rios automatizados de auditoria WCAG/WAI-ARIA com axe-core, verifica\u00e7\u00e3o de foco e navega\u00e7\u00e3o por teclado.",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "axe-core": "^4.10.2"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "typecheck": "tsc --noEmit"
+  }
+}

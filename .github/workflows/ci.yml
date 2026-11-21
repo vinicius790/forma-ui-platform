@@ -1,0 +1,50 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  quality:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [22, 24]
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm build
+      - run: pnpm typecheck
+      - run: pnpm verify:exports
+      - run: pnpm check:packages
+      - run: pnpm check:workspace-graph
+      - run: pnpm check:structure
+      - run: pnpm check:architecture
+      - run: pnpm check:docs
+      - run: pnpm check:hygiene
+      - run: pnpm check:source-merge
+      - if: matrix.os == 'ubuntu-latest' && matrix.node == 22
+        run: pnpm fixtures:verify
+      - if: matrix.os == 'ubuntu-latest' && matrix.node == 22
+        run: pnpm bench:fixtures
+      - run: pnpm check:publish
+      - run: pnpm smoke
+      - run: pnpm test
+      - run: pnpm test:a11y
+      - run: pnpm docs:build
+      - run: pnpm storybook:build
+      - if: matrix.os == 'ubuntu-latest' && matrix.node == 22
+        run: pnpm exec playwright install --with-deps chromium firefox webkit
+      - if: matrix.os == 'ubuntu-latest' && matrix.node == 22
+        run: pnpm test:e2e

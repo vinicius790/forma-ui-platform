@@ -1,0 +1,53 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "ignore": [
+    "archive-imports/**"
+  ],
+  "ignoreBinaries": [
+    "python"
+  ],
+  "workspaces": {
+    ".": {
+      "ignoreDependencies": [
+        "@arethetypeswrong/cli",
+        "@floating-ui/dom",
+        "@rollup/plugin-node-resolve",
+        "@rollup/plugin-typescript",
+        "@vitest/coverage-v8",
+        "axe-core",
+        "fast-check",
+        "publint",
+        "rollup",
+        "svelte",
+        "vite"
+      ]
+    },
+    "packages/eslint-plugin": {
+      "entry": [
+        "src/index.mjs",
+        "src/index.d.ts",
+        "src/*.test.mjs"
+      ]
+    },
+    "packages/floating-ui": {
+      "ignoreDependencies": [
+        "@forma-ui/core"
+      ]
+    },
+    "packages/playwright": {
+      "ignoreDependencies": [
+        "@forma-ui/core"
+      ]
+    },
+    "packages/angular": {
+      "ignoreDependencies": [
+        "@forma-ui/core"
+      ]
+    },
+    "packages/lit": {
+      "ignoreDependencies": [
+        "@forma-ui/core"
+      ]
+    }
+  }
+}

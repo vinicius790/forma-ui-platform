@@ -1,0 +1,31 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": [
+      "vite/client"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@forma-ui/core": [
+        "../../packages/core/src/index.ts"
+      ],
+      "@forma-ui/core/*": [
+        "../../packages/core/src/*"
+      ],
+      "@forma-ui/themes": [
+        "../../packages/themes/src/index.ts"
+      ],
+      "@forma-ui/tokens": [
+        "../../packages/tokens/src/index.ts"
+      ],
+      "@forma-ui/a11y-testing": [
+        "../../packages/a11y-testing/src/index.ts"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "vite.config.ts"
+  ]
+}

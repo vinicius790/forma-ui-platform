@@ -1,0 +1,31 @@
+{
+  "name": "@forma-ui/cli",
+  "version": "100.0.0",
+  "description": "Project scaffolding, diagnostics and integration discovery CLI",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "node --check src/index.mjs && node --check scripts/build.mjs",
+    "test": "node --test src/index.test.mjs",
+    "forma": "node src/index.mjs"
+  },
+  "peerDependencies": {},
+  "devDependencies": {},
+  "bin": {
+    "forma": "./dist/index.mjs"
+  },
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "engines": {
+    "node": ">=22.16.0"
+  }
+}

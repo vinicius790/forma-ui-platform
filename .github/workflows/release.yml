@@ -1,0 +1,36 @@
+name: Release
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+      - name: Ensure npm trusted publishing support
+        run: npm install --global npm@latest
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm check:legal-release
+      - run: pnpm release:check
+      - name: Install Playwright browsers
+        run: pnpm exec playwright install --with-deps chromium firefox webkit
+      - run: pnpm lint && pnpm build && pnpm typecheck && pnpm verify:exports && pnpm check:packages && pnpm check:workspace-graph && pnpm check:structure && pnpm check:architecture && pnpm check:docs && pnpm check:hygiene && pnpm check:publish && pnpm smoke && pnpm test && pnpm test:a11y && pnpm docs:build && pnpm storybook:build && pnpm test:e2e
+      - uses: changesets/action@v1
+        with:
+          publish: pnpm release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

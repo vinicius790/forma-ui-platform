@@ -1,0 +1,33 @@
+{
+  "name": "@forma-ui/react",
+  "version": "1.0.0",
+  "description": "Adaptadores headless e acess\u00edveis para React 18/19 constru\u00eddos sobre @forma-ui/core.",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@forma-ui/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "typecheck": "tsc --noEmit"
+  }
+}

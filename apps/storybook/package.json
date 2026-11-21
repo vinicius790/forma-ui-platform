@@ -1,0 +1,27 @@
+{
+  "name": "@forma-ui/storybook",
+  "version": "100.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Isolated component workshop with Storybook 10 and accessibility tooling",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@forma-ui/core": "workspace:*",
+    "lit": "^3.3.1",
+    "@forma-ui/commands": "workspace:*",
+    "@forma-ui/data-grid": "workspace:*"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.6.7",
+    "@storybook/web-components-vite": "^10.6.7",
+    "@types/node": "^22.13.14",
+    "storybook": "^10.6.7",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.5"
+  }
+}

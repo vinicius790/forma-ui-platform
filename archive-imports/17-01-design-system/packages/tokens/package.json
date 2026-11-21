@@ -1,0 +1,27 @@
+{
+  "name": "@forma-ui/tokens",
+  "version": "1.0.0",
+  "description": "Design tokens agn\u00f3sticos (cores, espa\u00e7amento, tipografia, raios, eleva\u00e7\u00e3o, z-index e movimento) com exporta\u00e7\u00e3o W3C JSON e CSS Custom Properties.",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./tokens.json": "./dist/tokens.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs && node scripts/emit-json.mjs",
+    "typecheck": "tsc --noEmit"
+  }
+}

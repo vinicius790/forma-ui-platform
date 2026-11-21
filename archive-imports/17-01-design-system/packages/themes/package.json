@@ -1,0 +1,32 @@
+{
+  "name": "@forma-ui/themes",
+  "version": "1.0.0",
+  "description": "Camada visual opcional e plug\u00e1vel para @forma-ui baseada em tokens de design e CSS Custom Properties.",
+  "license": "MIT",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@forma-ui/tokens": "workspace:*"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs && node scripts/emit-css.mjs",
+    "typecheck": "tsc --noEmit"
+  }
+}

@@ -1,0 +1,597 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "scripts/generate-test-inventory.mjs",
+  "scope": "tracked-source-tests-and-stories-only",
+  "note": "Hashes identify the current source snapshots; they are not test results or coverage percentages.",
+  "summary": {
+    "files": 58,
+    "tests": 51,
+    "specs": 1,
+    "stories": 6,
+    "totalBytes": 211962,
+    "totalLines": 4228
+  },
+  "groups": {
+    "apps/docs": {
+      "files": 1,
+      "paths": [
+        "apps/docs/src/docs.test.ts"
+      ]
+    },
+    "apps/storybook": {
+      "files": 6,
+      "paths": [
+        "apps/storybook/src/stories/core.stories.ts",
+        "apps/storybook/src/stories/data.stories.ts",
+        "apps/storybook/src/stories/enterprise-and-productivity.stories.ts",
+        "apps/storybook/src/stories/feedback.stories.ts",
+        "apps/storybook/src/stories/forms.stories.ts",
+        "apps/storybook/src/stories/overlays-and-inputs.stories.ts"
+      ]
+    },
+    "packages/cli": {
+      "files": 1,
+      "paths": [
+        "packages/cli/src/index.test.mjs"
+      ]
+    },
+    "packages/codemods": {
+      "files": 1,
+      "paths": [
+        "packages/codemods/src/__tests__/codemods.test.ts"
+      ]
+    },
+    "packages/collections": {
+      "files": 2,
+      "paths": [
+        "packages/collections/src/__tests__/tree-filter-and-range.test.ts",
+        "packages/collections/src/index.test.ts"
+      ]
+    },
+    "packages/commands": {
+      "files": 2,
+      "paths": [
+        "packages/commands/src/__tests__/chords-and-registry.test.ts",
+        "packages/commands/src/__tests__/commands.test.ts"
+      ]
+    },
+    "packages/core": {
+      "files": 21,
+      "paths": [
+        "packages/core/src/__tests__/accordion.test.ts",
+        "packages/core/src/__tests__/advanced-controls.test.ts",
+        "packages/core/src/__tests__/button.test.ts",
+        "packages/core/src/__tests__/collection-and-machine.test.ts",
+        "packages/core/src/__tests__/components.a11y.test.ts",
+        "packages/core/src/__tests__/dialog.test.ts",
+        "packages/core/src/__tests__/expanded-controls.test.ts",
+        "packages/core/src/__tests__/grid-and-pin-input.test.ts",
+        "packages/core/src/__tests__/inline-and-onboarding.test.ts",
+        "packages/core/src/__tests__/interactive-widgets.test.ts",
+        "packages/core/src/__tests__/menu.test.ts",
+        "packages/core/src/__tests__/overlays-and-layout.test.ts",
+        "packages/core/src/__tests__/positioner-and-modal.test.ts",
+        "packages/core/src/__tests__/primitives.test.ts",
+        "packages/core/src/__tests__/property-controls.test.ts",
+        "packages/core/src/__tests__/select.test.ts",
+        "packages/core/src/__tests__/tabs.test.ts",
+        "packages/core/src/__tests__/toast.test.ts",
+        "packages/core/src/__tests__/tooltip.test.ts",
+        "packages/core/src/__tests__/workbench-and-media.test.ts",
+        "packages/core/src/__tests__/workspace-and-boards.test.ts"
+      ]
+    },
+    "packages/data-grid": {
+      "files": 2,
+      "paths": [
+        "packages/data-grid/src/__tests__/data-grid.test.ts",
+        "packages/data-grid/src/__tests__/tree-pivot-and-clipboard.test.ts"
+      ]
+    },
+    "packages/dates": {
+      "files": 3,
+      "paths": [
+        "packages/dates/src/__tests__/date-properties.test.ts",
+        "packages/dates/src/__tests__/dates.test.ts",
+        "packages/dates/src/__tests__/recurrence-and-relative.test.ts"
+      ]
+    },
+    "packages/eslint-plugin": {
+      "files": 1,
+      "paths": [
+        "packages/eslint-plugin/src/index.test.mjs"
+      ]
+    },
+    "packages/forms": {
+      "files": 3,
+      "paths": [
+        "packages/forms/src/__tests__/computed-and-schema.test.ts",
+        "packages/forms/src/__tests__/form-controller.test.ts",
+        "packages/forms/src/__tests__/standard-schema.test.ts"
+      ]
+    },
+    "packages/motion": {
+      "files": 1,
+      "paths": [
+        "packages/motion/src/__tests__/motion.test.ts"
+      ]
+    },
+    "packages/playwright": {
+      "files": 1,
+      "paths": [
+        "packages/playwright/e2e/docs-smoke.spec.ts"
+      ]
+    },
+    "packages/preact": {
+      "files": 1,
+      "paths": [
+        "packages/preact/src/__tests__/preact-adapters.test.tsx"
+      ]
+    },
+    "packages/react": {
+      "files": 1,
+      "paths": [
+        "packages/react/src/__tests__/react-adapters.test.tsx"
+      ]
+    },
+    "packages/solid": {
+      "files": 1,
+      "paths": [
+        "packages/solid/src/__tests__/solid-adapters.test.ts"
+      ]
+    },
+    "packages/ssr": {
+      "files": 1,
+      "paths": [
+        "packages/ssr/src/__tests__/ids.test.ts"
+      ]
+    },
+    "packages/svelte": {
+      "files": 1,
+      "paths": [
+        "packages/svelte/src/__tests__/svelte-adapters.test.ts"
+      ]
+    },
+    "packages/testing": {
+      "files": 1,
+      "paths": [
+        "packages/testing/src/__tests__/dom-contracts.test.ts"
+      ]
+    },
+    "packages/themes": {
+      "files": 1,
+      "paths": [
+        "packages/themes/src/themes.test.ts"
+      ]
+    },
+    "packages/tokens": {
+      "files": 3,
+      "paths": [
+        "packages/tokens/src/contrast.test.ts",
+        "packages/tokens/src/dtcg.test.ts",
+        "packages/tokens/src/tokens.test.ts"
+      ]
+    },
+    "packages/virtualization": {
+      "files": 2,
+      "paths": [
+        "packages/virtualization/src/__tests__/masonry-and-sticky.test.ts",
+        "packages/virtualization/src/__tests__/virtualizer.test.ts"
+      ]
+    },
+    "packages/vue": {
+      "files": 1,
+      "paths": [
+        "packages/vue/src/__tests__/vue-adapters.test.ts"
+      ]
+    }
+  },
+  "files": [
+    {
+      "path": "apps/docs/src/docs.test.ts",
+      "bytes": 1859,
+      "lines": 23,
+      "sha256": "159712d69958075bbfa3bbcf2d33b691955316dd1255c9db4662da20b9fc5d06",
+      "kind": "test"
+    },
+    {
+      "path": "apps/storybook/src/stories/core.stories.ts",
+      "bytes": 13647,
+      "lines": 257,
+      "sha256": "5c984225e91db82f516cd117da10e162e0d010dcab48deaa7ffc3462f4375b3f",
+      "kind": "story"
+    },
+    {
+      "path": "apps/storybook/src/stories/data.stories.ts",
+      "bytes": 6542,
+      "lines": 90,
+      "sha256": "43dc32d3b5c6001f98ccbe5d464826f8e8661149edbcdf7853be11f7e04e600d",
+      "kind": "story"
+    },
+    {
+      "path": "apps/storybook/src/stories/enterprise-and-productivity.stories.ts",
+      "bytes": 10515,
+      "lines": 260,
+      "sha256": "d7b2b3233fffae913bdb8580932c4691066a0640be4e7ad0ac6e2ecaef6fae25",
+      "kind": "story"
+    },
+    {
+      "path": "apps/storybook/src/stories/feedback.stories.ts",
+      "bytes": 3200,
+      "lines": 40,
+      "sha256": "4416b9f55401c7ae69a2c504376ddaaf0ee5b7af35ca14c4dfaafc67fc793cb8",
+      "kind": "story"
+    },
+    {
+      "path": "apps/storybook/src/stories/forms.stories.ts",
+      "bytes": 6711,
+      "lines": 114,
+      "sha256": "ca3522a239522a63732e1c721bab5bcf989910c164b03bfeec008d23fa99e202",
+      "kind": "story"
+    },
+    {
+      "path": "apps/storybook/src/stories/overlays-and-inputs.stories.ts",
+      "bytes": 4160,
+      "lines": 88,
+      "sha256": "d0b40c31724b2be6f910e25bed41a2b23b223516e4bec5e00a6d5f20828d4eb8",
+      "kind": "story"
+    },
+    {
+      "path": "packages/cli/src/index.test.mjs",
+      "bytes": 7114,
+      "lines": 169,
+      "sha256": "a82ae1675f8344f279c668d0b6a41fc499647fc285ef6a58cc5f28cafef2c862",
+      "kind": "test"
+    },
+    {
+      "path": "packages/codemods/src/__tests__/codemods.test.ts",
+      "bytes": 1604,
+      "lines": 19,
+      "sha256": "5cc65f1e57cd7c4cb00694033b6382c74440a1a2cb0cd89b66cb08d2a896279b",
+      "kind": "test"
+    },
+    {
+      "path": "packages/collections/src/__tests__/tree-filter-and-range.test.ts",
+      "bytes": 2105,
+      "lines": 62,
+      "sha256": "30cc68d63e667240c7c7f6edc7553be12fbd3bb50150dcab5a531fe525a164a6",
+      "kind": "test"
+    },
+    {
+      "path": "packages/collections/src/index.test.ts",
+      "bytes": 2494,
+      "lines": 54,
+      "sha256": "6953c776a11a6c4c41cab70c17a953f5c2a8a9a049ba959338692e3413fb8aa7",
+      "kind": "test"
+    },
+    {
+      "path": "packages/commands/src/__tests__/chords-and-registry.test.ts",
+      "bytes": 2739,
+      "lines": 94,
+      "sha256": "62238b4bd751388273b8025c4ee7527e3d24215367046adff39cce78eeddd7e4",
+      "kind": "test"
+    },
+    {
+      "path": "packages/commands/src/__tests__/commands.test.ts",
+      "bytes": 3797,
+      "lines": 77,
+      "sha256": "e9dc60c0feb6cf8202c25f26f220000e5f599ef8ed7ac04e0d2229686c416c9a",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/accordion.test.ts",
+      "bytes": 1087,
+      "lines": 10,
+      "sha256": "0bc0f35673f556646a57b2c3eab3f429895c2a7cda183036e3e243956e9da1f9",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/advanced-controls.test.ts",
+      "bytes": 5143,
+      "lines": 113,
+      "sha256": "914fed93eab0b6de5060cada24e2d139b5b3b170532633da8d963e805b276bd0",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/button.test.ts",
+      "bytes": 515,
+      "lines": 8,
+      "sha256": "4563038b81e3530e90e1e511620275cac843761763ae18f706f0b5f318a8bf8a",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/collection-and-machine.test.ts",
+      "bytes": 4494,
+      "lines": 97,
+      "sha256": "0b70fe6135e4086440a92ebe455cd07b3219870a4bfa30cc9f7e009440ac754b",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/components.a11y.test.ts",
+      "bytes": 5309,
+      "lines": 89,
+      "sha256": "4a674899df614b6d62e1b05402c4cd406e902236ad5d18ad82d41c7a0fc1e80f",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/dialog.test.ts",
+      "bytes": 1790,
+      "lines": 12,
+      "sha256": "a26c6b9b6297c9774c23b65448b7a8e7c80c5fe5fb1b5c4c45f1b153ac4166ff",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/expanded-controls.test.ts",
+      "bytes": 6589,
+      "lines": 147,
+      "sha256": "239057134c28576f009158408a40585c7bdfd3659a6cbb32be05400b71a31457",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/grid-and-pin-input.test.ts",
+      "bytes": 4294,
+      "lines": 90,
+      "sha256": "e3ee3711e70c519d0b40e0891d8d8a8284f38ffd8340e1b3d807036c5679b36c",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/inline-and-onboarding.test.ts",
+      "bytes": 3964,
+      "lines": 110,
+      "sha256": "99c15f3f5d07f5699ff29c875a852a3ac6b4ad38e1b952288db876022ebd1791",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/interactive-widgets.test.ts",
+      "bytes": 4451,
+      "lines": 110,
+      "sha256": "14ae083e6b7b71d9f3b8d14913a22f71cd8b35b848bc9126a6bc77109de322ec",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/menu.test.ts",
+      "bytes": 4622,
+      "lines": 35,
+      "sha256": "9284872635a592a9fc97487671e32ed88582775e9c4f249a7f22388c62468b48",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/overlays-and-layout.test.ts",
+      "bytes": 4322,
+      "lines": 114,
+      "sha256": "160b84d87ffd630afd887c1f6fd794d2a7d05f3999a29fc085bda1af446d48f0",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/positioner-and-modal.test.ts",
+      "bytes": 2527,
+      "lines": 36,
+      "sha256": "2bd6c4c1b0e602646d26162a6f90eeced4f125c1a95f8cf497d7314650dacd53",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/primitives.test.ts",
+      "bytes": 6800,
+      "lines": 80,
+      "sha256": "ee395c0ff539b0729db950d03e5001035ad47da00c2a8107e6bb9031d9d45963",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/property-controls.test.ts",
+      "bytes": 1860,
+      "lines": 44,
+      "sha256": "951e9e6ea6b2728bc55a5ce6cca6266c0d0ec71394c133c1c7a8be9a24ea81e8",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/select.test.ts",
+      "bytes": 2825,
+      "lines": 44,
+      "sha256": "33815239bab0a6ec5475628698a86bf0623d979dbdaa678d9739509e37a6a697",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/tabs.test.ts",
+      "bytes": 1844,
+      "lines": 17,
+      "sha256": "5042eb091b27666fb7bc5675c72d09a4be6cec64d86df52bfba01270ec287def",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/toast.test.ts",
+      "bytes": 1631,
+      "lines": 11,
+      "sha256": "60fea6f736f5f1240fdb7380c2271229ffe816838ec285d1c3fd1ae127194f85",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/tooltip.test.ts",
+      "bytes": 1032,
+      "lines": 10,
+      "sha256": "8ae324f372c486ad64eea678b548f11531659f8711fb63534c2693f102ede2f4",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/workbench-and-media.test.ts",
+      "bytes": 4253,
+      "lines": 104,
+      "sha256": "51fb51a2649042f9c70a87eba648b33dee0d866fef9e50ac539baadc57a7d121",
+      "kind": "test"
+    },
+    {
+      "path": "packages/core/src/__tests__/workspace-and-boards.test.ts",
+      "bytes": 6578,
+      "lines": 174,
+      "sha256": "22440bf3269b6589e1c9fc4bc4049adc08d44dbf7fa5c1d1ff89e7c99bca5629",
+      "kind": "test"
+    },
+    {
+      "path": "packages/data-grid/src/__tests__/data-grid.test.ts",
+      "bytes": 4602,
+      "lines": 104,
+      "sha256": "073bc94098762fee8fe0bfe4cfc6e7d6082a5d81d29aea6739af9709b174623e",
+      "kind": "test"
+    },
+    {
+      "path": "packages/data-grid/src/__tests__/tree-pivot-and-clipboard.test.ts",
+      "bytes": 3329,
+      "lines": 90,
+      "sha256": "4f35ea218702c47d00b87678657e62ca636b9abc2cdb9c7483cb61f9d8d00a8b",
+      "kind": "test"
+    },
+    {
+      "path": "packages/dates/src/__tests__/date-properties.test.ts",
+      "bytes": 847,
+      "lines": 22,
+      "sha256": "28c7e22b7621b1f98a78dcf9c8432c7812285887e53305425081c7f519683cec",
+      "kind": "test"
+    },
+    {
+      "path": "packages/dates/src/__tests__/dates.test.ts",
+      "bytes": 3812,
+      "lines": 76,
+      "sha256": "ae138493b821a6811c9d43093610c059defd2e04d3a270a10709105a3673243a",
+      "kind": "test"
+    },
+    {
+      "path": "packages/dates/src/__tests__/recurrence-and-relative.test.ts",
+      "bytes": 1810,
+      "lines": 48,
+      "sha256": "23f3514e44fc8b3b97f6c90639841d387b82c955dbf4b9ca84b594e7e69b3083",
+      "kind": "test"
+    },
+    {
+      "path": "packages/eslint-plugin/src/index.test.mjs",
+      "bytes": 3795,
+      "lines": 67,
+      "sha256": "ef6d78638d41f9e38243f30b45ba60e4899b88cfe36d50415b933e15975dab07",
+      "kind": "test"
+    },
+    {
+      "path": "packages/forms/src/__tests__/computed-and-schema.test.ts",
+      "bytes": 4017,
+      "lines": 112,
+      "sha256": "636b5c92f73205d4391c3ff00cc9420a12d20663f042441c54fac3951b9bf77b",
+      "kind": "test"
+    },
+    {
+      "path": "packages/forms/src/__tests__/form-controller.test.ts",
+      "bytes": 4609,
+      "lines": 98,
+      "sha256": "bdcebde8b98c9b94c8bdbded0c172a1ded8b183494568e2b441fa4fe566c3d65",
+      "kind": "test"
+    },
+    {
+      "path": "packages/forms/src/__tests__/standard-schema.test.ts",
+      "bytes": 1276,
+      "lines": 29,
+      "sha256": "ae43895dab96ca66ca7f9fd18e63f6f81c59ca7f3a9b33a5f0e4ad89dff1bc9b",
+      "kind": "test"
+    },
+    {
+      "path": "packages/motion/src/__tests__/motion.test.ts",
+      "bytes": 1330,
+      "lines": 33,
+      "sha256": "7edbff89f98b0dd23909c50922912085e986b2969d142f75f82e5c75cfbcda3f",
+      "kind": "test"
+    },
+    {
+      "path": "packages/playwright/e2e/docs-smoke.spec.ts",
+      "bytes": 2020,
+      "lines": 47,
+      "sha256": "1f852843071dd65eda181b704dbf0c8c97031d8075ef08472e2bdf7b6ce65b6d",
+      "kind": "spec"
+    },
+    {
+      "path": "packages/preact/src/__tests__/preact-adapters.test.tsx",
+      "bytes": 1757,
+      "lines": 36,
+      "sha256": "f75916b13833f9e4601ce144d335f3b54f45daa91853608b72d08a010d894c9a",
+      "kind": "test"
+    },
+    {
+      "path": "packages/react/src/__tests__/react-adapters.test.tsx",
+      "bytes": 6547,
+      "lines": 85,
+      "sha256": "794395448706e643b02bcc3081693b21b7fe033e1a0fb8b942d4140cd3dd8dfc",
+      "kind": "test"
+    },
+    {
+      "path": "packages/solid/src/__tests__/solid-adapters.test.ts",
+      "bytes": 4290,
+      "lines": 142,
+      "sha256": "b8c4ca05d0fdd79c77ac0169054141d457d010ac59dc0186fb7c5c2d4cb3ab87",
+      "kind": "test"
+    },
+    {
+      "path": "packages/ssr/src/__tests__/ids.test.ts",
+      "bytes": 1529,
+      "lines": 37,
+      "sha256": "8b5d35db1e75afc322f35bdbdaec21df06b022a7281c6600d3ffc398ed9dbf59",
+      "kind": "test"
+    },
+    {
+      "path": "packages/svelte/src/__tests__/svelte-adapters.test.ts",
+      "bytes": 5600,
+      "lines": 85,
+      "sha256": "efd7f06874dbd8524dc43cf0cdf147e2117fd8eeb244dda6f96df65a13703028",
+      "kind": "test"
+    },
+    {
+      "path": "packages/testing/src/__tests__/dom-contracts.test.ts",
+      "bytes": 1417,
+      "lines": 21,
+      "sha256": "3af749bac85079bd34a8e6b5c63fcc8ce1580bfccb040368f2f687fe148a9afd",
+      "kind": "test"
+    },
+    {
+      "path": "packages/themes/src/themes.test.ts",
+      "bytes": 1340,
+      "lines": 17,
+      "sha256": "487c889a4751dcb3495fc46c91f8ab081011fb1a3b58fc05165b13fcf0bfac50",
+      "kind": "test"
+    },
+    {
+      "path": "packages/tokens/src/contrast.test.ts",
+      "bytes": 986,
+      "lines": 10,
+      "sha256": "49a4079d3aea75e8d260a9e99e963a8602ca1e08535fc3004ceeb36283b7cdf1",
+      "kind": "test"
+    },
+    {
+      "path": "packages/tokens/src/dtcg.test.ts",
+      "bytes": 1081,
+      "lines": 20,
+      "sha256": "3d624173f58b8185565b4e879fe7b4b4d06d4fcb5d64ce9c42cfa69a03024076",
+      "kind": "test"
+    },
+    {
+      "path": "packages/tokens/src/tokens.test.ts",
+      "bytes": 1867,
+      "lines": 31,
+      "sha256": "8373f7eb4403a8b72cc19ab66fc0a0974ae98e31752ca9b948876f454cf881af",
+      "kind": "test"
+    },
+    {
+      "path": "packages/virtualization/src/__tests__/masonry-and-sticky.test.ts",
+      "bytes": 1662,
+      "lines": 43,
+      "sha256": "bd9e6d12fd7b5ea3cb10364fbba749e5254dfef1d7aa82f79126a31fba30a003",
+      "kind": "test"
+    },
+    {
+      "path": "packages/virtualization/src/__tests__/virtualizer.test.ts",
+      "bytes": 4202,
+      "lines": 84,
+      "sha256": "b3951f6d0afd40eacd1fa4459736ec35d00e8f4d7da5bdaa08b4d4f981fe44ab",
+      "kind": "test"
+    },
+    {
+      "path": "packages/vue/src/__tests__/vue-adapters.test.ts",
+      "bytes": 5820,
+      "lines": 89,
+      "sha256": "5998b1284e46c89753aca4b98474270c378f8c4d68dd4e6654894fdeb944ba54",
+      "kind": "test"
+    }
+  ]
+}

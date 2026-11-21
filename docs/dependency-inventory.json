@@ -1,0 +1,1324 @@
+{
+  "schemaVersion": 1,
+  "scope": "declared-manifests-only",
+  "generatedBy": "scripts/generate-inventory.mjs",
+  "note": "This is not a resolved SBOM. Transitive versions, integrity hashes and licenses require a generated pnpm-lock.yaml and a CycloneDX/SPDX export.",
+  "packageManager": "pnpm@9.15.5",
+  "nodeEngine": ">=22.16.0",
+  "packages": [
+    {
+      "name": "@forma-ui/a11y-testing",
+      "version": "100.0.0",
+      "description": "axe-core helpers and ARIA contract assertions for Forma UI tests",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "axe-core": ">=4.8.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "axe-core": "^4.14.0",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/ai-ui",
+      "version": "100.0.0",
+      "description": "Headless accessible controllers for generative, streaming, and agentic AI user interfaces",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {
+        "@forma-ui/core": "workspace:*"
+      },
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/angular",
+      "version": "100.0.0",
+      "description": "Angular signals and DestroyRef lifecycle adapters for Forma UI",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@angular/core": ">=17.0.0 <23.0.0",
+        "@forma-ui/core": "^100.0.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@angular/core": ">=17.0.0 <23.0.0",
+        "@forma-ui/core": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/charts",
+      "version": "100.0.0",
+      "description": "Headless accessible data visualization, keyboard chart navigation, SVG series geometry, and audio sonification for Forma UI",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {
+        "@forma-ui/core": "workspace:*"
+      },
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/cli",
+      "version": "100.0.0",
+      "description": "Project scaffolding, diagnostics and integration discovery CLI",
+      "private": false,
+      "exports": {
+        ".": "./dist/index.mjs"
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {},
+      "scripts": {
+        "build": "node scripts/build.mjs",
+        "forma": "node src/index.mjs",
+        "test": "node --test src/index.test.mjs",
+        "typecheck": "node --check src/index.mjs && node --check scripts/build.mjs"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/codemods",
+      "version": "100.0.0",
+      "description": "Safe codemod migrations for Forma UI APIs",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {
+        "typescript": "^5.8.3"
+      },
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/collections",
+      "version": "100.0.0",
+      "description": "Framework-neutral keyed collections, selection managers and tree data structures",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@forma-ui/core": "^100.0.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@forma-ui/core": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/commands",
+      "version": "100.0.0",
+      "description": "Framework-neutral command palette, fuzzy search and asynchronous command execution",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/core",
+      "version": "100.0.0",
+      "description": "Framework-agnostic headless UI behavior and DOM primitives",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        },
+        "./components/*": {
+          "import": {
+            "types": "./dist/components/*.d.ts",
+            "default": "./dist/components/*.js"
+          },
+          "require": {
+            "types": "./dist/components/*.d.cts",
+            "default": "./dist/components/*.cjs"
+          }
+        },
+        "./primitives/*": {
+          "import": {
+            "types": "./dist/primitives/*.d.ts",
+            "default": "./dist/primitives/*.js"
+          },
+          "require": {
+            "types": "./dist/primitives/*.d.cts",
+            "default": "./dist/primitives/*.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "axe-core": "^4.14.0",
+        "fast-check": "^3.23.2",
+        "jsdom": "^26.0.0",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src/__tests__",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/crdt",
+      "version": "100.0.0",
+      "description": "Zero-dependency CRDT state registers, conflict-free maps, and multiplayer presence controllers for Forma UI",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {
+        "@forma-ui/core": "workspace:*"
+      },
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/data-grid",
+      "version": "100.0.0",
+      "description": "Framework-neutral data-grid row models, sorting, filtering, pagination, visibility and selection",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@forma-ui/core": "^100.0.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@forma-ui/core": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/dates",
+      "version": "100.0.0",
+      "description": "Timezone-safe date-only arithmetic, localized calendar grids and accessible calendar behavior",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@forma-ui/core": "^100.0.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@forma-ui/core": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "fast-check": "^3.23.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/devtools",
+      "version": "100.0.0",
+      "description": "Opt-in runtime controller inspector, telemetry timeline, and DOM ARIA diagnostics for Forma UI",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {
+        "@forma-ui/core": "workspace:*"
+      },
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/eslint-plugin",
+      "version": "100.0.0",
+      "description": "ESLint flat-config rules for accessible Forma UI integrations",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.mjs"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "eslint": ">=9.0.0 <10.0.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "eslint": "^9.25.1"
+      },
+      "scripts": {
+        "build": "node --check src/index.mjs && node scripts/build.mjs",
+        "test": "node --test src/index.test.mjs",
+        "typecheck": "node --check src/index.mjs"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/floating-ui",
+      "version": "100.0.0",
+      "description": "Optional Floating UI DOM adapter for anchored overlays and popovers",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@floating-ui/dom": ">=1.6.0",
+        "@forma-ui/core": "^100.0.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@floating-ui/dom": "^1.7.4",
+        "@forma-ui/core": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/forms",
+      "version": "100.0.0",
+      "description": "Framework-neutral typed form state, validation lifecycle and accessible field bindings",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {
+        "@forma-ui/core": "workspace:*"
+      },
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/i18n",
+      "version": "100.0.0",
+      "description": "Headless internationalization, ICU message formatting, and bidirectional RTL/LTR detection for Forma UI",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {
+        "@forma-ui/core": "workspace:*"
+      },
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/lit",
+      "version": "100.0.0",
+      "description": "Lit reactive-controller bridge and accessible custom-element helpers",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@forma-ui/core": "^100.0.0",
+        "lit": ">=3.0.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@forma-ui/core": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "lit": "^3.3.1",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/motion",
+      "version": "100.0.0",
+      "description": "Reduced-motion preferences and optional accessible motion tokens",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/playwright",
+      "version": "100.0.0",
+      "description": "Browser-level testing utilities and Playwright configuration for Forma UI",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@forma-ui/core": "^100.0.0",
+        "@playwright/test": ">=1.50.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@forma-ui/core": "workspace:*",
+        "@playwright/test": "^1.51.0",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test:e2e": "playwright test -c playwright.config.ts",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/preact",
+      "version": "100.0.0",
+      "description": "Preact hooks and reactive bindings for Forma UI headless controllers",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@forma-ui/core": "^100.0.0",
+        "preact": ">=10.19.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@forma-ui/core": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "preact": "^10.27.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/qwik",
+      "version": "100.0.0",
+      "description": "Qwik resumable signal and lifecycle adapters for Forma UI",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@builder.io/qwik": ">=1.5.0 <3.0.0",
+        "@forma-ui/core": "^100.0.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@forma-ui/core": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/react",
+      "version": "100.0.0",
+      "description": "React adapters for Forma UI headless components",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@forma-ui/core": "^100.0.0",
+        "react": ">=18.2.0",
+        "react-dom": ">=18.2.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@forma-ui/core": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "@testing-library/react": "^16.3.0",
+        "@types/react": "^19.0.12",
+        "@types/react-dom": "^19.0.4",
+        "jsdom": "^26.0.0",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src/__tests__",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/solid",
+      "version": "100.0.0",
+      "description": "SolidJS signals and lifecycle adapters for Forma UI",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@forma-ui/core": "^100.0.0",
+        "solid-js": ">=1.8.0 <2.0.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@forma-ui/core": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "jsdom": "^26.0.0",
+        "rollup": "^4.40.0",
+        "solid-js": "^1.9.5",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src/__tests__",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/ssr",
+      "version": "100.0.0",
+      "description": "Request-scoped deterministic IDs and hydration-safe render context utilities",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/svelte",
+      "version": "100.0.0",
+      "description": "Svelte 5 stores and actions for Forma UI",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@forma-ui/core": "^100.0.0",
+        "svelte": ">=5.0.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@forma-ui/core": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "jsdom": "^26.0.0",
+        "rollup": "^4.40.0",
+        "svelte": "^5.25.5",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src/__tests__",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/tailwind",
+      "version": "100.0.0",
+      "description": "Optional Tailwind CSS v4 @theme layer and serializable JavaScript token mapping for Tailwind v3+.",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        },
+        "./styles.css": "./styles.css"
+      },
+      "runtimeDependencies": {
+        "@forma-ui/tokens": "workspace:*"
+      },
+      "peerDependencies": {
+        "tailwindcss": ">=3.4.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node scripts/build.mjs && node ../../scripts/finalize-declarations.mjs",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": [
+        "./styles.css"
+      ]
+    },
+    {
+      "name": "@forma-ui/testing",
+      "version": "100.0.0",
+      "description": "DOM contract assertions for IDs, ARIA IDREFs and keyboard focus targets",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/themes",
+      "version": "100.0.0",
+      "description": "Optional CSS themes for Forma UI",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        },
+        "./styles.css": "./dist/styles.css"
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node scripts/emit-css.mjs && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src/*.test.ts",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": [
+        "./dist/styles.css"
+      ]
+    },
+    {
+      "name": "@forma-ui/tokens",
+      "version": "100.0.0",
+      "description": "Design tokens and W3C DTCG export for Forma UI",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        },
+        "./colors": {
+          "import": {
+            "types": "./dist/colors.d.ts",
+            "default": "./dist/colors.js"
+          },
+          "require": {
+            "types": "./dist/colors.d.cts",
+            "default": "./dist/colors.cjs"
+          }
+        },
+        "./contrast": {
+          "import": {
+            "types": "./dist/contrast.d.ts",
+            "default": "./dist/contrast.js"
+          },
+          "require": {
+            "types": "./dist/contrast.d.cts",
+            "default": "./dist/contrast.cjs"
+          }
+        },
+        "./tokens.json": "./dist/tokens.json"
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node scripts/emit-json.mjs && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src/*.test.ts",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/unocss",
+      "version": "100.0.0",
+      "description": "Optional UnoCSS preset for Forma UI token utilities",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {
+        "@forma-ui/tokens": "workspace:*"
+      },
+      "peerDependencies": {
+        "unocss": ">=0.60.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "unocss": ">=0.60.0"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/virtualization",
+      "version": "100.0.0",
+      "description": "Framework-neutral virtual range calculation with measured variable-size items",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {},
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "fast-check": "^3.23.2",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    },
+    {
+      "name": "@forma-ui/vue",
+      "version": "100.0.0",
+      "description": "Vue 3 composables and adapters for Forma UI",
+      "private": false,
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "runtimeDependencies": {},
+      "peerDependencies": {
+        "@forma-ui/core": "^100.0.0",
+        "vue": ">=3.3.0"
+      },
+      "optionalDependencies": {},
+      "optionalPeerDependencies": {},
+      "devDependencies": {
+        "@forma-ui/core": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-typescript": "^12.1.2",
+        "jsdom": "^26.0.0",
+        "rollup": "^4.40.0",
+        "tslib": "^2.8.1",
+        "typescript": "^5.8.3",
+        "vitest": "^3.1.1",
+        "vue": "^3.5.13"
+      },
+      "scripts": {
+        "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+        "test": "vitest run src/__tests__",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      },
+      "sideEffects": false
+    }
+  ],
+  "apps": [
+    {
+      "name": "@forma-ui/docs",
+      "version": "100.0.0",
+      "private": true,
+      "scripts": {
+        "build": "vite build",
+        "dev": "vite --host 0.0.0.0",
+        "preview": "vite preview",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      }
+    },
+    {
+      "name": "@forma-ui/storybook",
+      "version": "100.0.0",
+      "private": true,
+      "scripts": {
+        "build-storybook": "storybook build",
+        "storybook": "storybook dev -p 6006",
+        "typecheck": "tsc -p tsconfig.json --noEmit"
+      }
+    }
+  ]
+}

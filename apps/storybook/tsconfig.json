@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "types": [
+      "node"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@forma-ui/core": [
+        "../../packages/core/src/index.ts"
+      ],
+      "@forma-ui/core/*": [
+        "../../packages/core/src/*"
+      ],
+      "@forma-ui/commands": [
+        "../../packages/commands/src/index.ts"
+      ],
+      "@forma-ui/data-grid": [
+        "../../packages/data-grid/src/index.ts"
+      ]
+    }
+  },
+  "include": [
+    ".storybook/**/*.ts",
+    "src/**/*.ts"
+  ]
+}

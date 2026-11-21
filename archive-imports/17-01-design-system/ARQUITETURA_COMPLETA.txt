@@ -1,0 +1,147 @@
+/home/bard/ (Monorepo @forma-ui — 115 arquivos implementados e gravados em disco)
+├── apps/
+│   └── docs/
+│       ├── src/
+│       │   ├── docs.test.ts                            # [Gerado em Disco — 62 linhas]
+│       │   ├── keyboard-matrix.ts                      # [Gerado em Disco — 99 linhas]
+│       │   ├── main.ts                                 # [Gerado em Disco — 650 linhas]
+│       │   └── token-visualizer.ts                     # [Gerado em Disco — 89 linhas]
+│       ├── index.html                                  # [Gerado em Disco — 38 linhas]
+│       ├── package.json                                # [Gerado em Disco — 19 linhas]
+│       ├── tsconfig.json                               # [Gerado em Disco — 11 linhas]
+│       └── vite.config.ts                              # [Gerado em Disco — 17 linhas]
+├── docs/
+│   ├── accessibility-wcag.md                           # [Gerado em Disco — 24 linhas]
+│   ├── architecture.md                                 # [Gerado em Disco — 57 linhas]
+│   ├── i18n-and-rtl.md                                 # [Gerado em Disco — 20 linhas]
+│   └── versioning-and-codemods.md                      # [Gerado em Disco — 39 linhas]
+├── packages/
+│   ├── a11y-testing/
+│   │   ├── src/
+│   │   │   └── index.ts                                # [Gerado em Disco — 99 linhas]
+│   │   ├── README.md                                   # [Gerado em Disco — 15 linhas]
+│   │   ├── package.json                                # [Gerado em Disco — 29 linhas]
+│   │   ├── rollup.config.mjs                           # [Gerado em Disco — 20 linhas]
+│   │   └── tsconfig.json                               # [Gerado em Disco — 10 linhas]
+│   ├── codemods/
+│   │   ├── src/
+│   │   │   ├── __tests__/
+│   │   │   │   └── codemods.test.ts                    # [Gerado em Disco — 46 linhas]
+│   │   │   ├── cli.ts                                  # [Gerado em Disco — 67 linhas]
+│   │   │   └── index.ts                                # [Gerado em Disco — 122 linhas]
+│   │   ├── README.md                                   # [Gerado em Disco — 23 linhas]
+│   │   ├── package.json                                # [Gerado em Disco — 29 linhas]
+│   │   ├── rollup.config.mjs                           # [Gerado em Disco — 19 linhas]
+│   │   └── tsconfig.json                               # [Gerado em Disco — 13 linhas]
+│   ├── core/
+│   │   ├── src/
+│   │   │   ├── __tests__/
+│   │   │   │   ├── accordion.test.ts                   # [Gerado em Disco — 25 linhas]
+│   │   │   │   ├── button.test.ts                      # [Gerado em Disco — 31 linhas]
+│   │   │   │   ├── components.a11y.test.ts             # [Gerado em Disco — 353 linhas]
+│   │   │   │   ├── dialog.test.ts                      # [Gerado em Disco — 36 linhas]
+│   │   │   │   ├── menu.test.ts                        # [Gerado em Disco — 30 linhas]
+│   │   │   │   ├── positioner-and-modal.test.ts        # [Gerado em Disco — 74 linhas]
+│   │   │   │   ├── primitives.test.ts                  # [Gerado em Disco — 131 linhas]
+│   │   │   │   ├── select.test.ts                      # [Gerado em Disco — 28 linhas]
+│   │   │   │   ├── tabs.test.ts                        # [Gerado em Disco — 23 linhas]
+│   │   │   │   ├── toast.test.ts                       # [Gerado em Disco — 19 linhas]
+│   │   │   │   └── tooltip.test.ts                     # [Gerado em Disco — 27 linhas]
+│   │   │   ├── components/
+│   │   │   │   ├── accordion.ts                        # [Gerado em Disco — 207 linhas]
+│   │   │   │   ├── button.ts                           # [Gerado em Disco — 89 linhas]
+│   │   │   │   ├── dialog.ts                           # [Gerado em Disco — 294 linhas]
+│   │   │   │   ├── menu.ts                             # [Gerado em Disco — 281 linhas]
+│   │   │   │   ├── select.ts                           # [Gerado em Disco — 373 linhas]
+│   │   │   │   ├── tabs.ts                             # [Gerado em Disco — 210 linhas]
+│   │   │   │   ├── toast.ts                            # [Gerado em Disco — 297 linhas]
+│   │   │   │   └── tooltip.ts                          # [Gerado em Disco — 192 linhas]
+│   │   │   ├── primitives/
+│   │   │   │   ├── aria-hide-outside.ts                # [Gerado em Disco — 81 linhas]
+│   │   │   │   ├── dismissable-layer.ts                # [Gerado em Disco — 77 linhas]
+│   │   │   │   ├── dom.ts                              # [Gerado em Disco — 38 linhas]
+│   │   │   │   ├── focus.ts                            # [Gerado em Disco — 162 linhas]
+│   │   │   │   ├── i18n.ts                             # [Gerado em Disco — 134 linhas]
+│   │   │   │   ├── id.ts                               # [Gerado em Disco — 10 linhas]
+│   │   │   │   ├── index.ts                            # [Gerado em Disco — 72 linhas]
+│   │   │   │   ├── keyboard.ts                         # [Gerado em Disco — 28 linhas]
+│   │   │   │   ├── live-region.ts                      # [Gerado em Disco — 54 linhas]
+│   │   │   │   ├── portal.ts                           # [Gerado em Disco — 45 linhas]
+│   │   │   │   ├── positioner.ts                       # [Gerado em Disco — 160 linhas]
+│   │   │   │   ├── roving-tabindex.ts                  # [Gerado em Disco — 74 linhas]
+│   │   │   │   ├── scroll-lock.ts                      # [Gerado em Disco — 49 linhas]
+│   │   │   │   └── typeahead.ts                        # [Gerado em Disco — 64 linhas]
+│   │   │   └── index.ts                                # [Gerado em Disco — 57 linhas]
+│   │   ├── README.md                                   # [Gerado em Disco — 33 linhas]
+│   │   ├── package.json                                # [Gerado em Disco — 71 linhas]
+│   │   ├── rollup.config.mjs                           # [Gerado em Disco — 53 linhas]
+│   │   └── tsconfig.json                               # [Gerado em Disco — 13 linhas]
+│   ├── react/
+│   │   ├── src/
+│   │   │   ├── __tests__/
+│   │   │   │   └── react-adapters.test.tsx             # [Gerado em Disco — 84 linhas]
+│   │   │   └── index.ts                                # [Gerado em Disco — 465 linhas]
+│   │   ├── README.md                                   # [Gerado em Disco — 20 linhas]
+│   │   ├── package.json                                # [Gerado em Disco — 33 linhas]
+│   │   ├── rollup.config.mjs                           # [Gerado em Disco — 20 linhas]
+│   │   └── tsconfig.json                               # [Gerado em Disco — 15 linhas]
+│   ├── svelte/
+│   │   ├── src/
+│   │   │   ├── __tests__/
+│   │   │   │   └── svelte-adapters.test.ts             # [Gerado em Disco — 69 linhas]
+│   │   │   └── index.ts                                # [Gerado em Disco — 125 linhas]
+│   │   ├── README.md                                   # [Gerado em Disco — 23 linhas]
+│   │   ├── package.json                                # [Gerado em Disco — 32 linhas]
+│   │   ├── rollup.config.mjs                           # [Gerado em Disco — 20 linhas]
+│   │   └── tsconfig.json                               # [Gerado em Disco — 13 linhas]
+│   ├── themes/
+│   │   ├── scripts/
+│   │   │   └── emit-css.mjs                            # [Gerado em Disco — 9 linhas]
+│   │   ├── src/
+│   │   │   ├── index.ts                                # [Gerado em Disco — 225 linhas]
+│   │   │   └── themes.test.ts                          # [Gerado em Disco — 41 linhas]
+│   │   ├── README.md                                   # [Gerado em Disco — 17 linhas]
+│   │   ├── package.json                                # [Gerado em Disco — 32 linhas]
+│   │   ├── rollup.config.mjs                           # [Gerado em Disco — 20 linhas]
+│   │   └── tsconfig.json                               # [Gerado em Disco — 13 linhas]
+│   ├── tokens/
+│   │   ├── scripts/
+│   │   │   └── emit-json.mjs                           # [Gerado em Disco — 9 linhas]
+│   │   ├── src/
+│   │   │   ├── colors.ts                               # [Gerado em Disco — 96 linhas]
+│   │   │   ├── contrast.test.ts                        # [Gerado em Disco — 27 linhas]
+│   │   │   ├── contrast.ts                             # [Gerado em Disco — 71 linhas]
+│   │   │   ├── css-vars.ts                             # [Gerado em Disco — 103 linhas]
+│   │   │   ├── elevation.ts                            # [Gerado em Disco — 41 linhas]
+│   │   │   ├── index.ts                                # [Gerado em Disco — 32 linhas]
+│   │   │   ├── logical-css.ts                          # [Gerado em Disco — 27 linhas]
+│   │   │   ├── spacing.ts                              # [Gerado em Disco — 20 linhas]
+│   │   │   ├── tokens.test.ts                          # [Gerado em Disco — 41 linhas]
+│   │   │   └── typography.ts                           # [Gerado em Disco — 31 linhas]
+│   │   ├── README.md                                   # [Gerado em Disco — 38 linhas]
+│   │   ├── package.json                                # [Gerado em Disco — 27 linhas]
+│   │   ├── rollup.config.mjs                           # [Gerado em Disco — 22 linhas]
+│   │   └── tsconfig.json                               # [Gerado em Disco — 10 linhas]
+│   └── vue/
+│       ├── src/
+│       │   ├── __tests__/
+│       │   │   └── vue-adapters.test.ts                # [Gerado em Disco — 60 linhas]
+│       │   └── index.ts                                # [Gerado em Disco — 142 linhas]
+│       ├── README.md                                   # [Gerado em Disco — 20 linhas]
+│       ├── package.json                                # [Gerado em Disco — 32 linhas]
+│       ├── rollup.config.mjs                           # [Gerado em Disco — 20 linhas]
+│       └── tsconfig.json                               # [Gerado em Disco — 13 linhas]
+├── scripts/
+│   ├── release-check.mjs                               # [Gerado em Disco — 49 linhas]
+│   └── verify-exports.mjs                              # [Gerado em Disco — 75 linhas]
+├── AGENTS.md                                           # [Gerado em Disco — 27 linhas]
+├── CHANGELOG.md                                        # [Gerado em Disco — 23 linhas]
+├── CLAUDE.md                                           # [Gerado em Disco — 18 linhas]
+├── README.md                                           # [Gerado em Disco — 61 linhas]
+├── SPEC.md                                             # [Gerado em Disco — 11 linhas]
+├── eslint.config.mjs                                   # [Gerado em Disco — 27 linhas]
+├── package.json                                        # [Gerado em Disco — 53 linhas]
+├── pnpm-workspace.yaml                                 # [Gerado em Disco — 3 linhas]
+├── tsconfig.base.json                                  # [Gerado em Disco — 25 linhas]
+├── vitest.config.ts                                    # [Gerado em Disco — 28 linhas]
+└── vitest.setup.ts                                     # [Gerado em Disco — 49 linhas]

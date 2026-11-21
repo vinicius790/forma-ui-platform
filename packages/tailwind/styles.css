@@ -1,0 +1,14 @@
+/* Optional Tailwind CSS v4 theme mapping. Import explicitly; Forma core never imports CSS. */
+@theme {
+  --color-forma-surface: var(--forma-surface, var(--forma-color-surface, #ffffff));
+  --color-forma-surface-raised: var(--forma-surface-raised, var(--forma-color-surface, #ffffff));
+  --color-forma-text: var(--forma-text, var(--forma-color-text, #0f172a));
+  --color-forma-text-muted: var(--forma-text-muted, var(--forma-color-muted, #475569));
+  --color-forma-border: var(--forma-border, var(--forma-color-border, #cbd5e1));
+  --color-forma-focus: var(--forma-focus, var(--forma-color-focus, #2563eb));
+  --color-forma-primary: var(--forma-primary, var(--forma-color-primary, #1d4ed8));
+  --color-forma-danger: var(--forma-danger, var(--forma-color-danger, #b91c1c));
+  --radius-forma-sm: 0.25rem;
+  --radius-forma-md: 0.5rem;
+  --radius-forma-lg: 0.75rem;
+}

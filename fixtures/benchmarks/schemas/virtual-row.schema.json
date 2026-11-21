@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forma-ui.dev/schemas/virtual-row.schema.json",
+  "title": "Forma UI synthetic variable-height virtualization row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "index",
+    "estimatedHeight",
+    "section",
+    "heading",
+    "expanded",
+    "selectable",
+    "body",
+    "checksumToken"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^virtual-row-[0-9]{7}$"
+    },
+    "index": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "estimatedHeight": {
+      "type": "integer",
+      "minimum": 28,
+      "maximum": 200
+    },
+    "section": {
+      "enum": [
+        "Overview",
+        "Properties",
+        "Interactions",
+        "Accessibility",
+        "Examples",
+        "References"
+      ]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "expanded": {
+      "type": "boolean"
+    },
+    "selectable": {
+      "type": "boolean"
+    },
+    "body": {
+      "type": "string"
+    },
+    "checksumToken": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 20
+    }
+  }
+}

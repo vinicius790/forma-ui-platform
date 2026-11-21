@@ -1,0 +1,16 @@
+{
+  "entryPoints": [
+    "packages/core/src/index.ts",
+    "packages/tokens/src/index.ts"
+  ],
+  "tsconfig": "./tsconfig.typedoc.json",
+  "out": "docs/api",
+  "exclude": [
+    "**/*.test.ts",
+    "archive-imports/**"
+  ],
+  "plugin": [],
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "categorizeByGroup": true
+}

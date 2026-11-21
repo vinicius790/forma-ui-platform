@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+.vite/
+*.tsbuildinfo
+.env*
+!.env.example
+.DS_Store
+playwright-report/
+test-results/
+docs/api/
+.turbo/
+.eslintcache
+*.log
+storybook-static/
+apps/storybook/storybook-static/

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forma-ui.dev/schemas/i18n-message.schema.json",
+  "title": "Forma UI synthetic i18n ICU message benchmark record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "locale",
+    "direction",
+    "namespace",
+    "icuTemplate",
+    "description",
+    "token"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^i18n-msg-[0-9]{7}$"
+    },
+    "locale": {
+      "enum": [
+        "pt-BR",
+        "en-US",
+        "es-ES",
+        "fr-FR",
+        "de-DE",
+        "ar-EG",
+        "he-IL",
+        "ja-JP"
+      ]
+    },
+    "direction": {
+      "enum": [
+        "ltr",
+        "rtl"
+      ]
+    },
+    "namespace": {
+      "enum": [
+        "navigation",
+        "records",
+        "editing",
+        "workspace",
+        "accessibility",
+        "developer-tools",
+        "help"
+      ]
+    },
+    "icuTemplate": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string",
+      "minLength": 24,
+      "maxLength": 24
+    }
+  }
+}

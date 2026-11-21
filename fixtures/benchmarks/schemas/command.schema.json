@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forma-ui.dev/schemas/command.schema.json",
+  "title": "Forma UI synthetic Command Palette benchmark item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "group",
+    "keywords",
+    "enabled",
+    "rank",
+    "description",
+    "token"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^command-[0-9]{7}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "group": {
+      "enum": [
+        "navigation",
+        "records",
+        "editing",
+        "workspace",
+        "accessibility",
+        "developer-tools",
+        "help"
+      ]
+    },
+    "keywords": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "shortcut": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "rank": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string",
+      "minLength": 28,
+      "maxLength": 28
+    }
+  }
+}

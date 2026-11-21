@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forma-ui.dev/schemas/chart-point.schema.json",
+  "title": "Forma UI synthetic accessible chart & sonification point",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "metric",
+    "region",
+    "value",
+    "frequencyHz",
+    "timestamp",
+    "summary",
+    "token"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^chart-pt-[0-9]{7}$"
+    },
+    "metric": {
+      "enum": [
+        "inp-latency-ms",
+        "lcp-render-ms",
+        "cls-score",
+        "memory-heap-kb",
+        "virtual-fps",
+        "a11y-tree-depth"
+      ]
+    },
+    "region": {
+      "enum": [
+        "br-north",
+        "br-northeast",
+        "br-central-west",
+        "br-southeast",
+        "br-south",
+        "na-east",
+        "eu-west",
+        "ap-southeast"
+      ]
+    },
+    "value": {
+      "type": "number"
+    },
+    "frequencyHz": {
+      "type": "number"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string",
+      "minLength": 24,
+      "maxLength": 24
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forma-ui.dev/schemas/tree-node.schema.json",
+  "title": "Forma UI synthetic TreeGrid/Kanban/Timeline node",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "parentId",
+    "level",
+    "kind",
+    "expanded",
+    "startMinute",
+    "durationMinutes",
+    "summary",
+    "token"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^tree-node-[0-9]{7}$"
+    },
+    "parentId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 6
+    },
+    "kind": {
+      "enum": [
+        "workspace",
+        "package",
+        "controller",
+        "primitive",
+        "story",
+        "spec"
+      ]
+    },
+    "expanded": {
+      "type": "boolean"
+    },
+    "startMinute": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "durationMinutes": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "summary": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string",
+      "minLength": 24,
+      "maxLength": 24
+    }
+  }
+}

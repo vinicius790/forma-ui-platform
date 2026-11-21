@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forma-ui.dev/schemas/data-grid-record.schema.json",
+  "title": "Forma UI synthetic Data Grid benchmark record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "email",
+    "department",
+    "status",
+    "priority",
+    "amountMinor",
+    "region",
+    "createdAt",
+    "updatedAt",
+    "tags",
+    "token",
+    "description"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^grid-[0-9]{7}$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "department": {
+      "enum": [
+        "engineering",
+        "design",
+        "product",
+        "support",
+        "security",
+        "research",
+        "operations",
+        "finance"
+      ]
+    },
+    "status": {
+      "enum": [
+        "active",
+        "pending",
+        "suspended",
+        "archived"
+      ]
+    },
+    "priority": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "amountMinor": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "region": {
+      "enum": [
+        "br-north",
+        "br-northeast",
+        "br-central-west",
+        "br-southeast",
+        "br-south",
+        "na-east",
+        "eu-west",
+        "ap-southeast"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "token": {
+      "type": "string",
+      "minLength": 32,
+      "maxLength": 32
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

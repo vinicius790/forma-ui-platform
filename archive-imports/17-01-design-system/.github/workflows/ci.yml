@@ -1,0 +1,58 @@
+# .github/workflows/ci.yml
+name: CI — Build, Typecheck, Tests & A11y Audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify Monorepo (Build, Types, Lint, Exports & A11y)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.12.0
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: |
+          if [ -f pnpm-lock.yaml ]; then
+            pnpm install --frozen-lockfile
+          else
+            pnpm install --no-frozen-lockfile
+          fi
+
+      - name: Build all packages & emit declarations (.d.ts, tokens.json, styles.css)
+        run: pnpm build
+
+      - name: Verify package exports, dist artifacts & circular dependencies
+        run: node scripts/verify-exports.mjs --require-dist
+
+      - name: Verify SemVer & registry readiness metadata
+        run: pnpm release:check
+
+      - name: Typecheck all workspaces
+        run: pnpm typecheck
+
+      - name: Lint source files
+        run: pnpm lint
+
+      - name: Run unit & integration test suites
+        run: pnpm test
+
+      - name: Run automated WAI-ARIA / WCAG axe-core accessibility audit
+        run: pnpm test:a11y

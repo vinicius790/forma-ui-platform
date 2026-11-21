@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forma-ui.dev/schemas/ai-stream.schema.json",
+  "title": "Forma UI synthetic AI-UI stream event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "sessionId",
+    "model",
+    "phase",
+    "chunkIndex",
+    "citations",
+    "requiresApproval",
+    "timestamp",
+    "payload",
+    "token"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ai-evt-[0-9]{7}$"
+    },
+    "sessionId": {
+      "type": "string"
+    },
+    "model": {
+      "enum": [
+        "forma-stream-fast",
+        "forma-stream-pro",
+        "forma-agent-v100",
+        "forma-a11y-auditor"
+      ]
+    },
+    "phase": {
+      "enum": [
+        "streaming",
+        "tool-approval",
+        "complete",
+        "aborted"
+      ]
+    },
+    "chunkIndex": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "citations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requiresApproval": {
+      "type": "boolean"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "payload": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string",
+      "minLength": 24,
+      "maxLength": 24
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "@forma-ui/solid",
+  "version": "100.0.0",
+  "description": "SolidJS signals and lifecycle adapters for Forma UI",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c && tsc -p tsconfig.json --emitDeclarationOnly && node ../../scripts/finalize-declarations.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run src/__tests__"
+  },
+  "peerDependencies": {
+    "solid-js": ">=1.8.0 <2.0.0",
+    "@forma-ui/core": "^100.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "^4.40.0",
+    "typescript": "^5.8.3",
+    "tslib": "^2.8.1",
+    "vitest": "^3.1.1",
+    "jsdom": "^26.0.0",
+    "@forma-ui/core": "workspace:*",
+    "solid-js": "^1.9.5"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "engines": {
+    "node": ">=22.16.0"
+  }
+}

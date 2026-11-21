@@ -1,0 +1,53 @@
+{
+  "name": "forma-ui-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "17.1 Design system + biblioteca de componentes headless agn\u00f3stica de estilo com foco em acessibilidade WAI-ARIA.",
+  "packageManager": "pnpm@9.12.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "pnpm --filter \"./packages/*\" --filter \"./apps/*\" build",
+    "typecheck": "pnpm --filter \"./packages/*\" --filter \"./apps/*\" typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:a11y": "vitest run --testNamePattern=\"a11y|accessibility|axe\"",
+    "lint": "eslint \"packages/*/src/**/*.{ts,tsx}\" \"apps/*/src/**/*.ts\"",
+    "format": "prettier --write \"packages/**/*.{ts,tsx,vue,svelte,json,md}\" \"apps/**/*.{ts,html,css,md}\" \"docs/**/*.md\"",
+    "verify:exports": "node scripts/verify-exports.mjs",
+    "release:check": "node scripts/release-check.mjs",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && pnpm test && pnpm verify:exports && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.8",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^22.7.5",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "axe-core": "^4.10.2",
+    "eslint": "^9.12.0",
+    "jsdom": "^25.0.1",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rollup": "^4.24.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "svelte": "^5.1.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8",
+    "vitest": "^2.1.2",
+    "vue": "^3.5.12"
+  }
+}
